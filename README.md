@@ -237,16 +237,6 @@ Sistem gerekli durumlarda otomatik olarak simulated mode'a geçer.
 - Markdown raporları
 - TXT raporları
 
----
-
-## 🔮 Gelecek Geliştirmeler
-
-- Telemetry heatmaps
-- Çok sezonlu analiz
-- Docker desteği
-- Grafana entegrasyonu
-- Pit strategy optimizer
-- Live race monitoring
 
 ---
 
