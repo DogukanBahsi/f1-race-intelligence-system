@@ -1,0 +1,139 @@
+# 🏎️ F1 Race Intelligence Report
+## Great Britain Grand Prix — 2025 Sezonu
+*Rapor tarihi: 23 May 2026, 17:42*
+
+---
+## 📊 Yarış Genel Bakış
+| Metrik | Değer |
+|--------|-------|
+| Toplam Tur | 1124 |
+| Toplam Pilot | 17 |
+| En Hızlı Tur | 1:07.924 |
+| En Hızlı Pilot | PIA |
+| En İstikrarlı Pilot | ALB |
+| Ortalama Hava Sıcaklığı | 30.3°C |
+| Ortalama Pist Sıcaklığı | 49.2°C |
+
+## 🏁 Pilot İstikrar Analizi
+**En İstikrarlı Pilot:** ALB
+**En Hızlı Pilot:** PIA
+
+| Sıra | Pilot | Ort. Tur | En Hızlı | Std Sapma | Consistency |
+|------|-------|----------|----------|-----------|-------------|
+| 1 | ALB | 71.197s | 70.641s | 0.410s | 0.7092 |
+| 2 | RUS | 70.599s | 69.372s | 0.650s | 0.6060 |
+| 3 | HUL | 70.781s | 69.459s | 0.684s | 0.5937 |
+| 4 | BEA | 71.076s | 69.960s | 0.689s | 0.5921 |
+| 5 | GAS | 71.176s | 70.151s | 0.692s | 0.5911 |
+| 6 | NOR | 69.675s | 68.272s | 0.710s | 0.5849 |
+| 7 | HAD | 71.352s | 70.204s | 0.748s | 0.5721 |
+| 8 | LAW | 70.942s | 69.977s | 0.764s | 0.5670 |
+| 9 | BOR | 70.686s | 69.247s | 0.764s | 0.5670 |
+| 10 | OCO | 70.791s | 69.550s | 0.778s | 0.5623 |
+
+> Great Britain yarışında en stabil pilot ALB olmuştur (Consistency Score: 0.709). En hızlı tur PIA adına kayıtlıdır (1:07.924).
+
+## 🔴 Lastik Stratejisi Analizi
+**En Avantajlı Lastik:** HARD
+
+| Lastik | Ort. Tur (s) | En Hızlı (s) | Std Sapma | Tur Sayısı |
+|--------|--------------|--------------|-----------|------------|
+| HARD | 70.493 | 69.196 | 0.762 | 416 |
+| MEDIUM | 70.834 | 67.924 | 1.016 | 537 |
+| SOFT | 70.949 | 69.214 | 0.993 | 54 |
+
+> Great Britain yarışında HARD lastikler en hızlı ortalama süreyi kaydetmiştir (1:10.493).
+
+## 📉 Lastik Bozulma Analizi
+**En Hızlı Bozulan Lastik:** MEDIUM
+
+| Lastik | Bozulma Oranı (s/tur) | R² |
+|--------|----------------------|-----|
+| MEDIUM | 0.0481 | 0.846 |
+| HARD | 0.0245 | 0.735 |
+| SOFT | -0.0113 | 0.005 |
+
+> Great Britain yarışında en hızlı bozulan lastik MEDIUM olmuştur (0.048 s/tur artış).
+
+## 🔧 Pit Stop Analizi
+**Ortalama Pit Stop Faydası:** 1.130s
+
+| Pilot | Pit Sayısı | Ortalama Etki (s) |
+|-------|------------|-------------------|
+| PIA | 4 | 1.722 |
+| STR | 4 | 1.649 |
+| COL | 4 | 1.624 |
+| HAM | 4 | 1.522 |
+| HAD | 2 | 1.440 |
+| OCO | 4 | 1.291 |
+| LAW | 2 | 1.284 |
+| ALO | 2 | 1.207 |
+| GAS | 4 | 1.127 |
+| NOR | 4 | 1.060 |
+| BOR | 4 | 1.039 |
+| TSU | 6 | 0.929 |
+| RUS | 4 | 0.859 |
+| BEA | 4 | 0.594 |
+| LEC | 4 | 0.488 |
+| HUL | 4 | 0.246 |
+
+> Great Britain yarışında ortalama pit stop faydası 1.13s olarak ölçülmüştür. Pit stop sonrası hız artışı gözlemlenmiştir (undercut avantajı).
+
+## 🌡️ Hava ve Sıcaklık Analizi
+**Hava Sıcaklığı**
+- Pearson r = nan
+- p-değeri = nan (❌ Anlamlı değil)
+- Çok güçlü ilişki
+> Great Britain: Hava Sıcaklığı artarken tur zamanı azalıyor (r=nan, p=>0.05). Çok güçlü ilişki.
+
+**Pist Sıcaklığı**
+- Pearson r = nan
+- p-değeri = nan (❌ Anlamlı değil)
+- Çok güçlü ilişki
+> Great Britain: Pist Sıcaklığı artarken tur zamanı azalıyor (r=nan, p=>0.05). Çok güçlü ilişki.
+
+## 🤖 Makine Öğrenmesi Sonuçları
+### K-Means Clustering
+**Küme Sayısı:** 3
+- **Stabil & Hızlı:** ALO, BOR, HAD, HAM, LAW, LEC, NOR, OCO, PIA, RUS, STR, TSU
+- **Agresif:** BEA, COL, GAS, HUL
+- **Düzensiz:** ALB
+
+> Great Britain yarışında 3 performans grubu tespit edilmiştir. 'Stabil & Hızlı' grubundaki pilotlar: ALO, BOR, HAD, HAM, LAW, LEC, NOR, OCO, PIA, RUS, STR, TSU.
+
+### Decision Tree Sınıflandırma
+**Doğruluk:** %33.3
+
+**Feature Importance:**
+- `average_lap_time`: 0.6562 █████████████
+- `sector_consistency`: 0.3438 ██████
+- `tire_degradation_rate`: 0.0000 
+- `consistency_score`: 0.0000 
+- `pit_stop_impact`: 0.0000 
+- `AirTemp`: 0.0000 
+- `TrackTemp`: 0.0000 
+
+**En Önemli Özellik:** `average_lap_time`
+
+> Decision Tree modeli Great Britain yarışında %33.3 doğruluk oranı elde etti. Yarış performansını en çok etkileyen faktör: average_lap_time.
+
+### kNN Sınıflandırma
+**Doğruluk:** %50.0 (k=5)
+> kNN modeli (k=5) Great Britain yarışında %50.0 doğruluk oranı elde etti.
+
+### Model Karşılaştırması
+| Model | Doğruluk |
+|-------|----------|
+| Decision Tree | %33.3 |
+| kNN | %50.0 |
+| **Kazanan** | **kNN** |
+
+> Great Britain: Decision Tree doğruluk oranı %33.3, kNN doğruluk oranı %50.0. Bu yarışta daha başarılı model: kNN.
+
+---
+## 📝 Genel Sonuç
+Great Britain Grand Prix analizi tamamlandı. Yarışın en hızlı pilotu **PIA** olurken, en tutarlı performansı **ALB** sergilemiştir. Lastik stratejisi açısından **HARD** bileşiği bu pistte en avantajlı seçenek olarak öne çıkmıştır. Makine öğrenmesi modeli, yarış performansını etkileyen en kritik faktör olarak **average_lap_time** özelliğini belirlemiştir. Sınıflandırma modelleri karşılaştırmasında **kNN** daha yüksek doğruluk oranına ulaşmıştır.
+
+---
+*Bu rapor F1 Race Intelligence System tarafından otomatik üretilmiştir.*
+*Veri kaynağı: FastF1 / 2025 Formula 1 Sezonu*
