@@ -31,30 +31,7 @@ Sistem:
 
 ---
 
-## 📸 Dashboard Görselleri
 
-### Flask Dashboard
-
-> Buraya dashboard ekran görüntüsü ekleyin
-
-```md
-![Dashboard](screenshots/dashboard.png)
-```
-
-### Driver Comparison
-
-> Buraya comparison ekran görüntüsü ekleyin
-
-```md
-![Comparison](screenshots/comparison.png)
-```
-
-### ML Insights
-
-> Buraya ML ekran görüntüsü ekleyin
-
-```md
-![ML](screenshots/ml.png)
 ```
 
 ---
