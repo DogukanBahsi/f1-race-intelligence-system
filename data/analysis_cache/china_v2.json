@@ -1,0 +1,2613 @@
+{
+  "_cache_version": "v2",
+  "_race_name": "China",
+  "_created_at": "2026-05-23 12:39:45",
+  "analysis": {
+    "race_name": "China",
+    "driver_stability": {
+      "data": [
+        {
+          "Driver": "ALO",
+          "avg_lap_time": 99.42349999999999,
+          "best_lap_time": 99.256,
+          "lap_time_std": 0.23688077169748398,
+          "lap_count": 2,
+          "consistency_score": 0.8084853632477519,
+          "Team": "Aston Martin",
+          "stability_rank": 1
+        },
+        {
+          "Driver": "PIA",
+          "avg_lap_time": 96.94203703703704,
+          "best_lap_time": 95.52,
+          "lap_time_std": 0.7777872814633474,
+          "lap_count": 54,
+          "consistency_score": 0.5624969929905627,
+          "Team": "McLaren",
+          "stability_rank": 2
+        },
+        {
+          "Driver": "SAI",
+          "avg_lap_time": 98.16235849056604,
+          "best_lap_time": 96.779,
+          "lap_time_std": 0.8403108420821219,
+          "lap_count": 53,
+          "consistency_score": 0.5433864633806119,
+          "Team": "Williams",
+          "stability_rank": 3
+        },
+        {
+          "Driver": "DOO",
+          "avg_lap_time": 98.23120754716982,
+          "best_lap_time": 96.424,
+          "lap_time_std": 0.9098459793260751,
+          "lap_count": 53,
+          "consistency_score": 0.5236024322510388,
+          "Team": "Alpine",
+          "stability_rank": 4
+        },
+        {
+          "Driver": "LEC",
+          "avg_lap_time": 97.41185185185185,
+          "best_lap_time": 96.157,
+          "lap_time_std": 0.9364777729062459,
+          "lap_count": 54,
+          "consistency_score": 0.5164014862402527,
+          "Team": "Ferrari",
+          "stability_rank": 5
+        },
+        {
+          "Driver": "RUS",
+          "avg_lap_time": 97.20075925925927,
+          "best_lap_time": 95.816,
+          "lap_time_std": 0.9409329560297334,
+          "lap_count": 54,
+          "consistency_score": 0.5152161474168306,
+          "Team": "Mercedes",
+          "stability_rank": 6
+        },
+        {
+          "Driver": "NOR",
+          "avg_lap_time": 97.14533333333333,
+          "best_lap_time": 95.454,
+          "lap_time_std": 0.9769812381119138,
+          "lap_count": 54,
+          "consistency_score": 0.5058216945725974,
+          "Team": "McLaren",
+          "stability_rank": 7
+        },
+        {
+          "Driver": "TSU",
+          "avg_lap_time": 97.8029375,
+          "best_lap_time": 95.871,
+          "lap_time_std": 0.9790377474358425,
+          "lap_count": 48,
+          "consistency_score": 0.5052960719398398,
+          "Team": "Racing Bulls",
+          "stability_rank": 8
+        },
+        {
+          "Driver": "OCO",
+          "avg_lap_time": 97.75441509433963,
+          "best_lap_time": 95.74,
+          "lap_time_std": 1.0059871622128118,
+          "lap_count": 53,
+          "consistency_score": 0.4985076768372218,
+          "Team": "Haas F1 Team",
+          "stability_rank": 9
+        },
+        {
+          "Driver": "ALB",
+          "avg_lap_time": 97.79654716981132,
+          "best_lap_time": 96.254,
+          "lap_time_std": 1.0077998421168224,
+          "lap_count": 53,
+          "consistency_score": 0.4980576146204397,
+          "Team": "Williams",
+          "stability_rank": 10
+        },
+        {
+          "Driver": "GAS",
+          "avg_lap_time": 98.04932075471697,
+          "best_lap_time": 96.425,
+          "lap_time_std": 1.0137794057877831,
+          "lap_count": 53,
+          "consistency_score": 0.4965787201547051,
+          "Team": "Alpine",
+          "stability_rank": 11
+        },
+        {
+          "Driver": "ANT",
+          "avg_lap_time": 97.8205283018868,
+          "best_lap_time": 96.046,
+          "lap_time_std": 1.0278796622879394,
+          "lap_count": 53,
+          "consistency_score": 0.4931259081082542,
+          "Team": "Mercedes",
+          "stability_rank": 12
+        },
+        {
+          "Driver": "HAD",
+          "avg_lap_time": 97.8938431372549,
+          "best_lap_time": 95.868,
+          "lap_time_std": 1.0325913494223877,
+          "lap_count": 51,
+          "consistency_score": 0.4919828081941681,
+          "Team": "Racing Bulls",
+          "stability_rank": 13
+        },
+        {
+          "Driver": "STR",
+          "avg_lap_time": 98.14443396226415,
+          "best_lap_time": 96.044,
+          "lap_time_std": 1.1268631837886292,
+          "lap_count": 53,
+          "consistency_score": 0.4701759885742522,
+          "Team": "Aston Martin",
+          "stability_rank": 14
+        },
+        {
+          "Driver": "BOR",
+          "avg_lap_time": 98.13323529411765,
+          "best_lap_time": 95.874,
+          "lap_time_std": 1.157747581957911,
+          "lap_count": 51,
+          "consistency_score": 0.4634462382725108,
+          "Team": "Kick Sauber",
+          "stability_rank": 15
+        },
+        {
+          "Driver": "HUL",
+          "avg_lap_time": 98.88955769230769,
+          "best_lap_time": 97.275,
+          "lap_time_std": 1.20963091783844,
+          "lap_count": 52,
+          "consistency_score": 0.4525642685060928,
+          "Team": "Kick Sauber",
+          "stability_rank": 16
+        },
+        {
+          "Driver": "BEA",
+          "avg_lap_time": 97.92383018867925,
+          "best_lap_time": 96.363,
+          "lap_time_std": 1.2191762309641805,
+          "lap_count": 53,
+          "consistency_score": 0.4506176598536851,
+          "Team": "Haas F1 Team",
+          "stability_rank": 17
+        },
+        {
+          "Driver": "VER",
+          "avg_lap_time": 97.29296296296296,
+          "best_lap_time": 95.488,
+          "lap_time_std": 1.2467776270981712,
+          "lap_count": 54,
+          "consistency_score": 0.44508187545536104,
+          "Team": "Red Bull Racing",
+          "stability_rank": 18
+        },
+        {
+          "Driver": "LAW",
+          "avg_lap_time": 97.82366666666665,
+          "best_lap_time": 95.985,
+          "lap_time_std": 1.2740452529901172,
+          "lap_count": 51,
+          "consistency_score": 0.43974498690609215,
+          "Team": "Red Bull Racing",
+          "stability_rank": 19
+        },
+        {
+          "Driver": "HAM",
+          "avg_lap_time": 97.02573076923076,
+          "best_lap_time": 95.069,
+          "lap_time_std": 1.3362377256412308,
+          "lap_count": 52,
+          "consistency_score": 0.42803863195280284,
+          "Team": "Ferrari",
+          "stability_rank": 20
+        }
+      ],
+      "most_stable": "ALO",
+      "fastest": "HAM",
+      "comment": "China yarışında en stabil pilot ALO olmuştur (Consistency Score: 0.808). En hızlı tur HAM adına kayıtlıdır (1:35.069)."
+    },
+    "tire_strategy": {
+      "compound_stats": [
+        {
+          "Compound": "HARD",
+          "avg_lap_time": 97.53452870493992,
+          "best_lap_time": 95.069,
+          "std": 1.0753914649954688,
+          "count": 749
+        },
+        {
+          "Compound": "MEDIUM",
+          "avg_lap_time": 98.42622222222222,
+          "best_lap_time": 95.871,
+          "std": 1.1413094798986776,
+          "count": 252
+        }
+      ],
+      "tyre_age_data": {
+        "MEDIUM": [
+          {
+            "TyreLife": 1.0,
+            "LapTime": 100.44966666666666
+          },
+          {
+            "TyreLife": 2.0,
+            "LapTime": 98.50083333333333
+          },
+          {
+            "TyreLife": 3.0,
+            "LapTime": 98.40288888888888
+          },
+          {
+            "TyreLife": 4.0,
+            "LapTime": 98.40005555555555
+          },
+          {
+            "TyreLife": 5.0,
+            "LapTime": 98.38622222222222
+          },
+          {
+            "TyreLife": 6.0,
+            "LapTime": 98.52394444444445
+          },
+          {
+            "TyreLife": 7.0,
+            "LapTime": 98.70178947368422
+          },
+          {
+            "TyreLife": 8.0,
+            "LapTime": 98.66245
+          },
+          {
+            "TyreLife": 9.0,
+            "LapTime": 98.70510526315789
+          },
+          {
+            "TyreLife": 10.0,
+            "LapTime": 98.43933333333332
+          },
+          {
+            "TyreLife": 11.0,
+            "LapTime": 98.28406666666666
+          },
+          {
+            "TyreLife": 12.0,
+            "LapTime": 98.28508333333333
+          },
+          {
+            "TyreLife": 13.0,
+            "LapTime": 98.2629
+          },
+          {
+            "TyreLife": 14.0,
+            "LapTime": 98.20375
+          },
+          {
+            "TyreLife": 15.0,
+            "LapTime": 98.13366666666666
+          },
+          {
+            "TyreLife": 16.0,
+            "LapTime": 98.3038
+          },
+          {
+            "TyreLife": 17.0,
+            "LapTime": 98.44825
+          },
+          {
+            "TyreLife": 18.0,
+            "LapTime": 98.52199999999999
+          },
+          {
+            "TyreLife": 19.0,
+            "LapTime": 98.7
+          },
+          {
+            "TyreLife": 20.0,
+            "LapTime": 96.707
+          },
+          {
+            "TyreLife": 21.0,
+            "LapTime": 96.642
+          },
+          {
+            "TyreLife": 22.0,
+            "LapTime": 96.836
+          },
+          {
+            "TyreLife": 23.0,
+            "LapTime": 96.813
+          },
+          {
+            "TyreLife": 24.0,
+            "LapTime": 96.739
+          },
+          {
+            "TyreLife": 25.0,
+            "LapTime": 96.504
+          },
+          {
+            "TyreLife": 26.0,
+            "LapTime": 96.363
+          },
+          {
+            "TyreLife": 27.0,
+            "LapTime": 96.859
+          },
+          {
+            "TyreLife": 28.0,
+            "LapTime": 96.434
+          },
+          {
+            "TyreLife": 29.0,
+            "LapTime": 96.576
+          },
+          {
+            "TyreLife": 30.0,
+            "LapTime": 96.848
+          }
+        ],
+        "HARD": [
+          {
+            "TyreLife": 2.0,
+            "LapTime": 97.64825
+          },
+          {
+            "TyreLife": 3.0,
+            "LapTime": 97.95029166666666
+          },
+          {
+            "TyreLife": 4.0,
+            "LapTime": 97.99779166666667
+          },
+          {
+            "TyreLife": 5.0,
+            "LapTime": 98.20691666666666
+          },
+          {
+            "TyreLife": 6.0,
+            "LapTime": 98.13833333333334
+          },
+          {
+            "TyreLife": 7.0,
+            "LapTime": 98.02095833333334
+          },
+          {
+            "TyreLife": 8.0,
+            "LapTime": 98.03595833333333
+          },
+          {
+            "TyreLife": 9.0,
+            "LapTime": 97.733875
+          },
+          {
+            "TyreLife": 10.0,
+            "LapTime": 97.76904166666667
+          },
+          {
+            "TyreLife": 11.0,
+            "LapTime": 97.75278260869564
+          },
+          {
+            "TyreLife": 12.0,
+            "LapTime": 97.82508695652173
+          },
+          {
+            "TyreLife": 13.0,
+            "LapTime": 97.77273913043479
+          },
+          {
+            "TyreLife": 14.0,
+            "LapTime": 97.73508695652174
+          },
+          {
+            "TyreLife": 15.0,
+            "LapTime": 97.70095652173913
+          },
+          {
+            "TyreLife": 16.0,
+            "LapTime": 97.75621739130435
+          },
+          {
+            "TyreLife": 17.0,
+            "LapTime": 97.72560869565217
+          },
+          {
+            "TyreLife": 18.0,
+            "LapTime": 97.68990909090908
+          },
+          {
+            "TyreLife": 19.0,
+            "LapTime": 97.65599999999999
+          },
+          {
+            "TyreLife": 20.0,
+            "LapTime": 97.73176190476191
+          },
+          {
+            "TyreLife": 21.0,
+            "LapTime": 97.6614
+          },
+          {
+            "TyreLife": 22.0,
+            "LapTime": 97.46745
+          },
+          {
+            "TyreLife": 23.0,
+            "LapTime": 97.6351
+          },
+          {
+            "TyreLife": 24.0,
+            "LapTime": 97.68094117647058
+          },
+          {
+            "TyreLife": 25.0,
+            "LapTime": 97.4576875
+          },
+          {
+            "TyreLife": 26.0,
+            "LapTime": 97.3654
+          },
+          {
+            "TyreLife": 27.0,
+            "LapTime": 97.17750000000001
+          },
+          {
+            "TyreLife": 28.0,
+            "LapTime": 97.20964285714285
+          },
+          {
+            "TyreLife": 29.0,
+            "LapTime": 97.32414285714286
+          },
+          {
+            "TyreLife": 30.0,
+            "LapTime": 97.13415384615384
+          },
+          {
+            "TyreLife": 31.0,
+            "LapTime": 96.94630769230768
+          },
+          {
+            "TyreLife": 32.0,
+            "LapTime": 96.87069230769231
+          },
+          {
+            "TyreLife": 33.0,
+            "LapTime": 97.06046153846154
+          },
+          {
+            "TyreLife": 34.0,
+            "LapTime": 96.79938461538462
+          },
+          {
+            "TyreLife": 35.0,
+            "LapTime": 96.86046153846154
+          },
+          {
+            "TyreLife": 36.0,
+            "LapTime": 96.46172727272727
+          },
+          {
+            "TyreLife": 37.0,
+            "LapTime": 96.42269999999999
+          },
+          {
+            "TyreLife": 38.0,
+            "LapTime": 96.5897
+          },
+          {
+            "TyreLife": 39.0,
+            "LapTime": 96.6716
+          },
+          {
+            "TyreLife": 40.0,
+            "LapTime": 96.65233333333333
+          },
+          {
+            "TyreLife": 41.0,
+            "LapTime": 96.66644444444445
+          },
+          {
+            "TyreLife": 42.0,
+            "LapTime": 96.42042857142857
+          },
+          {
+            "TyreLife": 43.0,
+            "LapTime": 96.451
+          },
+          {
+            "TyreLife": 44.0,
+            "LapTime": 96.48175
+          },
+          {
+            "TyreLife": 45.0,
+            "LapTime": 96.68900000000001
+          },
+          {
+            "TyreLife": 46.0,
+            "LapTime": 96.85
+          }
+        ]
+      },
+      "strategy_map": {
+        "PIA": [
+          {
+            "Stint": 1.0,
+            "compound": "MEDIUM",
+            "laps": 14,
+            "avg_time": 98.29364285714284
+          },
+          {
+            "Stint": 2.0,
+            "compound": "HARD",
+            "laps": 42,
+            "avg_time": 97.11702380952381
+          }
+        ],
+        "NOR": [
+          {
+            "Stint": 1.0,
+            "compound": "MEDIUM",
+            "laps": 15,
+            "avg_time": 98.51219999999999
+          },
+          {
+            "Stint": 2.0,
+            "compound": "HARD",
+            "laps": 41,
+            "avg_time": 97.24612195121951
+          }
+        ],
+        "RUS": [
+          {
+            "Stint": 1.0,
+            "compound": "MEDIUM",
+            "laps": 14,
+            "avg_time": 98.68878571428571
+          },
+          {
+            "Stint": 2.0,
+            "compound": "HARD",
+            "laps": 42,
+            "avg_time": 97.24952380952381
+          }
+        ],
+        "VER": [
+          {
+            "Stint": 1.0,
+            "compound": "MEDIUM",
+            "laps": 13,
+            "avg_time": 99.35407692307693
+          },
+          {
+            "Stint": 2.0,
+            "compound": "HARD",
+            "laps": 43,
+            "avg_time": 97.21113953488371
+          }
+        ],
+        "OCO": [
+          {
+            "Stint": 1.0,
+            "compound": "MEDIUM",
+            "laps": 11,
+            "avg_time": 100.08954545454547
+          },
+          {
+            "Stint": 2.0,
+            "compound": "HARD",
+            "laps": 45,
+            "avg_time": 97.8668888888889
+          }
+        ],
+        "ANT": [
+          {
+            "Stint": 1.0,
+            "compound": "MEDIUM",
+            "laps": 12,
+            "avg_time": 99.70316666666666
+          },
+          {
+            "Stint": 2.0,
+            "compound": "HARD",
+            "laps": 44,
+            "avg_time": 98.00763636363637
+          }
+        ],
+        "ALB": [
+          {
+            "Stint": 1.0,
+            "compound": "MEDIUM",
+            "laps": 20,
+            "avg_time": 99.56275000000001
+          },
+          {
+            "Stint": 2.0,
+            "compound": "HARD",
+            "laps": 36,
+            "avg_time": 97.78033333333333
+          }
+        ],
+        "BEA": [
+          {
+            "Stint": 1.0,
+            "compound": "HARD",
+            "laps": 26,
+            "avg_time": 99.67573076923077
+          },
+          {
+            "Stint": 2.0,
+            "compound": "MEDIUM",
+            "laps": 30,
+            "avg_time": 97.49199999999999
+          }
+        ],
+        "STR": [
+          {
+            "Stint": 1.0,
+            "compound": "HARD",
+            "laps": 36,
+            "avg_time": 99.22233333333332
+          },
+          {
+            "Stint": 2.0,
+            "compound": "MEDIUM",
+            "laps": 20,
+            "avg_time": 97.6613
+          }
+        ],
+        "SAI": [
+          {
+            "Stint": 1.0,
+            "compound": "MEDIUM",
+            "laps": 17,
+            "avg_time": 100.04735294117647
+          },
+          {
+            "Stint": 2.0,
+            "compound": "HARD",
+            "laps": 39,
+            "avg_time": 98.22071794871795
+          }
+        ],
+        "HAD": [
+          {
+            "Stint": 1.0,
+            "compound": "MEDIUM",
+            "laps": 12,
+            "avg_time": 99.88691666666666
+          },
+          {
+            "Stint": 2.0,
+            "compound": "HARD",
+            "laps": 21,
+            "avg_time": 99.41771428571428
+          },
+          {
+            "Stint": 3.0,
+            "compound": "HARD",
+            "laps": 23,
+            "avg_time": 97.71678260869565
+          }
+        ],
+        "LAW": [
+          {
+            "Stint": 1.0,
+            "compound": "HARD",
+            "laps": 18,
+            "avg_time": 100.25755555555556
+          },
+          {
+            "Stint": 2.0,
+            "compound": "MEDIUM",
+            "laps": 12,
+            "avg_time": 99.83933333333334
+          },
+          {
+            "Stint": 3.0,
+            "compound": "HARD",
+            "laps": 26,
+            "avg_time": 97.44096153846155
+          }
+        ],
+        "DOO": [
+          {
+            "Stint": 1.0,
+            "compound": "MEDIUM",
+            "laps": 11,
+            "avg_time": 100.63481818181818
+          },
+          {
+            "Stint": 2.0,
+            "compound": "HARD",
+            "laps": 45,
+            "avg_time": 98.36542222222221
+          }
+        ],
+        "BOR": [
+          {
+            "Stint": 1.0,
+            "compound": "MEDIUM",
+            "laps": 1,
+            "avg_time": 123.657
+          },
+          {
+            "Stint": 2.0,
+            "compound": "HARD",
+            "laps": 25,
+            "avg_time": 100.10452
+          },
+          {
+            "Stint": 3.0,
+            "compound": "HARD",
+            "laps": 29,
+            "avg_time": 97.91420689655173
+          }
+        ],
+        "HUL": [
+          {
+            "Stint": 1.0,
+            "compound": "MEDIUM",
+            "laps": 20,
+            "avg_time": 100.97375
+          },
+          {
+            "Stint": 2.0,
+            "compound": "HARD",
+            "laps": 35,
+            "avg_time": 98.73648571428572
+          }
+        ],
+        "TSU": [
+          {
+            "Stint": 1.0,
+            "compound": "MEDIUM",
+            "laps": 11,
+            "avg_time": 99.86872727272727
+          },
+          {
+            "Stint": 2.0,
+            "compound": "HARD",
+            "laps": 24,
+            "avg_time": 99.07995833333332
+          },
+          {
+            "Stint": 3.0,
+            "compound": "HARD",
+            "laps": 11,
+            "avg_time": 99.39427272727272
+          },
+          {
+            "Stint": 4.0,
+            "compound": "MEDIUM",
+            "laps": 9,
+            "avg_time": 100.96944444444445
+          }
+        ],
+        "ALO": [
+          {
+            "Stint": 1.0,
+            "compound": "MEDIUM",
+            "laps": 4,
+            "avg_time": 111.3935
+          }
+        ],
+        "LEC": [
+          {
+            "Stint": 1.0,
+            "compound": "MEDIUM",
+            "laps": 15,
+            "avg_time": 98.8602
+          },
+          {
+            "Stint": 2.0,
+            "compound": "HARD",
+            "laps": 41,
+            "avg_time": 97.44717073170732
+          }
+        ],
+        "HAM": [
+          {
+            "Stint": 1.0,
+            "compound": "MEDIUM",
+            "laps": 13,
+            "avg_time": 98.93730769230768
+          },
+          {
+            "Stint": 2.0,
+            "compound": "HARD",
+            "laps": 24,
+            "avg_time": 98.451125
+          },
+          {
+            "Stint": 3.0,
+            "compound": "HARD",
+            "laps": 19,
+            "avg_time": 96.3892105263158
+          }
+        ],
+        "GAS": [
+          {
+            "Stint": 1.0,
+            "compound": "MEDIUM",
+            "laps": 10,
+            "avg_time": 100.33619999999999
+          },
+          {
+            "Stint": 2.0,
+            "compound": "HARD",
+            "laps": 46,
+            "avg_time": 98.23606521739131
+          }
+        ]
+      },
+      "best_compound": "HARD",
+      "comment": "China yarışında HARD lastikler en hızlı ortalama süreyi kaydetmiştir (1:37.535)."
+    },
+    "tire_degradation": {
+      "by_compound": {
+        "MEDIUM": {
+          "age_performance": [
+            {
+              "TyreLife": 1.0,
+              "mean": 100.44966666666666,
+              "std": 1.4790481623891274,
+              "count": 6
+            },
+            {
+              "TyreLife": 2.0,
+              "mean": 98.50083333333333,
+              "std": 1.0725973560639102,
+              "count": 18
+            },
+            {
+              "TyreLife": 3.0,
+              "mean": 98.40288888888888,
+              "std": 1.0496951876273901,
+              "count": 18
+            },
+            {
+              "TyreLife": 4.0,
+              "mean": 98.40005555555555,
+              "std": 0.7922136129206173,
+              "count": 18
+            },
+            {
+              "TyreLife": 5.0,
+              "mean": 98.38622222222222,
+              "std": 0.7024052421380459,
+              "count": 18
+            },
+            {
+              "TyreLife": 6.0,
+              "mean": 98.52394444444445,
+              "std": 0.8313974396246259,
+              "count": 18
+            },
+            {
+              "TyreLife": 7.0,
+              "mean": 98.70178947368422,
+              "std": 0.7949374244378786,
+              "count": 19
+            },
+            {
+              "TyreLife": 8.0,
+              "mean": 98.66245,
+              "std": 1.039807749184031,
+              "count": 20
+            },
+            {
+              "TyreLife": 9.0,
+              "mean": 98.70510526315789,
+              "std": 0.9915872738379763,
+              "count": 19
+            },
+            {
+              "TyreLife": 10.0,
+              "mean": 98.43933333333332,
+              "std": 1.0464044319927714,
+              "count": 18
+            },
+            {
+              "TyreLife": 11.0,
+              "mean": 98.28406666666666,
+              "std": 1.011615643178678,
+              "count": 15
+            },
+            {
+              "TyreLife": 12.0,
+              "mean": 98.28508333333333,
+              "std": 0.9565355535219358,
+              "count": 12
+            },
+            {
+              "TyreLife": 13.0,
+              "mean": 98.2629,
+              "std": 0.8641700514237782,
+              "count": 10
+            },
+            {
+              "TyreLife": 14.0,
+              "mean": 98.20375,
+              "std": 1.4089779223658139,
+              "count": 8
+            },
+            {
+              "TyreLife": 15.0,
+              "mean": 98.13366666666666,
+              "std": 1.3700236007699529,
+              "count": 6
+            },
+            {
+              "TyreLife": 16.0,
+              "mean": 98.3038,
+              "std": 1.653484865367688,
+              "count": 5
+            },
+            {
+              "TyreLife": 17.0,
+              "mean": 98.44825,
+              "std": 1.9482404668486526,
+              "count": 4
+            },
+            {
+              "TyreLife": 18.0,
+              "mean": 98.52199999999999,
+              "std": 2.256487388250456,
+              "count": 4
+            },
+            {
+              "TyreLife": 19.0,
+              "mean": 98.7,
+              "std": 2.4644248821986805,
+              "count": 4
+            },
+            {
+              "TyreLife": 20.0,
+              "mean": 96.707,
+              "std": 0.21778888860546658,
+              "count": 2
+            },
+            {
+              "TyreLife": 21.0,
+              "mean": 96.642,
+              "std": null,
+              "count": 1
+            },
+            {
+              "TyreLife": 22.0,
+              "mean": 96.836,
+              "std": null,
+              "count": 1
+            },
+            {
+              "TyreLife": 23.0,
+              "mean": 96.813,
+              "std": null,
+              "count": 1
+            },
+            {
+              "TyreLife": 24.0,
+              "mean": 96.739,
+              "std": null,
+              "count": 1
+            },
+            {
+              "TyreLife": 25.0,
+              "mean": 96.504,
+              "std": null,
+              "count": 1
+            },
+            {
+              "TyreLife": 26.0,
+              "mean": 96.363,
+              "std": null,
+              "count": 1
+            },
+            {
+              "TyreLife": 27.0,
+              "mean": 96.859,
+              "std": null,
+              "count": 1
+            },
+            {
+              "TyreLife": 28.0,
+              "mean": 96.434,
+              "std": null,
+              "count": 1
+            },
+            {
+              "TyreLife": 29.0,
+              "mean": 96.576,
+              "std": null,
+              "count": 1
+            },
+            {
+              "TyreLife": 30.0,
+              "mean": 96.848,
+              "std": null,
+              "count": 1
+            }
+          ],
+          "degradation_rate": -0.0970456508531246,
+          "r_squared": 0.7241959672700158,
+          "comment": "China yarışında lastikler nispeten dayanıklı görünmektedir (-0.097 s/tur)."
+        },
+        "HARD": {
+          "age_performance": [
+            {
+              "TyreLife": 2.0,
+              "mean": 97.64825,
+              "std": 1.1546288411734578,
+              "count": 24
+            },
+            {
+              "TyreLife": 3.0,
+              "mean": 97.95029166666666,
+              "std": 1.0316464459749555,
+              "count": 24
+            },
+            {
+              "TyreLife": 4.0,
+              "mean": 97.99779166666667,
+              "std": 1.0966133629286239,
+              "count": 24
+            },
+            {
+              "TyreLife": 5.0,
+              "mean": 98.20691666666666,
+              "std": 1.2074993173701043,
+              "count": 24
+            },
+            {
+              "TyreLife": 6.0,
+              "mean": 98.13833333333334,
+              "std": 1.2528128236151235,
+              "count": 24
+            },
+            {
+              "TyreLife": 7.0,
+              "mean": 98.02095833333334,
+              "std": 1.0798890635119682,
+              "count": 24
+            },
+            {
+              "TyreLife": 8.0,
+              "mean": 98.03595833333333,
+              "std": 1.2019642792625689,
+              "count": 24
+            },
+            {
+              "TyreLife": 9.0,
+              "mean": 97.733875,
+              "std": 0.9884690539678903,
+              "count": 24
+            },
+            {
+              "TyreLife": 10.0,
+              "mean": 97.76904166666667,
+              "std": 0.9500315088214837,
+              "count": 24
+            },
+            {
+              "TyreLife": 11.0,
+              "mean": 97.75278260869564,
+              "std": 0.9594409336370515,
+              "count": 23
+            },
+            {
+              "TyreLife": 12.0,
+              "mean": 97.82508695652173,
+              "std": 1.0178344620294901,
+              "count": 23
+            },
+            {
+              "TyreLife": 13.0,
+              "mean": 97.77273913043479,
+              "std": 1.0322689139327696,
+              "count": 23
+            },
+            {
+              "TyreLife": 14.0,
+              "mean": 97.73508695652174,
+              "std": 0.9593728497420229,
+              "count": 23
+            },
+            {
+              "TyreLife": 15.0,
+              "mean": 97.70095652173913,
+              "std": 1.1570906493231163,
+              "count": 23
+            },
+            {
+              "TyreLife": 16.0,
+              "mean": 97.75621739130435,
+              "std": 1.0733231300507657,
+              "count": 23
+            },
+            {
+              "TyreLife": 17.0,
+              "mean": 97.72560869565217,
+              "std": 1.0372017310195942,
+              "count": 23
+            },
+            {
+              "TyreLife": 18.0,
+              "mean": 97.68990909090908,
+              "std": 1.1558716731001455,
+              "count": 22
+            },
+            {
+              "TyreLife": 19.0,
+              "mean": 97.65599999999999,
+              "std": 1.0022176362827548,
+              "count": 22
+            },
+            {
+              "TyreLife": 20.0,
+              "mean": 97.73176190476191,
+              "std": 0.8012282386911933,
+              "count": 21
+            },
+            {
+              "TyreLife": 21.0,
+              "mean": 97.6614,
+              "std": 0.901315319554238,
+              "count": 20
+            },
+            {
+              "TyreLife": 22.0,
+              "mean": 97.46745,
+              "std": 0.8935486600598377,
+              "count": 20
+            },
+            {
+              "TyreLife": 23.0,
+              "mean": 97.6351,
+              "std": 0.891731662494235,
+              "count": 20
+            },
+            {
+              "TyreLife": 24.0,
+              "mean": 97.68094117647058,
+              "std": 1.0131692523085825,
+              "count": 17
+            },
+            {
+              "TyreLife": 25.0,
+              "mean": 97.4576875,
+              "std": 0.9730625686460231,
+              "count": 16
+            },
+            {
+              "TyreLife": 26.0,
+              "mean": 97.3654,
+              "std": 0.9793362766982237,
+              "count": 15
+            },
+            {
+              "TyreLife": 27.0,
+              "mean": 97.17750000000001,
+              "std": 0.7793107161509355,
+              "count": 14
+            },
+            {
+              "TyreLife": 28.0,
+              "mean": 97.20964285714285,
+              "std": 0.89015578646427,
+              "count": 14
+            },
+            {
+              "TyreLife": 29.0,
+              "mean": 97.32414285714286,
+              "std": 0.9354770775584841,
+              "count": 14
+            },
+            {
+              "TyreLife": 30.0,
+              "mean": 97.13415384615384,
+              "std": 0.8688196826877508,
+              "count": 13
+            },
+            {
+              "TyreLife": 31.0,
+              "mean": 96.94630769230768,
+              "std": 0.6614414038818853,
+              "count": 13
+            },
+            {
+              "TyreLife": 32.0,
+              "mean": 96.87069230769231,
+              "std": 0.7553959651087415,
+              "count": 13
+            },
+            {
+              "TyreLife": 33.0,
+              "mean": 97.06046153846154,
+              "std": 1.1961099876533547,
+              "count": 13
+            },
+            {
+              "TyreLife": 34.0,
+              "mean": 96.79938461538462,
+              "std": 0.815320033122122,
+              "count": 13
+            },
+            {
+              "TyreLife": 35.0,
+              "mean": 96.86046153846154,
+              "std": 1.0587629271453751,
+              "count": 13
+            },
+            {
+              "TyreLife": 36.0,
+              "mean": 96.46172727272727,
+              "std": 0.5597297724633057,
+              "count": 11
+            },
+            {
+              "TyreLife": 37.0,
+              "mean": 96.42269999999999,
+              "std": 0.5062287691021388,
+              "count": 10
+            },
+            {
+              "TyreLife": 38.0,
+              "mean": 96.5897,
+              "std": 0.8938983350098264,
+              "count": 10
+            },
+            {
+              "TyreLife": 39.0,
+              "mean": 96.6716,
+              "std": 0.6063752413591206,
+              "count": 10
+            },
+            {
+              "TyreLife": 40.0,
+              "mean": 96.65233333333333,
+              "std": 0.9774153416025332,
+              "count": 9
+            },
+            {
+              "TyreLife": 41.0,
+              "mean": 96.66644444444445,
+              "std": 1.1354644546518318,
+              "count": 9
+            },
+            {
+              "TyreLife": 42.0,
+              "mean": 96.42042857142857,
+              "std": 0.4237707151840713,
+              "count": 7
+            },
+            {
+              "TyreLife": 43.0,
+              "mean": 96.451,
+              "std": 0.7548205084654228,
+              "count": 5
+            },
+            {
+              "TyreLife": 44.0,
+              "mean": 96.48175,
+              "std": 0.6039527437363544,
+              "count": 4
+            },
+            {
+              "TyreLife": 45.0,
+              "mean": 96.68900000000001,
+              "std": 0.8966454148658821,
+              "count": 3
+            },
+            {
+              "TyreLife": 46.0,
+              "mean": 96.85,
+              "std": null,
+              "count": 1
+            }
+          ],
+          "degradation_rate": -0.03906805541705969,
+          "r_squared": 0.8820765130204923,
+          "comment": "China yarışında lastikler nispeten dayanıklı görünmektedir (-0.039 s/tur)."
+        }
+      },
+      "worst_compound": "HARD",
+      "comment": "China yarışında en hızlı bozulan lastik HARD olmuştur (-0.039 s/tur artış)."
+    },
+    "pit_stop": {
+      "driver_analysis": [
+        {
+          "Driver": "PIA",
+          "pit_count": 2,
+          "avg_impact": 0.897,
+          "details": [
+            {
+              "pit_lap": 14,
+              "before_avg": 98.064,
+              "after_avg": 97.149,
+              "impact": 0.915
+            },
+            {
+              "pit_lap": 15,
+              "before_avg": 98.034,
+              "after_avg": 97.156,
+              "impact": 0.878
+            }
+          ]
+        },
+        {
+          "Driver": "NOR",
+          "pit_count": 2,
+          "avg_impact": 0.849,
+          "details": [
+            {
+              "pit_lap": 15,
+              "before_avg": 98.312,
+              "after_avg": 97.454,
+              "impact": 0.857
+            },
+            {
+              "pit_lap": 16,
+              "before_avg": 98.369,
+              "after_avg": 97.529,
+              "impact": 0.84
+            }
+          ]
+        },
+        {
+          "Driver": "RUS",
+          "pit_count": 2,
+          "avg_impact": 0.727,
+          "details": [
+            {
+              "pit_lap": 14,
+              "before_avg": 98.326,
+              "after_avg": 97.331,
+              "impact": 0.995
+            },
+            {
+              "pit_lap": 15,
+              "before_avg": 98.301,
+              "after_avg": 97.842,
+              "impact": 0.459
+            }
+          ]
+        },
+        {
+          "Driver": "VER",
+          "pit_count": 2,
+          "avg_impact": 1.713,
+          "details": [
+            {
+              "pit_lap": 13,
+              "before_avg": 98.948,
+              "after_avg": 97.173,
+              "impact": 1.775
+            },
+            {
+              "pit_lap": 14,
+              "before_avg": 98.891,
+              "after_avg": 97.238,
+              "impact": 1.652
+            }
+          ]
+        },
+        {
+          "Driver": "OCO",
+          "pit_count": 2,
+          "avg_impact": 1.05,
+          "details": [
+            {
+              "pit_lap": 11,
+              "before_avg": 99.302,
+              "after_avg": 98.174,
+              "impact": 1.127
+            },
+            {
+              "pit_lap": 12,
+              "before_avg": 99.279,
+              "after_avg": 98.306,
+              "impact": 0.974
+            }
+          ]
+        },
+        {
+          "Driver": "ANT",
+          "pit_count": 2,
+          "avg_impact": 0.186,
+          "details": [
+            {
+              "pit_lap": 12,
+              "before_avg": 99.232,
+              "after_avg": 99.004,
+              "impact": 0.228
+            },
+            {
+              "pit_lap": 13,
+              "before_avg": 99.206,
+              "after_avg": 99.061,
+              "impact": 0.144
+            }
+          ]
+        },
+        {
+          "Driver": "ALB",
+          "pit_count": 2,
+          "avg_impact": 1.482,
+          "details": [
+            {
+              "pit_lap": 20,
+              "before_avg": 99.039,
+              "after_avg": 97.466,
+              "impact": 1.573
+            },
+            {
+              "pit_lap": 21,
+              "before_avg": 98.959,
+              "after_avg": 97.568,
+              "impact": 1.391
+            }
+          ]
+        },
+        {
+          "Driver": "BEA",
+          "pit_count": 2,
+          "avg_impact": 1.851,
+          "details": [
+            {
+              "pit_lap": 26,
+              "before_avg": 98.856,
+              "after_avg": 96.933,
+              "impact": 1.923
+            },
+            {
+              "pit_lap": 27,
+              "before_avg": 98.847,
+              "after_avg": 97.068,
+              "impact": 1.779
+            }
+          ]
+        },
+        {
+          "Driver": "STR",
+          "pit_count": 2,
+          "avg_impact": 1.527,
+          "details": [
+            {
+              "pit_lap": 36,
+              "before_avg": 98.005,
+              "after_avg": 96.305,
+              "impact": 1.7
+            },
+            {
+              "pit_lap": 37,
+              "before_avg": 97.898,
+              "after_avg": 96.543,
+              "impact": 1.355
+            }
+          ]
+        },
+        {
+          "Driver": "SAI",
+          "pit_count": 2,
+          "avg_impact": 0.929,
+          "details": [
+            {
+              "pit_lap": 17,
+              "before_avg": 99.189,
+              "after_avg": 98.332,
+              "impact": 0.858
+            },
+            {
+              "pit_lap": 18,
+              "before_avg": 99.272,
+              "after_avg": 98.271,
+              "impact": 1.001
+            }
+          ]
+        },
+        {
+          "Driver": "HAD",
+          "pit_count": 4,
+          "avg_impact": 1.021,
+          "details": [
+            {
+              "pit_lap": 12,
+              "before_avg": 99.14,
+              "after_avg": 98.421,
+              "impact": 0.72
+            },
+            {
+              "pit_lap": 13,
+              "before_avg": 99.086,
+              "after_avg": 98.487,
+              "impact": 0.599
+            },
+            {
+              "pit_lap": 33,
+              "before_avg": 98.043,
+              "after_avg": 96.489,
+              "impact": 1.554
+            },
+            {
+              "pit_lap": 34,
+              "before_avg": 98.04,
+              "after_avg": 96.828,
+              "impact": 1.212
+            }
+          ]
+        },
+        {
+          "Driver": "LAW",
+          "pit_count": 4,
+          "avg_impact": 1.989,
+          "details": [
+            {
+              "pit_lap": 18,
+              "before_avg": 100.11,
+              "after_avg": 97.762,
+              "impact": 2.348
+            },
+            {
+              "pit_lap": 19,
+              "before_avg": 100.312,
+              "after_avg": 97.802,
+              "impact": 2.51
+            },
+            {
+              "pit_lap": 30,
+              "before_avg": 97.843,
+              "after_avg": 96.147,
+              "impact": 1.697
+            },
+            {
+              "pit_lap": 31,
+              "before_avg": 97.707,
+              "after_avg": 96.307,
+              "impact": 1.4
+            }
+          ]
+        },
+        {
+          "Driver": "DOO",
+          "pit_count": 2,
+          "avg_impact": 1.369,
+          "details": [
+            {
+              "pit_lap": 11,
+              "before_avg": 99.412,
+              "after_avg": 98.038,
+              "impact": 1.374
+            },
+            {
+              "pit_lap": 12,
+              "before_avg": 99.458,
+              "after_avg": 98.095,
+              "impact": 1.363
+            }
+          ]
+        },
+        {
+          "Driver": "BOR",
+          "pit_count": 2,
+          "avg_impact": 3.286,
+          "details": [
+            {
+              "pit_lap": 26,
+              "before_avg": 99.831,
+              "after_avg": 96.411,
+              "impact": 3.42
+            },
+            {
+              "pit_lap": 27,
+              "before_avg": 99.852,
+              "after_avg": 96.7,
+              "impact": 3.152
+            }
+          ]
+        },
+        {
+          "Driver": "HUL",
+          "pit_count": 2,
+          "avg_impact": 3.615,
+          "details": [
+            {
+              "pit_lap": 20,
+              "before_avg": 101.484,
+              "after_avg": 97.947,
+              "impact": 3.537
+            },
+            {
+              "pit_lap": 21,
+              "before_avg": 101.81,
+              "after_avg": 98.117,
+              "impact": 3.693
+            }
+          ]
+        },
+        {
+          "Driver": "TSU",
+          "pit_count": 6,
+          "avg_impact": 0.936,
+          "details": [
+            {
+              "pit_lap": 11,
+              "before_avg": 99.266,
+              "after_avg": 98.453,
+              "impact": 0.813
+            },
+            {
+              "pit_lap": 12,
+              "before_avg": 99.2,
+              "after_avg": 98.448,
+              "impact": 0.752
+            },
+            {
+              "pit_lap": 35,
+              "before_avg": 98.032,
+              "after_avg": 96.865,
+              "impact": 1.167
+            },
+            {
+              "pit_lap": 36,
+              "before_avg": 97.951,
+              "after_avg": 96.743,
+              "impact": 1.208
+            },
+            {
+              "pit_lap": 46,
+              "before_avg": 96.868,
+              "after_avg": 96.017,
+              "impact": 0.852
+            },
+            {
+              "pit_lap": 47,
+              "before_avg": 96.836,
+              "after_avg": 96.014,
+              "impact": 0.822
+            }
+          ]
+        },
+        {
+          "Driver": "LEC",
+          "pit_count": 2,
+          "avg_impact": 0.637,
+          "details": [
+            {
+              "pit_lap": 15,
+              "before_avg": 98.436,
+              "after_avg": 97.903,
+              "impact": 0.533
+            },
+            {
+              "pit_lap": 16,
+              "before_avg": 98.313,
+              "after_avg": 97.571,
+              "impact": 0.742
+            }
+          ]
+        },
+        {
+          "Driver": "HAM",
+          "pit_count": 4,
+          "avg_impact": 1.225,
+          "details": [
+            {
+              "pit_lap": 13,
+              "before_avg": 98.6,
+              "after_avg": 97.819,
+              "impact": 0.782
+            },
+            {
+              "pit_lap": 14,
+              "before_avg": 98.618,
+              "after_avg": 97.723,
+              "impact": 0.895
+            },
+            {
+              "pit_lap": 37,
+              "before_avg": 97.198,
+              "after_avg": 95.663,
+              "impact": 1.535
+            },
+            {
+              "pit_lap": 38,
+              "before_avg": 97.151,
+              "after_avg": 95.465,
+              "impact": 1.687
+            }
+          ]
+        },
+        {
+          "Driver": "GAS",
+          "pit_count": 2,
+          "avg_impact": 1.109,
+          "details": [
+            {
+              "pit_lap": 10,
+              "before_avg": 99.281,
+              "after_avg": 98.035,
+              "impact": 1.246
+            },
+            {
+              "pit_lap": 11,
+              "before_avg": 99.377,
+              "after_avg": 98.405,
+              "impact": 0.972
+            }
+          ]
+        }
+      ],
+      "race_avg_impact": 1.389,
+      "comment": "China yarışında ortalama pit stop faydası 1.39s olarak ölçülmüştür. Pit stop sonrası hız artışı gözlemlenmiştir (undercut avantajı)."
+    },
+    "weather_impact": {
+      "AirTemp": {
+        "label": "Hava Sıcaklığı",
+        "pearson_r": null,
+        "p_value": null,
+        "significant": false,
+        "interpretation": "Çok güçlü ilişki",
+        "comment": "China: Hava Sıcaklığı artarken tur zamanı azalıyor (r=nan, p=>0.05). Çok güçlü ilişki."
+      },
+      "TrackTemp": {
+        "label": "Pist Sıcaklığı",
+        "pearson_r": null,
+        "p_value": null,
+        "significant": false,
+        "interpretation": "Çok güçlü ilişki",
+        "comment": "China: Pist Sıcaklığı artarken tur zamanı azalıyor (r=nan, p=>0.05). Çok güçlü ilişki."
+      }
+    },
+    "race_overview": {
+      "race_name": "China",
+      "total_laps": 1065,
+      "total_drivers": 20,
+      "fastest_lap": 95.069,
+      "fastest_driver": "HAM",
+      "most_stable_driver": "ALO",
+      "compound_usage": {
+        "HARD": 781,
+        "MEDIUM": 284
+      },
+      "avg_air_temp": 27.2,
+      "avg_track_temp": 35.8
+    }
+  },
+  "ml": {
+    "feature_matrix": [
+      {
+        "Driver": "ALB",
+        "average_lap_time": 97.79654716981132,
+        "best_lap_time": 96.254,
+        "lap_time_std": 1.0077998421168224,
+        "consistency_score": 0.4980576146204397,
+        "average_race_pace": 97.79654716981132,
+        "tire_degradation_rate": -0.12093333333333289,
+        "pit_stop_impact": 1.4819999999999922,
+        "sector_consistency": 1.3642911564845164,
+        "AirTemp": 27.21558441558442,
+        "TrackTemp": 35.81688311688312,
+        "degradation_hard": -0.05594425770308084,
+        "degradation_medium": -0.12093333333333289,
+        "avg_air_temp": 27.21558441558442
+      },
+      {
+        "Driver": "ALO",
+        "average_lap_time": 99.42349999999999,
+        "best_lap_time": 99.256,
+        "lap_time_std": 0.23688077169748398,
+        "consistency_score": 0.8084853632477519,
+        "average_race_pace": 99.42349999999999,
+        "tire_degradation_rate": -3.252499999999981,
+        "pit_stop_impact": 0.0,
+        "sector_consistency": 6.874298508830004,
+        "AirTemp": 27.21558441558442,
+        "TrackTemp": 35.81688311688312,
+        "degradation_hard": 0.0,
+        "degradation_medium": -3.252499999999981,
+        "avg_air_temp": 27.21558441558442
+      },
+      {
+        "Driver": "ANT",
+        "average_lap_time": 97.8205283018868,
+        "best_lap_time": 96.046,
+        "lap_time_std": 1.0278796622879394,
+        "consistency_score": 0.4931259081082542,
+        "average_race_pace": 97.8205283018868,
+        "tire_degradation_rate": -0.11338181818182275,
+        "pit_stop_impact": 0.18616666666666504,
+        "sector_consistency": 1.285392141882186,
+        "AirTemp": 27.21558441558442,
+        "TrackTemp": 35.81688311688312,
+        "degradation_hard": -0.06933192389006233,
+        "degradation_medium": -0.11338181818182275,
+        "avg_air_temp": 27.21558441558442
+      },
+      {
+        "Driver": "BEA",
+        "average_lap_time": 97.92383018867925,
+        "best_lap_time": 96.363,
+        "lap_time_std": 1.2191762309641805,
+        "consistency_score": 0.4506176598536851,
+        "average_race_pace": 97.92383018867925,
+        "tire_degradation_rate": -0.11129846153846536,
+        "pit_stop_impact": 1.8510833333333352,
+        "sector_consistency": 1.2850712618504627,
+        "AirTemp": 27.21558441558442,
+        "TrackTemp": 35.81688311688312,
+        "degradation_hard": -0.11129846153846536,
+        "degradation_medium": -0.028635960591132645,
+        "avg_air_temp": 27.21558441558442
+      },
+      {
+        "Driver": "BOR",
+        "average_lap_time": 98.13323529411765,
+        "best_lap_time": 95.874,
+        "lap_time_std": 1.157747581957911,
+        "consistency_score": 0.4634462382725108,
+        "average_race_pace": 98.13323529411765,
+        "tire_degradation_rate": 0.037847326192427304,
+        "pit_stop_impact": 3.2858333333333363,
+        "sector_consistency": 2.2357081277774506,
+        "AirTemp": 27.21558441558442,
+        "TrackTemp": 35.81688311688312,
+        "degradation_hard": 0.037847326192427304,
+        "degradation_medium": -0.08704035087719202,
+        "avg_air_temp": 27.21558441558442
+      },
+      {
+        "Driver": "DOO",
+        "average_lap_time": 98.23120754716982,
+        "best_lap_time": 96.424,
+        "lap_time_std": 0.9098459793260751,
+        "consistency_score": 0.5236024322510388,
+        "average_race_pace": 98.23120754716982,
+        "tire_degradation_rate": -0.4930000000000001,
+        "pit_stop_impact": 1.3683333333333394,
+        "sector_consistency": 1.2552726569610948,
+        "AirTemp": 27.21558441558442,
+        "TrackTemp": 35.81688311688312,
+        "degradation_hard": -0.04523375616631239,
+        "degradation_medium": -0.4930000000000001,
+        "avg_air_temp": 27.21558441558442
+      },
+      {
+        "Driver": "GAS",
+        "average_lap_time": 98.04932075471697,
+        "best_lap_time": 96.425,
+        "lap_time_std": 1.0137794057877831,
+        "consistency_score": 0.4965787201547051,
+        "average_race_pace": 98.04932075471697,
+        "tire_degradation_rate": -0.45903333333333585,
+        "pit_stop_impact": 1.1087500000000006,
+        "sector_consistency": 1.2806788485294727,
+        "AirTemp": 27.21558441558442,
+        "TrackTemp": 35.81688311688312,
+        "degradation_hard": -0.05982173913043454,
+        "degradation_medium": -0.45903333333333585,
+        "avg_air_temp": 27.21558441558442
+      },
+      {
+        "Driver": "HAD",
+        "average_lap_time": 97.8938431372549,
+        "best_lap_time": 95.868,
+        "lap_time_std": 1.0325913494223877,
+        "consistency_score": 0.4919828081941681,
+        "average_race_pace": 97.8938431372549,
+        "tire_degradation_rate": -0.21878181818182235,
+        "pit_stop_impact": 1.0210833333333298,
+        "sector_consistency": 1.6978008367069155,
+        "AirTemp": 27.21558441558442,
+        "TrackTemp": 35.81688311688312,
+        "degradation_hard": -0.03090537151907047,
+        "degradation_medium": -0.21878181818182232,
+        "avg_air_temp": 27.21558441558442
+      },
+      {
+        "Driver": "HAM",
+        "average_lap_time": 97.02573076923076,
+        "best_lap_time": 95.069,
+        "lap_time_std": 1.3362377256412308,
+        "consistency_score": 0.42803863195280284,
+        "average_race_pace": 97.02573076923076,
+        "tire_degradation_rate": -0.031937062937067086,
+        "pit_stop_impact": 1.224458333333338,
+        "sector_consistency": 1.6673408527727933,
+        "AirTemp": 27.21558441558442,
+        "TrackTemp": 35.81688311688312,
+        "degradation_hard": 0.0049707718501729205,
+        "degradation_medium": -0.031937062937067086,
+        "avg_air_temp": 27.21558441558442
+      },
+      {
+        "Driver": "HUL",
+        "average_lap_time": 98.88955769230769,
+        "best_lap_time": 97.275,
+        "lap_time_std": 1.20963091783844,
+        "consistency_score": 0.4525642685060928,
+        "average_race_pace": 98.88955769230769,
+        "tire_degradation_rate": -0.08704035087719202,
+        "pit_stop_impact": 3.615000000000002,
+        "sector_consistency": 1.4179261939313885,
+        "AirTemp": 27.21558441558442,
+        "TrackTemp": 35.81688311688312,
+        "degradation_hard": 0.02856531703590478,
+        "degradation_medium": -0.08704035087719202,
+        "avg_air_temp": 27.21558441558442
+      },
+      {
+        "Driver": "LAW",
+        "average_lap_time": 97.82366666666665,
+        "best_lap_time": 95.985,
+        "lap_time_std": 1.2740452529901172,
+        "consistency_score": 0.43974498690609215,
+        "average_race_pace": 97.82366666666665,
+        "tire_degradation_rate": -0.03994623042208465,
+        "pit_stop_impact": 1.9885833333333238,
+        "sector_consistency": 1.700768190831563,
+        "AirTemp": 27.21558441558442,
+        "TrackTemp": 35.81688311688312,
+        "degradation_hard": -0.03994623042208465,
+        "degradation_medium": 0.011721212121215728,
+        "avg_air_temp": 27.21558441558442
+      },
+      {
+        "Driver": "LEC",
+        "average_lap_time": 97.41185185185185,
+        "best_lap_time": 96.157,
+        "lap_time_std": 0.9364777729062459,
+        "consistency_score": 0.5164014862402527,
+        "average_race_pace": 97.41185185185185,
+        "tire_degradation_rate": -0.06721318681318508,
+        "pit_stop_impact": 0.6375000000000028,
+        "sector_consistency": 1.1705662502958385,
+        "AirTemp": 27.21558441558442,
+        "TrackTemp": 35.81688311688312,
+        "degradation_hard": -0.01684671669793677,
+        "degradation_medium": -0.06721318681318508,
+        "avg_air_temp": 27.21558441558442
+      },
+      {
+        "Driver": "NOR",
+        "average_lap_time": 97.14533333333333,
+        "best_lap_time": 95.454,
+        "lap_time_std": 0.9769812381119138,
+        "consistency_score": 0.5058216945725974,
+        "average_race_pace": 97.14533333333333,
+        "tire_degradation_rate": 0.017239560439561694,
+        "pit_stop_impact": 0.8484166666666724,
+        "sector_consistency": 1.251269853087725,
+        "AirTemp": 27.21558441558442,
+        "TrackTemp": 35.81688311688312,
+        "degradation_hard": -0.022719887429643364,
+        "degradation_medium": 0.017239560439561694,
+        "avg_air_temp": 27.21558441558442
+      },
+      {
+        "Driver": "OCO",
+        "average_lap_time": 97.75441509433963,
+        "best_lap_time": 95.74,
+        "lap_time_std": 1.0059871622128118,
+        "consistency_score": 0.4985076768372218,
+        "average_race_pace": 97.75441509433963,
+        "tire_degradation_rate": -0.2820242424242389,
+        "pit_stop_impact": 1.0505000000000138,
+        "sector_consistency": 1.2929430138527922,
+        "AirTemp": 27.21558441558442,
+        "TrackTemp": 35.81688311688312,
+        "degradation_hard": -0.06210817477096383,
+        "degradation_medium": -0.2820242424242389,
+        "avg_air_temp": 27.21558441558442
+      },
+      {
+        "Driver": "PIA",
+        "average_lap_time": 96.94203703703704,
+        "best_lap_time": 95.52,
+        "lap_time_std": 0.7777872814633474,
+        "consistency_score": 0.5624969929905627,
+        "average_race_pace": 96.94203703703704,
+        "tire_degradation_rate": 0.020186813186807533,
+        "pit_stop_impact": 0.896333333333331,
+        "sector_consistency": 1.2472492225100746,
+        "AirTemp": 27.21558441558442,
+        "TrackTemp": 35.81688311688312,
+        "degradation_hard": -0.04054668989546888,
+        "degradation_medium": 0.020186813186807533,
+        "avg_air_temp": 27.21558441558442
+      },
+      {
+        "Driver": "RUS",
+        "average_lap_time": 97.20075925925927,
+        "best_lap_time": 95.816,
+        "lap_time_std": 0.9409329560297334,
+        "consistency_score": 0.5152161474168306,
+        "average_race_pace": 97.20075925925927,
+        "tire_degradation_rate": -0.0069945054945102295,
+        "pit_stop_impact": 0.7266666666666808,
+        "sector_consistency": 1.1765151363874204,
+        "AirTemp": 27.21558441558442,
+        "TrackTemp": 35.81688311688312,
+        "degradation_hard": -0.04894494773518879,
+        "degradation_medium": -0.0069945054945102295,
+        "avg_air_temp": 27.21558441558442
+      },
+      {
+        "Driver": "SAI",
+        "average_lap_time": 98.16235849056604,
+        "best_lap_time": 96.779,
+        "lap_time_std": 0.8403108420821219,
+        "consistency_score": 0.5433864633806119,
+        "average_race_pace": 98.16235849056604,
+        "tire_degradation_rate": -0.17581470588235001,
+        "pit_stop_impact": 0.9294999999999831,
+        "sector_consistency": 1.3212021179341817,
+        "AirTemp": 27.21558441558442,
+        "TrackTemp": 35.81688311688312,
+        "degradation_hard": -0.034274318853264894,
+        "degradation_medium": -0.17581470588235001,
+        "avg_air_temp": 27.21558441558442
+      },
+      {
+        "Driver": "STR",
+        "average_lap_time": 98.14443396226415,
+        "best_lap_time": 96.044,
+        "lap_time_std": 1.1268631837886292,
+        "consistency_score": 0.4701759885742522,
+        "average_race_pace": 98.14443396226415,
+        "tire_degradation_rate": -0.0733134453781511,
+        "pit_stop_impact": 1.527000000000001,
+        "sector_consistency": 1.285718146554307,
+        "AirTemp": 27.21558441558442,
+        "TrackTemp": 35.81688311688312,
+        "degradation_hard": -0.0733134453781511,
+        "degradation_medium": 0.02897543859648946,
+        "avg_air_temp": 27.21558441558442
+      },
+      {
+        "Driver": "TSU",
+        "average_lap_time": 97.8029375,
+        "best_lap_time": 95.871,
+        "lap_time_std": 0.9790377474358425,
+        "consistency_score": 0.5052960719398398,
+        "average_race_pace": 97.8029375,
+        "tire_degradation_rate": -0.29550029291154467,
+        "pit_stop_impact": 0.9356388888888887,
+        "sector_consistency": 2.6828204881592814,
+        "AirTemp": 27.21558441558442,
+        "TrackTemp": 35.81688311688312,
+        "degradation_hard": 0.018427805499521693,
+        "degradation_medium": -0.29550029291154467,
+        "avg_air_temp": 27.21558441558442
+      },
+      {
+        "Driver": "VER",
+        "average_lap_time": 97.29296296296296,
+        "best_lap_time": 95.488,
+        "lap_time_std": 1.2467776270981712,
+        "consistency_score": 0.44508187545536104,
+        "average_race_pace": 97.29296296296296,
+        "tire_degradation_rate": -0.08147902097902707,
+        "pit_stop_impact": 1.7137499999999903,
+        "sector_consistency": 1.219391337451645,
+        "AirTemp": 27.21558441558442,
+        "TrackTemp": 35.81688311688312,
+        "degradation_hard": -0.05342314237095907,
+        "degradation_medium": -0.08147902097902707,
+        "avg_air_temp": 27.21558441558442
+      }
+    ],
+    "kmeans": {
+      "n_clusters": 3,
+      "driver_clusters": [
+        {
+          "Driver": "ALB",
+          "cluster_id": 2,
+          "cluster_label": "Stabil & Hızlı"
+        },
+        {
+          "Driver": "ALO",
+          "cluster_id": 1,
+          "cluster_label": "Düzensiz"
+        },
+        {
+          "Driver": "ANT",
+          "cluster_id": 2,
+          "cluster_label": "Stabil & Hızlı"
+        },
+        {
+          "Driver": "BEA",
+          "cluster_id": 0,
+          "cluster_label": "Agresif"
+        },
+        {
+          "Driver": "BOR",
+          "cluster_id": 0,
+          "cluster_label": "Agresif"
+        },
+        {
+          "Driver": "DOO",
+          "cluster_id": 2,
+          "cluster_label": "Stabil & Hızlı"
+        },
+        {
+          "Driver": "GAS",
+          "cluster_id": 2,
+          "cluster_label": "Stabil & Hızlı"
+        },
+        {
+          "Driver": "HAD",
+          "cluster_id": 2,
+          "cluster_label": "Stabil & Hızlı"
+        },
+        {
+          "Driver": "HAM",
+          "cluster_id": 0,
+          "cluster_label": "Agresif"
+        },
+        {
+          "Driver": "HUL",
+          "cluster_id": 0,
+          "cluster_label": "Agresif"
+        },
+        {
+          "Driver": "LAW",
+          "cluster_id": 0,
+          "cluster_label": "Agresif"
+        },
+        {
+          "Driver": "LEC",
+          "cluster_id": 2,
+          "cluster_label": "Stabil & Hızlı"
+        },
+        {
+          "Driver": "NOR",
+          "cluster_id": 2,
+          "cluster_label": "Stabil & Hızlı"
+        },
+        {
+          "Driver": "OCO",
+          "cluster_id": 2,
+          "cluster_label": "Stabil & Hızlı"
+        },
+        {
+          "Driver": "PIA",
+          "cluster_id": 2,
+          "cluster_label": "Stabil & Hızlı"
+        },
+        {
+          "Driver": "RUS",
+          "cluster_id": 2,
+          "cluster_label": "Stabil & Hızlı"
+        },
+        {
+          "Driver": "SAI",
+          "cluster_id": 2,
+          "cluster_label": "Stabil & Hızlı"
+        },
+        {
+          "Driver": "STR",
+          "cluster_id": 0,
+          "cluster_label": "Agresif"
+        },
+        {
+          "Driver": "TSU",
+          "cluster_id": 2,
+          "cluster_label": "Stabil & Hızlı"
+        },
+        {
+          "Driver": "VER",
+          "cluster_id": 0,
+          "cluster_label": "Agresif"
+        }
+      ],
+      "cluster_summary": {
+        "Agresif": [
+          "BEA",
+          "BOR",
+          "HAM",
+          "HUL",
+          "LAW",
+          "STR",
+          "VER"
+        ],
+        "Düzensiz": [
+          "ALO"
+        ],
+        "Stabil & Hızlı": [
+          "ALB",
+          "ANT",
+          "DOO",
+          "GAS",
+          "HAD",
+          "LEC",
+          "NOR",
+          "OCO",
+          "PIA",
+          "RUS",
+          "SAI",
+          "TSU"
+        ]
+      },
+      "features_used": [
+        "average_lap_time",
+        "lap_time_std",
+        "consistency_score",
+        "tire_degradation_rate",
+        "sector_consistency"
+      ],
+      "elbow_inertias": [
+        [
+          2,
+          27.044069877781997
+        ],
+        [
+          3,
+          17.307951358354877
+        ],
+        [
+          4,
+          11.594420894703479
+        ],
+        [
+          5,
+          7.2438220263621975
+        ],
+        [
+          6,
+          5.417838590498327
+        ],
+        [
+          7,
+          3.9346520179828217
+        ]
+      ],
+      "sil_scores": [
+        [
+          2,
+          0.7798911553909293
+        ],
+        [
+          3,
+          0.30774145323920954
+        ],
+        [
+          4,
+          0.3343625607957486
+        ],
+        [
+          5,
+          0.38327568848798227
+        ],
+        [
+          6,
+          0.3747253942870917
+        ],
+        [
+          7,
+          0.37531110581762345
+        ]
+      ],
+      "X_scaled": [
+        [
+          -0.07947045162201526,
+          -0.02194158717716778,
+          -0.09505738981747675,
+          0.24597580683340575,
+          -0.30027096058464053
+        ],
+        [
+          2.6799532469693097,
+          -3.3790059534325416,
+          3.9067197173294246,
+          -4.263584748166475,
+          4.1554409058804955
+        ],
+        [
+          -0.03879680519524987,
+          0.06549852341784669,
+          -0.15863286046048622,
+          0.2568502407773532,
+          -0.3640732848168145
+        ],
+        [
+          0.1364102870049778,
+          0.8985235694069329,
+          -0.7066139461793327,
+          0.2598503439017366,
+          -0.3643327670413623
+        ],
+        [
+          0.4915757225546644,
+          0.6310247662783721,
+          -0.5412385515482013,
+          0.47462525783053344,
+          0.4044073985061547
+        ],
+        [
+          0.6577433900248842,
+          -0.44849404246020536,
+          0.234245215546907,
+          -0.28981261552078375,
+          -0.38842964911777983
+        ],
+        [
+          0.34925090257094,
+          0.0040971773258538695,
+          -0.11412207086816473,
+          -0.24089948146067985,
+          -0.36788472748446843
+        ],
+        [
+          0.08555018902560911,
+          0.08601615956271032,
+          -0.17336875661538537,
+          0.1050707217409853,
+          -0.030575668959418024
+        ],
+        [
+          -1.386827987475217,
+          1.4082826187286175,
+          -0.997684049786147,
+          0.37413340756182906,
+          -0.05520738053233131
+        ],
+        [
+          1.7743504352665191,
+          0.8569572989789059,
+          -0.6815198816950024,
+          0.2947828331702287,
+          -0.25689855515425564
+        ],
+        [
+          -0.033473923063897904,
+          1.137457649159765,
+          -0.846775429447407,
+          0.3625999389777903,
+          -0.02817609412408352
+        ],
+        [
+          -0.7319401221725635,
+          -0.33252253693131945,
+          0.14141659109825822,
+          0.3233346114006854,
+          -0.45692816776010825
+        ],
+        [
+          -1.1839738274325862,
+          -0.15614508698984844,
+          0.005030690413728943,
+          0.44494938710582677,
+          -0.39166654874008505
+        ],
+        [
+          -0.15092934420338303,
+          -0.02983513054206474,
+          -0.08925556094143529,
+          0.013999519329145147,
+          -0.3579672113235973
+        ],
+        [
+          -1.5287783032764024,
+          -1.0235603053921893,
+          0.735641638541379,
+          0.4491935294630904,
+          -0.39491786407052354
+        ],
+        [
+          -1.089967651790306,
+          -0.3131218798677101,
+          0.12613618595162365,
+          0.41005152304729653,
+          -0.45211755306297396
+        ],
+        [
+          0.540970663186763,
+          -0.7512935714916726,
+          0.4892845385826115,
+          0.1669447980141878,
+          -0.3351152589868147
+        ],
+        [
+          0.5105694325766719,
+          0.49653475747505876,
+          -0.45448419143248914,
+          0.3145500353951064,
+          -0.36380965851049496
+        ],
+        [
+          -0.06863201289332684,
+          -0.1471897576496656,
+          -0.001745200685145811,
+          -0.005406443303426848,
+          0.7659684132929178
+        ],
+        [
+          -0.9335838400553671,
+          1.018717331600307,
+          -0.7779766879872834,
+          0.30279133390216467,
+          -0.417445367409812
+        ]
+      ],
+      "labels": [
+        2,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        0,
+        2,
+        0
+      ],
+      "label_map": {
+        "2": "Stabil & Hızlı",
+        "1": "Düzensiz",
+        "0": "Agresif"
+      },
+      "comment": "China yarışında 3 performans grubu tespit edilmiştir. 'Stabil & Hızlı' grubundaki pilotlar: ALB, ANT, DOO, GAS, HAD, LEC, NOR, OCO, PIA, RUS, SAI, TSU."
+    },
+    "decision_tree": {
+      "accuracy": 0.8333,
+      "confusion_matrix": [
+        [
+          3,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 0.75,
+          "f1-score": 0.8571428571428571,
+          "support": 4.0
+        },
+        "1": {
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1-score": 0.8,
+          "support": 2.0
+        },
+        "accuracy": 0.8333333333333334,
+        "macro avg": {
+          "precision": 0.8333333333333333,
+          "recall": 0.875,
+          "f1-score": 0.8285714285714285,
+          "support": 6.0
+        },
+        "weighted avg": {
+          "precision": 0.8888888888888888,
+          "recall": 0.8333333333333334,
+          "f1-score": 0.8380952380952381,
+          "support": 6.0
+        }
+      },
+      "feature_importance": [
+        [
+          "average_lap_time",
+          0.7407407407407407
+        ],
+        [
+          "pit_stop_impact",
+          0.2592592592592593
+        ],
+        [
+          "tire_degradation_rate",
+          0.0
+        ],
+        [
+          "consistency_score",
+          0.0
+        ],
+        [
+          "sector_consistency",
+          0.0
+        ],
+        [
+          "AirTemp",
+          0.0
+        ],
+        [
+          "TrackTemp",
+          0.0
+        ]
+      ],
+      "most_important_feature": "average_lap_time",
+      "comment": "Decision Tree modeli China yarışında %83.3 doğruluk oranı elde etti. Yarış performansını en çok etkileyen faktör: average_lap_time."
+    },
+    "knn": {
+      "accuracy": 0.6667,
+      "k": 5,
+      "confusion_matrix": [
+        [
+          2,
+          2
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1-score": 0.6666666666666666,
+          "support": 4.0
+        },
+        "1": {
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1-score": 0.6666666666666666,
+          "support": 2.0
+        },
+        "accuracy": 0.6666666666666666,
+        "macro avg": {
+          "precision": 0.75,
+          "recall": 0.75,
+          "f1-score": 0.6666666666666666,
+          "support": 6.0
+        },
+        "weighted avg": {
+          "precision": 0.8333333333333334,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.6666666666666666,
+          "support": 6.0
+        }
+      },
+      "comment": "kNN modeli (k=5) China yarışında %66.7 doğruluk oranı elde etti."
+    },
+    "comparison": {
+      "decision_tree_accuracy": 0.8333,
+      "knn_accuracy": 0.6667,
+      "winner": "Decision Tree",
+      "features_used": [
+        "average_lap_time",
+        "tire_degradation_rate",
+        "consistency_score",
+        "pit_stop_impact",
+        "sector_consistency",
+        "AirTemp",
+        "TrackTemp"
+      ],
+      "n_drivers": 20,
+      "n_strong": 7,
+      "comment": "China: Decision Tree doğruluk oranı %83.3, kNN doğruluk oranı %66.7. Bu yarışta daha başarılı model: Decision Tree."
+    }
+  },
+  "chart_keys": [
+    "driver_avg_laptime",
+    "consistency_score",
+    "compound_avg_laptime",
+    "tire_degradation",
+    "tyre_life_scatter",
+    "pit_impact",
+    "temp_vs_laptime",
+    "correlation_heatmap",
+    "kmeans_clusters",
+    "elbow_curve",
+    "feature_importance",
+    "model_comparison"
+  ]
+}
