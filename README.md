@@ -242,13 +242,13 @@ Sistem gerekli durumlarda otomatik olarak simulated mode'a geçer.
 
 ## 👨‍💻 Geliştirici
 
-**Doğukan Bahşi**
+**Ramazan Doğukan Bahşi**
 
 Bilgisayar Mühendisliği Öğrencisi  
-Veri Analizi & Motorsport Teknolojileri
+Veri Madenciliği Dersi
 
 ---
 
 ## 📌 Proje Hakkında
 
-Bu proje, Veri Madenciliği / Veri Analizi dersi kapsamında geliştirilmiş Formula 1 yarış strateji ve performans analiz sistemidir.
+Bu proje, Veri Madenciliği dersi kapsamında geliştirilmiş Formula 1 yarış strateji ve performans analiz sistemidir.
