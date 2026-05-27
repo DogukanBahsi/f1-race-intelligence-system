@@ -1,0 +1,877 @@
+[INFO] 2026-05-23 08:13:00 | Database | Veritabanı tabloları hazır.
+[INFO] 2026-05-23 08:13:00 | DataLoader | ==================================================
+[INFO] 2026-05-23 08:13:00 | DataLoader | Yarış yükleniyor: Bahrain 2025
+[WARNING] 2026-05-23 08:13:00 | DataLoader | fastf1 kütüphanesi bulunamadı. Örnek veri kullanılacak.
+[ERROR] 2026-05-23 08:13:00 | DataLoader | fastf1 yüklü değil. 'pip install fastf1' komutu çalıştırın.
+[WARNING] 2026-05-23 08:13:00 | Utils | Bahrain için örnek (simüle) veri üretiliyor.
+[INFO] 2026-05-23 08:13:00 | DataLoader | Preprocessing başlıyor...
+[INFO] 2026-05-23 08:13:00 | Preprocessing | Preprocessing started: Bahrain (200 satır)
+[INFO] 2026-05-23 08:13:00 | Preprocessing | Preprocessing tamamlandı: 200 satır (0 satır çıkarıldı).
+[INFO] 2026-05-23 08:13:00 | Database | Bahrain: 200 tur SQLite'a kaydedildi.
+[INFO] 2026-05-23 08:13:00 | DataLoader | Feature engineering başlıyor...
+[INFO] 2026-05-23 08:13:00 | FeatureEngineering | Feature engineering başladı: Bahrain
+[INFO] 2026-05-23 08:13:00 | FeatureEngineering | Feature engineering tamamlandı: 35 sütun mevcut.
+[SUCCESS] 2026-05-23 08:13:00 | F1System | Bahrain: İşlenmiş veri kaydedildi (200 tur).
+[INFO] 2026-05-23 08:13:00 | EDA | EDA başlıyor: Bahrain
+[INFO] 2026-05-23 08:13:01 | EDA | EDA tamamlandı: Bahrain
+[INFO] 2026-05-23 08:13:01 | Analysis | Analizler başlıyor: Bahrain
+[INFO] 2026-05-23 08:13:01 | Analysis | Tüm analizler tamamlandı: Bahrain
+[INFO] 2026-05-23 08:13:01 | Models | ML pipeline başlıyor: Bahrain
+[SUCCESS] 2026-05-23 08:13:01 | F1System | K-Means tamamlandı: 3 küme, 10 pilot sınıflandırıldı.
+[SUCCESS] 2026-05-23 08:13:01 | F1System | Decision Tree model trained. Accuracy: 0.667
+[SUCCESS] 2026-05-23 08:13:01 | F1System | kNN model trained (k=5). Accuracy: 0.667
+[SUCCESS] 2026-05-23 08:13:01 | F1System | ML pipeline tamamlandı: Bahrain
+[INFO] 2026-05-23 08:13:01 | Main | Decision Tree model trained.
+[INFO] 2026-05-23 08:13:01 | Visualization | Grafik üretimi başlıyor: Bahrain
+[ERROR] 2026-05-23 08:13:02 | Visualization | Grafik üretim hatası: 'mean'
+[INFO] 2026-05-23 08:13:02 | Visualization | Üretilen grafik sayısı: 3
+[INFO] 2026-05-23 08:13:02 | ReportGenerator | Rapor üretiliyor: Bahrain
+[WARNING] 2026-05-23 08:13:02 | Main | Rapor hatası (Bahrain): Invalid format specifier '.4f if rate else 'N/A'' for object of type 'float'
+[SUCCESS] 2026-05-23 08:13:02 | F1System | Dashboard data is ready: Bahrain (1.6s)
+[INFO] 2026-05-23 08:13:02 | DataLoader | ==================================================
+[INFO] 2026-05-23 08:13:02 | DataLoader | Yarış yükleniyor: Monaco 2025
+[WARNING] 2026-05-23 08:13:02 | DataLoader | fastf1 kütüphanesi bulunamadı. Örnek veri kullanılacak.
+[ERROR] 2026-05-23 08:13:02 | DataLoader | fastf1 yüklü değil. 'pip install fastf1' komutu çalıştırın.
+[WARNING] 2026-05-23 08:13:02 | Utils | Monaco için örnek (simüle) veri üretiliyor.
+[INFO] 2026-05-23 08:13:02 | DataLoader | Preprocessing başlıyor...
+[INFO] 2026-05-23 08:13:02 | Preprocessing | Preprocessing started: Monaco (200 satır)
+[INFO] 2026-05-23 08:13:02 | Preprocessing | Preprocessing tamamlandı: 200 satır (0 satır çıkarıldı).
+[INFO] 2026-05-23 08:13:02 | Database | Monaco: 200 tur SQLite'a kaydedildi.
+[INFO] 2026-05-23 08:13:02 | DataLoader | Feature engineering başlıyor...
+[INFO] 2026-05-23 08:13:02 | FeatureEngineering | Feature engineering başladı: Monaco
+[INFO] 2026-05-23 08:13:02 | FeatureEngineering | Feature engineering tamamlandı: 35 sütun mevcut.
+[SUCCESS] 2026-05-23 08:13:02 | F1System | Monaco: İşlenmiş veri kaydedildi (200 tur).
+[INFO] 2026-05-23 08:13:02 | EDA | EDA başlıyor: Monaco
+[INFO] 2026-05-23 08:13:03 | EDA | EDA tamamlandı: Monaco
+[INFO] 2026-05-23 08:13:03 | Analysis | Analizler başlıyor: Monaco
+[INFO] 2026-05-23 08:13:03 | Analysis | Tüm analizler tamamlandı: Monaco
+[INFO] 2026-05-23 08:13:03 | Models | ML pipeline başlıyor: Monaco
+[SUCCESS] 2026-05-23 08:13:03 | F1System | K-Means tamamlandı: 3 küme, 10 pilot sınıflandırıldı.
+[SUCCESS] 2026-05-23 08:13:03 | F1System | Decision Tree model trained. Accuracy: 0.667
+[SUCCESS] 2026-05-23 08:13:03 | F1System | kNN model trained (k=5). Accuracy: 0.667
+[SUCCESS] 2026-05-23 08:13:03 | F1System | ML pipeline tamamlandı: Monaco
+[INFO] 2026-05-23 08:13:03 | Main | Decision Tree model trained.
+[INFO] 2026-05-23 08:13:03 | Visualization | Grafik üretimi başlıyor: Monaco
+[ERROR] 2026-05-23 08:13:03 | Visualization | Grafik üretim hatası: 'mean'
+[INFO] 2026-05-23 08:13:03 | Visualization | Üretilen grafik sayısı: 3
+[INFO] 2026-05-23 08:13:03 | ReportGenerator | Rapor üretiliyor: Monaco
+[WARNING] 2026-05-23 08:13:03 | Main | Rapor hatası (Monaco): Invalid format specifier '.4f if rate else 'N/A'' for object of type 'float'
+[SUCCESS] 2026-05-23 08:13:03 | F1System | Dashboard data is ready: Monaco (1.5s)
+[INFO] 2026-05-23 08:13:03 | DataLoader | ==================================================
+[INFO] 2026-05-23 08:13:03 | DataLoader | Yarış yükleniyor: Great Britain 2025
+[WARNING] 2026-05-23 08:13:03 | DataLoader | fastf1 kütüphanesi bulunamadı. Örnek veri kullanılacak.
+[ERROR] 2026-05-23 08:13:03 | DataLoader | fastf1 yüklü değil. 'pip install fastf1' komutu çalıştırın.
+[WARNING] 2026-05-23 08:13:03 | Utils | Great Britain için örnek (simüle) veri üretiliyor.
+[INFO] 2026-05-23 08:13:03 | DataLoader | Preprocessing başlıyor...
+[INFO] 2026-05-23 08:13:03 | Preprocessing | Preprocessing started: Great Britain (200 satır)
+[INFO] 2026-05-23 08:13:03 | Preprocessing | Preprocessing tamamlandı: 200 satır (0 satır çıkarıldı).
+[INFO] 2026-05-23 08:13:03 | Database | Great Britain: 200 tur SQLite'a kaydedildi.
+[INFO] 2026-05-23 08:13:03 | DataLoader | Feature engineering başlıyor...
+[INFO] 2026-05-23 08:13:03 | FeatureEngineering | Feature engineering başladı: Great Britain
+[INFO] 2026-05-23 08:13:03 | FeatureEngineering | Feature engineering tamamlandı: 35 sütun mevcut.
+[SUCCESS] 2026-05-23 08:13:03 | F1System | Great Britain: İşlenmiş veri kaydedildi (200 tur).
+[INFO] 2026-05-23 08:13:03 | EDA | EDA başlıyor: Great Britain
+[INFO] 2026-05-23 08:13:04 | EDA | EDA tamamlandı: Great Britain
+[INFO] 2026-05-23 08:13:04 | Analysis | Analizler başlıyor: Great Britain
+[INFO] 2026-05-23 08:13:04 | Analysis | Tüm analizler tamamlandı: Great Britain
+[INFO] 2026-05-23 08:13:04 | Models | ML pipeline başlıyor: Great Britain
+[SUCCESS] 2026-05-23 08:13:04 | F1System | K-Means tamamlandı: 3 küme, 10 pilot sınıflandırıldı.
+[SUCCESS] 2026-05-23 08:13:04 | F1System | Decision Tree model trained. Accuracy: 0.667
+[SUCCESS] 2026-05-23 08:13:04 | F1System | kNN model trained (k=5). Accuracy: 0.667
+[SUCCESS] 2026-05-23 08:13:04 | F1System | ML pipeline tamamlandı: Great Britain
+[INFO] 2026-05-23 08:13:04 | Main | Decision Tree model trained.
+[INFO] 2026-05-23 08:13:04 | Visualization | Grafik üretimi başlıyor: Great Britain
+[ERROR] 2026-05-23 08:13:05 | Visualization | Grafik üretim hatası: 'mean'
+[INFO] 2026-05-23 08:13:05 | Visualization | Üretilen grafik sayısı: 3
+[INFO] 2026-05-23 08:13:05 | ReportGenerator | Rapor üretiliyor: Great Britain
+[WARNING] 2026-05-23 08:13:05 | Main | Rapor hatası (Great Britain): Invalid format specifier '.4f if rate else 'N/A'' for object of type 'float'
+[SUCCESS] 2026-05-23 08:13:05 | F1System | Dashboard data is ready: Great Britain (1.4s)
+[INFO] 2026-05-23 08:13:05 | DataLoader | ==================================================
+[INFO] 2026-05-23 08:13:05 | DataLoader | Yarış yükleniyor: Belgium 2025
+[WARNING] 2026-05-23 08:13:05 | DataLoader | fastf1 kütüphanesi bulunamadı. Örnek veri kullanılacak.
+[ERROR] 2026-05-23 08:13:05 | DataLoader | fastf1 yüklü değil. 'pip install fastf1' komutu çalıştırın.
+[WARNING] 2026-05-23 08:13:05 | Utils | Belgium için örnek (simüle) veri üretiliyor.
+[INFO] 2026-05-23 08:13:05 | DataLoader | Preprocessing başlıyor...
+[INFO] 2026-05-23 08:13:05 | Preprocessing | Preprocessing started: Belgium (200 satır)
+[INFO] 2026-05-23 08:13:05 | Preprocessing | Preprocessing tamamlandı: 200 satır (0 satır çıkarıldı).
+[INFO] 2026-05-23 08:13:05 | Database | Belgium: 200 tur SQLite'a kaydedildi.
+[INFO] 2026-05-23 08:13:05 | DataLoader | Feature engineering başlıyor...
+[INFO] 2026-05-23 08:13:05 | FeatureEngineering | Feature engineering başladı: Belgium
+[INFO] 2026-05-23 08:13:05 | FeatureEngineering | Feature engineering tamamlandı: 35 sütun mevcut.
+[SUCCESS] 2026-05-23 08:13:05 | F1System | Belgium: İşlenmiş veri kaydedildi (200 tur).
+[INFO] 2026-05-23 08:13:05 | EDA | EDA başlıyor: Belgium
+[INFO] 2026-05-23 08:13:06 | EDA | EDA tamamlandı: Belgium
+[INFO] 2026-05-23 08:13:06 | Analysis | Analizler başlıyor: Belgium
+[INFO] 2026-05-23 08:13:06 | Analysis | Tüm analizler tamamlandı: Belgium
+[INFO] 2026-05-23 08:13:06 | Models | ML pipeline başlıyor: Belgium
+[SUCCESS] 2026-05-23 08:13:06 | F1System | K-Means tamamlandı: 3 küme, 10 pilot sınıflandırıldı.
+[SUCCESS] 2026-05-23 08:13:06 | F1System | Decision Tree model trained. Accuracy: 0.667
+[SUCCESS] 2026-05-23 08:13:06 | F1System | kNN model trained (k=5). Accuracy: 0.667
+[SUCCESS] 2026-05-23 08:13:06 | F1System | ML pipeline tamamlandı: Belgium
+[INFO] 2026-05-23 08:13:06 | Main | Decision Tree model trained.
+[INFO] 2026-05-23 08:13:06 | Visualization | Grafik üretimi başlıyor: Belgium
+[ERROR] 2026-05-23 08:13:06 | Visualization | Grafik üretim hatası: 'mean'
+[INFO] 2026-05-23 08:13:06 | Visualization | Üretilen grafik sayısı: 3
+[INFO] 2026-05-23 08:13:06 | ReportGenerator | Rapor üretiliyor: Belgium
+[WARNING] 2026-05-23 08:13:06 | Main | Rapor hatası (Belgium): Invalid format specifier '.4f if rate else 'N/A'' for object of type 'float'
+[SUCCESS] 2026-05-23 08:13:06 | F1System | Dashboard data is ready: Belgium (1.5s)
+[INFO] 2026-05-23 08:13:06 | DataLoader | ==================================================
+[INFO] 2026-05-23 08:13:06 | DataLoader | Yarış yükleniyor: Italy 2025
+[WARNING] 2026-05-23 08:13:06 | DataLoader | fastf1 kütüphanesi bulunamadı. Örnek veri kullanılacak.
+[ERROR] 2026-05-23 08:13:06 | DataLoader | fastf1 yüklü değil. 'pip install fastf1' komutu çalıştırın.
+[WARNING] 2026-05-23 08:13:06 | Utils | Italy için örnek (simüle) veri üretiliyor.
+[INFO] 2026-05-23 08:13:06 | DataLoader | Preprocessing başlıyor...
+[INFO] 2026-05-23 08:13:06 | Preprocessing | Preprocessing started: Italy (200 satır)
+[INFO] 2026-05-23 08:13:06 | Preprocessing | Preprocessing tamamlandı: 200 satır (0 satır çıkarıldı).
+[INFO] 2026-05-23 08:13:06 | Database | Italy: 200 tur SQLite'a kaydedildi.
+[INFO] 2026-05-23 08:13:06 | DataLoader | Feature engineering başlıyor...
+[INFO] 2026-05-23 08:13:06 | FeatureEngineering | Feature engineering başladı: Italy
+[INFO] 2026-05-23 08:13:06 | FeatureEngineering | Feature engineering tamamlandı: 35 sütun mevcut.
+[SUCCESS] 2026-05-23 08:13:06 | F1System | Italy: İşlenmiş veri kaydedildi (200 tur).
+[INFO] 2026-05-23 08:13:06 | EDA | EDA başlıyor: Italy
+[INFO] 2026-05-23 08:13:07 | EDA | EDA tamamlandı: Italy
+[INFO] 2026-05-23 08:13:07 | Analysis | Analizler başlıyor: Italy
+[INFO] 2026-05-23 08:13:07 | Analysis | Tüm analizler tamamlandı: Italy
+[INFO] 2026-05-23 08:13:07 | Models | ML pipeline başlıyor: Italy
+[SUCCESS] 2026-05-23 08:13:07 | F1System | K-Means tamamlandı: 3 küme, 10 pilot sınıflandırıldı.
+[SUCCESS] 2026-05-23 08:13:07 | F1System | Decision Tree model trained. Accuracy: 0.667
+[SUCCESS] 2026-05-23 08:13:07 | F1System | kNN model trained (k=5). Accuracy: 0.667
+[SUCCESS] 2026-05-23 08:13:07 | F1System | ML pipeline tamamlandı: Italy
+[INFO] 2026-05-23 08:13:07 | Main | Decision Tree model trained.
+[INFO] 2026-05-23 08:13:07 | Visualization | Grafik üretimi başlıyor: Italy
+[ERROR] 2026-05-23 08:13:07 | Visualization | Grafik üretim hatası: 'mean'
+[INFO] 2026-05-23 08:13:07 | Visualization | Üretilen grafik sayısı: 3
+[INFO] 2026-05-23 08:13:07 | ReportGenerator | Rapor üretiliyor: Italy
+[WARNING] 2026-05-23 08:13:07 | Main | Rapor hatası (Italy): Invalid format specifier '.4f if rate else 'N/A'' for object of type 'float'
+[SUCCESS] 2026-05-23 08:13:07 | F1System | Dashboard data is ready: Italy (1.4s)
+[INFO] 2026-05-23 08:13:44 | DataLoader | ==================================================
+[INFO] 2026-05-23 08:13:44 | DataLoader | Yarış yükleniyor: Bahrain 2025
+[INFO] 2026-05-23 08:13:44 | DataLoader | Bahrain: Ham veri CSV'den okundu (200 satır).
+[INFO] 2026-05-23 08:13:44 | DataLoader | Preprocessing başlıyor...
+[INFO] 2026-05-23 08:13:44 | Preprocessing | Preprocessing started: Bahrain (200 satır)
+[INFO] 2026-05-23 08:13:44 | Preprocessing | Preprocessing tamamlandı: 200 satır (0 satır çıkarıldı).
+[INFO] 2026-05-23 08:13:44 | Database | Bahrain: 200 tur SQLite'a kaydedildi.
+[INFO] 2026-05-23 08:13:44 | DataLoader | Feature engineering başlıyor...
+[INFO] 2026-05-23 08:13:44 | FeatureEngineering | Feature engineering başladı: Bahrain
+[INFO] 2026-05-23 08:13:44 | FeatureEngineering | Feature engineering tamamlandı: 35 sütun mevcut.
+[SUCCESS] 2026-05-23 08:13:44 | F1System | Bahrain: İşlenmiş veri kaydedildi (200 tur).
+[INFO] 2026-05-23 08:13:44 | Analysis | Analizler başlıyor: Bahrain
+[INFO] 2026-05-23 08:13:45 | Analysis | Tüm analizler tamamlandı: Bahrain
+[INFO] 2026-05-23 08:13:45 | Models | ML pipeline başlıyor: Bahrain
+[SUCCESS] 2026-05-23 08:13:45 | F1System | K-Means tamamlandı: 3 küme, 10 pilot sınıflandırıldı.
+[SUCCESS] 2026-05-23 08:13:45 | F1System | Decision Tree model trained. Accuracy: 0.667
+[SUCCESS] 2026-05-23 08:13:45 | F1System | kNN model trained (k=5). Accuracy: 0.667
+[SUCCESS] 2026-05-23 08:13:45 | F1System | ML pipeline tamamlandı: Bahrain
+[INFO] 2026-05-23 08:13:45 | Visualization | Grafik üretimi başlıyor: Bahrain
+[INFO] 2026-05-23 08:13:46 | Visualization | Üretilen grafik sayısı: 11
+[INFO] 2026-05-23 08:13:46 | ReportGenerator | Rapor üretiliyor: Bahrain
+[INFO] 2026-05-23 08:13:46 | ReportGenerator | Raporlar kaydedildi: bahrain_report_20260523_0813.md, bahrain_report_20260523_0813.txt
+[INFO] 2026-05-23 08:14:05 | Dashboard | API isteği: Bahrain
+[INFO] 2026-05-23 08:14:05 | DataLoader | ==================================================
+[INFO] 2026-05-23 08:14:05 | DataLoader | Yarış yükleniyor: Bahrain 2025
+[SUCCESS] 2026-05-23 08:14:05 | F1System | Bahrain: Processed CSV'den yüklendi (200 tur).
+[INFO] 2026-05-23 08:14:05 | Analysis | Analizler başlıyor: Bahrain
+[INFO] 2026-05-23 08:14:06 | Analysis | Tüm analizler tamamlandı: Bahrain
+[INFO] 2026-05-23 08:14:06 | Models | ML pipeline başlıyor: Bahrain
+[SUCCESS] 2026-05-23 08:14:06 | F1System | K-Means tamamlandı: 3 küme, 10 pilot sınıflandırıldı.
+[SUCCESS] 2026-05-23 08:14:06 | F1System | Decision Tree model trained. Accuracy: 0.667
+[SUCCESS] 2026-05-23 08:14:06 | F1System | kNN model trained (k=5). Accuracy: 0.667
+[SUCCESS] 2026-05-23 08:14:06 | F1System | ML pipeline tamamlandı: Bahrain
+[INFO] 2026-05-23 08:14:06 | Visualization | Grafik üretimi başlıyor: Bahrain
+[INFO] 2026-05-23 08:14:07 | Visualization | Üretilen grafik sayısı: 11
+[INFO] 2026-05-23 08:17:33 | Dashboard | API isteği: Bahrain
+[INFO] 2026-05-23 08:17:33 | DataLoader | ==================================================
+[INFO] 2026-05-23 08:17:33 | DataLoader | Yarış yükleniyor: Bahrain 2025
+[SUCCESS] 2026-05-23 08:17:33 | F1System | Bahrain: Processed CSV'den yüklendi (200 tur).
+[INFO] 2026-05-23 08:17:33 | Analysis | Analizler başlıyor: Bahrain
+[INFO] 2026-05-23 08:17:33 | Analysis | Tüm analizler tamamlandı: Bahrain
+[INFO] 2026-05-23 08:17:33 | Models | ML pipeline başlıyor: Bahrain
+[SUCCESS] 2026-05-23 08:17:33 | F1System | K-Means tamamlandı: 3 küme, 10 pilot sınıflandırıldı.
+[SUCCESS] 2026-05-23 08:17:33 | F1System | Decision Tree model trained. Accuracy: 0.667
+[SUCCESS] 2026-05-23 08:17:33 | F1System | kNN model trained (k=5). Accuracy: 0.667
+[SUCCESS] 2026-05-23 08:17:33 | F1System | ML pipeline tamamlandı: Bahrain
+[INFO] 2026-05-23 08:17:33 | Visualization | Grafik üretimi başlıyor: Bahrain
+[INFO] 2026-05-23 08:17:35 | Visualization | Üretilen grafik sayısı: 11
+[INFO] 2026-05-23 08:17:48 | DataLoader | ==================================================
+[INFO] 2026-05-23 08:17:48 | DataLoader | Yarış yükleniyor: Bahrain 2025
+[SUCCESS] 2026-05-23 08:17:48 | F1System | Bahrain: Processed CSV'den yüklendi (200 tur).
+[INFO] 2026-05-23 08:17:48 | Dashboard | API isteği: Azerbaijan
+[INFO] 2026-05-23 08:17:48 | DataLoader | ==================================================
+[INFO] 2026-05-23 08:17:48 | DataLoader | Yarış yükleniyor: Azerbaijan 2025
+[WARNING] 2026-05-23 08:17:48 | DataLoader | fastf1 kütüphanesi bulunamadı. Örnek veri kullanılacak.
+[ERROR] 2026-05-23 08:17:48 | DataLoader | fastf1 yüklü değil. 'pip install fastf1' komutu çalıştırın.
+[WARNING] 2026-05-23 08:17:48 | Utils | Azerbaijan için örnek (simüle) veri üretiliyor.
+[INFO] 2026-05-23 08:17:48 | DataLoader | Preprocessing başlıyor...
+[INFO] 2026-05-23 08:17:48 | Preprocessing | Preprocessing started: Azerbaijan (200 satır)
+[INFO] 2026-05-23 08:17:48 | Preprocessing | Preprocessing tamamlandı: 200 satır (0 satır çıkarıldı).
+[INFO] 2026-05-23 08:17:48 | Database | Azerbaijan: 200 tur SQLite'a kaydedildi.
+[INFO] 2026-05-23 08:17:48 | DataLoader | Feature engineering başlıyor...
+[INFO] 2026-05-23 08:17:48 | FeatureEngineering | Feature engineering başladı: Azerbaijan
+[INFO] 2026-05-23 08:17:48 | FeatureEngineering | Feature engineering tamamlandı: 35 sütun mevcut.
+[SUCCESS] 2026-05-23 08:17:48 | F1System | Azerbaijan: İşlenmiş veri kaydedildi (200 tur).
+[INFO] 2026-05-23 08:17:48 | Analysis | Analizler başlıyor: Azerbaijan
+[INFO] 2026-05-23 08:17:48 | Analysis | Tüm analizler tamamlandı: Azerbaijan
+[INFO] 2026-05-23 08:17:48 | Models | ML pipeline başlıyor: Azerbaijan
+[SUCCESS] 2026-05-23 08:17:48 | F1System | K-Means tamamlandı: 3 küme, 10 pilot sınıflandırıldı.
+[SUCCESS] 2026-05-23 08:17:48 | F1System | Decision Tree model trained. Accuracy: 0.667
+[SUCCESS] 2026-05-23 08:17:48 | F1System | kNN model trained (k=5). Accuracy: 0.667
+[SUCCESS] 2026-05-23 08:17:48 | F1System | ML pipeline tamamlandı: Azerbaijan
+[INFO] 2026-05-23 08:17:48 | Visualization | Grafik üretimi başlıyor: Azerbaijan
+[INFO] 2026-05-23 08:17:50 | Visualization | Üretilen grafik sayısı: 11
+[INFO] 2026-05-23 08:18:29 | Dashboard | API isteği: Bahrain
+[INFO] 2026-05-23 08:18:29 | DataLoader | ==================================================
+[INFO] 2026-05-23 08:18:29 | DataLoader | Yarış yükleniyor: Bahrain 2025
+[SUCCESS] 2026-05-23 08:18:29 | F1System | Bahrain: Processed CSV'den yüklendi (200 tur).
+[INFO] 2026-05-23 08:18:29 | Analysis | Analizler başlıyor: Bahrain
+[INFO] 2026-05-23 08:18:29 | Analysis | Tüm analizler tamamlandı: Bahrain
+[INFO] 2026-05-23 08:18:29 | Models | ML pipeline başlıyor: Bahrain
+[SUCCESS] 2026-05-23 08:18:29 | F1System | K-Means tamamlandı: 3 küme, 10 pilot sınıflandırıldı.
+[SUCCESS] 2026-05-23 08:18:29 | F1System | Decision Tree model trained. Accuracy: 0.667
+[SUCCESS] 2026-05-23 08:18:29 | F1System | kNN model trained (k=5). Accuracy: 0.667
+[SUCCESS] 2026-05-23 08:18:29 | F1System | ML pipeline tamamlandı: Bahrain
+[INFO] 2026-05-23 08:18:29 | Visualization | Grafik üretimi başlıyor: Bahrain
+[INFO] 2026-05-23 08:18:31 | Visualization | Üretilen grafik sayısı: 11
+[INFO] 2026-05-23 08:18:46 | Dashboard | API isteği: Bahrain
+[INFO] 2026-05-23 08:18:46 | DataLoader | ==================================================
+[INFO] 2026-05-23 08:18:46 | DataLoader | Yarış yükleniyor: Bahrain 2025
+[SUCCESS] 2026-05-23 08:18:46 | F1System | Bahrain: Processed CSV'den yüklendi (200 tur).
+[INFO] 2026-05-23 08:18:46 | Analysis | Analizler başlıyor: Bahrain
+[INFO] 2026-05-23 08:18:46 | Analysis | Tüm analizler tamamlandı: Bahrain
+[INFO] 2026-05-23 08:18:46 | Models | ML pipeline başlıyor: Bahrain
+[SUCCESS] 2026-05-23 08:18:46 | F1System | K-Means tamamlandı: 3 küme, 10 pilot sınıflandırıldı.
+[SUCCESS] 2026-05-23 08:18:46 | F1System | Decision Tree model trained. Accuracy: 0.667
+[SUCCESS] 2026-05-23 08:18:46 | F1System | kNN model trained (k=5). Accuracy: 0.667
+[SUCCESS] 2026-05-23 08:18:46 | F1System | ML pipeline tamamlandı: Bahrain
+[INFO] 2026-05-23 08:18:46 | Visualization | Grafik üretimi başlıyor: Bahrain
+[INFO] 2026-05-23 08:18:48 | Visualization | Üretilen grafik sayısı: 11
+[INFO] 2026-05-23 08:18:48 | Dashboard | API isteği: Singapore
+[INFO] 2026-05-23 08:18:48 | DataLoader | ==================================================
+[INFO] 2026-05-23 08:18:48 | DataLoader | Yarış yükleniyor: Singapore 2025
+[WARNING] 2026-05-23 08:18:48 | DataLoader | fastf1 kütüphanesi bulunamadı. Örnek veri kullanılacak.
+[ERROR] 2026-05-23 08:18:48 | DataLoader | fastf1 yüklü değil. 'pip install fastf1' komutu çalıştırın.
+[WARNING] 2026-05-23 08:18:48 | Utils | Singapore için örnek (simüle) veri üretiliyor.
+[INFO] 2026-05-23 08:18:48 | DataLoader | Preprocessing başlıyor...
+[INFO] 2026-05-23 08:18:48 | Preprocessing | Preprocessing started: Singapore (200 satır)
+[INFO] 2026-05-23 08:18:48 | Preprocessing | Preprocessing tamamlandı: 200 satır (0 satır çıkarıldı).
+[INFO] 2026-05-23 08:18:48 | Database | Singapore: 200 tur SQLite'a kaydedildi.
+[INFO] 2026-05-23 08:18:48 | DataLoader | Feature engineering başlıyor...
+[INFO] 2026-05-23 08:18:48 | FeatureEngineering | Feature engineering başladı: Singapore
+[INFO] 2026-05-23 08:18:48 | FeatureEngineering | Feature engineering tamamlandı: 35 sütun mevcut.
+[SUCCESS] 2026-05-23 08:18:48 | F1System | Singapore: İşlenmiş veri kaydedildi (200 tur).
+[INFO] 2026-05-23 08:18:48 | Analysis | Analizler başlıyor: Singapore
+[INFO] 2026-05-23 08:18:48 | Analysis | Tüm analizler tamamlandı: Singapore
+[INFO] 2026-05-23 08:18:48 | Models | ML pipeline başlıyor: Singapore
+[SUCCESS] 2026-05-23 08:18:48 | F1System | K-Means tamamlandı: 3 küme, 10 pilot sınıflandırıldı.
+[SUCCESS] 2026-05-23 08:18:48 | F1System | Decision Tree model trained. Accuracy: 0.667
+[SUCCESS] 2026-05-23 08:18:48 | F1System | kNN model trained (k=5). Accuracy: 0.667
+[SUCCESS] 2026-05-23 08:18:48 | F1System | ML pipeline tamamlandı: Singapore
+[INFO] 2026-05-23 08:18:48 | Visualization | Grafik üretimi başlıyor: Singapore
+[INFO] 2026-05-23 08:18:49 | Visualization | Üretilen grafik sayısı: 11
+[WARNING] 2026-05-23 08:26:58 | Utils | [SIMULATED] Bahrain için simüle veri üretiliyor. Gerçek veri için internet bağlantısı ve FastF1 gereklidir.
+[WARNING] 2026-05-23 08:26:58 | Utils | [SIMULATED] Bahrain: 1140 satır, 20 pilot üretildi. Bu veriler gerçek değildir.
+[WARNING] 2026-05-23 08:26:58 | Utils | [SIMULATED] Monaco için simüle veri üretiliyor. Gerçek veri için internet bağlantısı ve FastF1 gereklidir.
+[WARNING] 2026-05-23 08:26:58 | Utils | [SIMULATED] Monaco: 1560 satır, 20 pilot üretildi. Bu veriler gerçek değildir.
+[INFO] 2026-05-23 08:31:19 | Database | Veritabanı tabloları hazır.
+[INFO] 2026-05-23 08:31:19 | DataLoader | ==================================================
+[INFO] 2026-05-23 08:31:19 | DataLoader | Yarış yükleniyor: Bahrain 2025
+[WARNING] 2026-05-23 08:31:19 | DataLoader | fastf1 kütüphanesi bulunamadı. Örnek veri kullanılacak.
+[ERROR] 2026-05-23 08:31:19 | DataLoader | fastf1 yüklü değil. 'pip install fastf1' komutu çalıştırın.
+[WARNING] 2026-05-23 08:31:19 | Utils | [SIMULATED] Bahrain için simüle veri üretiliyor. Gerçek veri için internet bağlantısı ve FastF1 gereklidir.
+[WARNING] 2026-05-23 08:31:19 | Utils | [SIMULATED] Bahrain: 1140 satır, 20 pilot üretildi. Bu veriler gerçek değildir.
+[INFO] 2026-05-23 08:31:19 | DataLoader | Preprocessing başlıyor...
+[INFO] 2026-05-23 08:31:19 | Preprocessing | Preprocessing started: Bahrain (1140 satır)
+[INFO] 2026-05-23 08:31:19 | Preprocessing | Preprocessing tamamlandı: 1140 satır (0 satır çıkarıldı).
+[INFO] 2026-05-23 08:31:19 | Database | Bahrain: 1140 tur SQLite'a kaydedildi.
+[INFO] 2026-05-23 08:31:19 | DataLoader | Feature engineering başlıyor...
+[INFO] 2026-05-23 08:31:19 | FeatureEngineering | Feature engineering başladı: Bahrain
+[INFO] 2026-05-23 08:31:20 | FeatureEngineering | Feature engineering tamamlandı: 36 sütun mevcut.
+[SUCCESS] 2026-05-23 08:31:20 | F1System | Bahrain: İşlenmiş veri kaydedildi (1140 tur).
+[INFO] 2026-05-23 08:31:20 | EDA | EDA başlıyor: Bahrain
+[INFO] 2026-05-23 08:31:21 | EDA | EDA tamamlandı: Bahrain
+[INFO] 2026-05-23 08:31:21 | Analysis | Analizler başlıyor: Bahrain
+[INFO] 2026-05-23 08:31:21 | Analysis | Tüm analizler tamamlandı: Bahrain
+[INFO] 2026-05-23 08:31:21 | Models | ML pipeline başlıyor: Bahrain
+[SUCCESS] 2026-05-23 08:31:21 | F1System | K-Means tamamlandı: 3 küme, 20 pilot sınıflandırıldı.
+[SUCCESS] 2026-05-23 08:31:21 | F1System | Decision Tree model trained. Accuracy: 0.833
+[SUCCESS] 2026-05-23 08:31:21 | F1System | kNN model trained (k=5). Accuracy: 0.833
+[SUCCESS] 2026-05-23 08:31:21 | F1System | ML pipeline tamamlandı: Bahrain
+[INFO] 2026-05-23 08:31:21 | InsightEngine | Insight engine çalışıyor: Bahrain
+[INFO] 2026-05-23 08:31:21 | InsightEngine | Insight engine tamamlandı: Bahrain
+[INFO] 2026-05-23 08:31:21 | Visualization | Grafik üretimi başlıyor: Bahrain
+[INFO] 2026-05-23 08:31:23 | Visualization | Üretilen grafik sayısı: 12
+[INFO] 2026-05-23 08:31:23 | CacheManager | Analysis cache created: Bahrain → bahrain_v2.json
+[INFO] 2026-05-23 08:31:23 | ReportGenerator | Rapor üretiliyor: Bahrain
+[INFO] 2026-05-23 08:31:23 | ReportGenerator | Raporlar kaydedildi: bahrain_report_20260523_0831.md, bahrain_report_20260523_0831.txt
+[INFO] 2026-05-23 08:31:24 | PDFReport | PDF raporu oluşturuldu: bahrain_report_20260523_0831.pdf
+[SUCCESS] 2026-05-23 08:31:24 | F1System | Dashboard data is ready: Bahrain (4.3s)
+[INFO] 2026-05-23 08:31:24 | DataLoader | ==================================================
+[INFO] 2026-05-23 08:31:24 | DataLoader | Yarış yükleniyor: Monaco 2025
+[WARNING] 2026-05-23 08:31:24 | DataLoader | fastf1 kütüphanesi bulunamadı. Örnek veri kullanılacak.
+[ERROR] 2026-05-23 08:31:24 | DataLoader | fastf1 yüklü değil. 'pip install fastf1' komutu çalıştırın.
+[WARNING] 2026-05-23 08:31:24 | Utils | [SIMULATED] Monaco için simüle veri üretiliyor. Gerçek veri için internet bağlantısı ve FastF1 gereklidir.
+[WARNING] 2026-05-23 08:31:24 | Utils | [SIMULATED] Monaco: 1560 satır, 20 pilot üretildi. Bu veriler gerçek değildir.
+[INFO] 2026-05-23 08:31:24 | DataLoader | Preprocessing başlıyor...
+[INFO] 2026-05-23 08:31:24 | Preprocessing | Preprocessing started: Monaco (1560 satır)
+[INFO] 2026-05-23 08:31:24 | Preprocessing | Preprocessing tamamlandı: 1560 satır (0 satır çıkarıldı).
+[INFO] 2026-05-23 08:31:24 | Database | Monaco: 1560 tur SQLite'a kaydedildi.
+[INFO] 2026-05-23 08:31:24 | DataLoader | Feature engineering başlıyor...
+[INFO] 2026-05-23 08:31:24 | FeatureEngineering | Feature engineering başladı: Monaco
+[INFO] 2026-05-23 08:31:24 | FeatureEngineering | Feature engineering tamamlandı: 36 sütun mevcut.
+[SUCCESS] 2026-05-23 08:31:24 | F1System | Monaco: İşlenmiş veri kaydedildi (1560 tur).
+[INFO] 2026-05-23 08:31:24 | EDA | EDA başlıyor: Monaco
+[INFO] 2026-05-23 08:31:25 | EDA | EDA tamamlandı: Monaco
+[INFO] 2026-05-23 08:31:25 | Analysis | Analizler başlıyor: Monaco
+[INFO] 2026-05-23 08:31:25 | Analysis | Tüm analizler tamamlandı: Monaco
+[INFO] 2026-05-23 08:31:25 | Models | ML pipeline başlıyor: Monaco
+[SUCCESS] 2026-05-23 08:31:25 | F1System | K-Means tamamlandı: 3 küme, 20 pilot sınıflandırıldı.
+[SUCCESS] 2026-05-23 08:31:25 | F1System | Decision Tree model trained. Accuracy: 0.667
+[SUCCESS] 2026-05-23 08:31:25 | F1System | kNN model trained (k=5). Accuracy: 0.833
+[SUCCESS] 2026-05-23 08:31:25 | F1System | ML pipeline tamamlandı: Monaco
+[INFO] 2026-05-23 08:31:25 | InsightEngine | Insight engine çalışıyor: Monaco
+[INFO] 2026-05-23 08:31:25 | InsightEngine | Insight engine tamamlandı: Monaco
+[INFO] 2026-05-23 08:31:25 | Visualization | Grafik üretimi başlıyor: Monaco
+[INFO] 2026-05-23 08:31:27 | Visualization | Üretilen grafik sayısı: 12
+[INFO] 2026-05-23 08:31:27 | CacheManager | Analysis cache created: Monaco → monaco_v2.json
+[INFO] 2026-05-23 08:31:27 | ReportGenerator | Rapor üretiliyor: Monaco
+[INFO] 2026-05-23 08:31:27 | ReportGenerator | Raporlar kaydedildi: monaco_report_20260523_0831.md, monaco_report_20260523_0831.txt
+[INFO] 2026-05-23 08:31:28 | PDFReport | PDF raporu oluşturuldu: monaco_report_20260523_0831.pdf
+[SUCCESS] 2026-05-23 08:31:28 | F1System | Dashboard data is ready: Monaco (3.8s)
+[INFO] 2026-05-23 08:31:28 | DataLoader | ==================================================
+[INFO] 2026-05-23 08:31:28 | DataLoader | Yarış yükleniyor: Great Britain 2025
+[WARNING] 2026-05-23 08:31:28 | DataLoader | fastf1 kütüphanesi bulunamadı. Örnek veri kullanılacak.
+[ERROR] 2026-05-23 08:31:28 | DataLoader | fastf1 yüklü değil. 'pip install fastf1' komutu çalıştırın.
+[WARNING] 2026-05-23 08:31:28 | Utils | [SIMULATED] Great Britain için simüle veri üretiliyor. Gerçek veri için internet bağlantısı ve FastF1 gereklidir.
+[WARNING] 2026-05-23 08:31:28 | Utils | [SIMULATED] Great Britain: 1040 satır, 20 pilot üretildi. Bu veriler gerçek değildir.
+[INFO] 2026-05-23 08:31:28 | DataLoader | Preprocessing başlıyor...
+[INFO] 2026-05-23 08:31:28 | Preprocessing | Preprocessing started: Great Britain (1040 satır)
+[INFO] 2026-05-23 08:31:28 | Preprocessing | Preprocessing tamamlandı: 1040 satır (0 satır çıkarıldı).
+[INFO] 2026-05-23 08:31:28 | Database | Great Britain: 1040 tur SQLite'a kaydedildi.
+[INFO] 2026-05-23 08:31:28 | DataLoader | Feature engineering başlıyor...
+[INFO] 2026-05-23 08:31:28 | FeatureEngineering | Feature engineering başladı: Great Britain
+[INFO] 2026-05-23 08:31:28 | FeatureEngineering | Feature engineering tamamlandı: 36 sütun mevcut.
+[SUCCESS] 2026-05-23 08:31:28 | F1System | Great Britain: İşlenmiş veri kaydedildi (1040 tur).
+[INFO] 2026-05-23 08:31:28 | EDA | EDA başlıyor: Great Britain
+[INFO] 2026-05-23 08:31:29 | EDA | EDA tamamlandı: Great Britain
+[INFO] 2026-05-23 08:31:29 | Analysis | Analizler başlıyor: Great Britain
+[INFO] 2026-05-23 08:31:29 | Analysis | Tüm analizler tamamlandı: Great Britain
+[INFO] 2026-05-23 08:31:29 | Models | ML pipeline başlıyor: Great Britain
+[SUCCESS] 2026-05-23 08:31:29 | F1System | K-Means tamamlandı: 3 küme, 20 pilot sınıflandırıldı.
+[SUCCESS] 2026-05-23 08:31:29 | F1System | Decision Tree model trained. Accuracy: 0.667
+[SUCCESS] 2026-05-23 08:31:29 | F1System | kNN model trained (k=5). Accuracy: 0.833
+[SUCCESS] 2026-05-23 08:31:29 | F1System | ML pipeline tamamlandı: Great Britain
+[INFO] 2026-05-23 08:31:29 | InsightEngine | Insight engine çalışıyor: Great Britain
+[INFO] 2026-05-23 08:31:29 | InsightEngine | Insight engine tamamlandı: Great Britain
+[INFO] 2026-05-23 08:31:29 | Visualization | Grafik üretimi başlıyor: Great Britain
+[INFO] 2026-05-23 08:31:31 | Visualization | Üretilen grafik sayısı: 12
+[INFO] 2026-05-23 08:31:31 | CacheManager | Analysis cache created: Great Britain → great_britain_v2.json
+[INFO] 2026-05-23 08:31:31 | ReportGenerator | Rapor üretiliyor: Great Britain
+[INFO] 2026-05-23 08:31:31 | ReportGenerator | Raporlar kaydedildi: great_britain_report_20260523_0831.md, great_britain_report_20260523_0831.txt
+[INFO] 2026-05-23 08:31:31 | PDFReport | PDF raporu oluşturuldu: great_britain_report_20260523_0831.pdf
+[SUCCESS] 2026-05-23 08:31:31 | F1System | Dashboard data is ready: Great Britain (3.8s)
+[INFO] 2026-05-23 08:31:31 | DataLoader | ==================================================
+[INFO] 2026-05-23 08:31:31 | DataLoader | Yarış yükleniyor: Belgium 2025
+[WARNING] 2026-05-23 08:31:31 | DataLoader | fastf1 kütüphanesi bulunamadı. Örnek veri kullanılacak.
+[ERROR] 2026-05-23 08:31:31 | DataLoader | fastf1 yüklü değil. 'pip install fastf1' komutu çalıştırın.
+[WARNING] 2026-05-23 08:31:31 | Utils | [SIMULATED] Belgium için simüle veri üretiliyor. Gerçek veri için internet bağlantısı ve FastF1 gereklidir.
+[WARNING] 2026-05-23 08:31:31 | Utils | [SIMULATED] Belgium: 880 satır, 20 pilot üretildi. Bu veriler gerçek değildir.
+[INFO] 2026-05-23 08:31:31 | DataLoader | Preprocessing başlıyor...
+[INFO] 2026-05-23 08:31:31 | Preprocessing | Preprocessing started: Belgium (880 satır)
+[INFO] 2026-05-23 08:31:31 | Preprocessing | Preprocessing tamamlandı: 880 satır (0 satır çıkarıldı).
+[INFO] 2026-05-23 08:31:31 | Database | Belgium: 880 tur SQLite'a kaydedildi.
+[INFO] 2026-05-23 08:31:31 | DataLoader | Feature engineering başlıyor...
+[INFO] 2026-05-23 08:31:31 | FeatureEngineering | Feature engineering başladı: Belgium
+[INFO] 2026-05-23 08:31:32 | FeatureEngineering | Feature engineering tamamlandı: 36 sütun mevcut.
+[SUCCESS] 2026-05-23 08:31:32 | F1System | Belgium: İşlenmiş veri kaydedildi (880 tur).
+[INFO] 2026-05-23 08:31:32 | EDA | EDA başlıyor: Belgium
+[INFO] 2026-05-23 08:31:33 | EDA | EDA tamamlandı: Belgium
+[INFO] 2026-05-23 08:31:33 | Analysis | Analizler başlıyor: Belgium
+[INFO] 2026-05-23 08:31:33 | Analysis | Tüm analizler tamamlandı: Belgium
+[INFO] 2026-05-23 08:31:33 | Models | ML pipeline başlıyor: Belgium
+[SUCCESS] 2026-05-23 08:31:33 | F1System | K-Means tamamlandı: 3 küme, 20 pilot sınıflandırıldı.
+[SUCCESS] 2026-05-23 08:31:33 | F1System | Decision Tree model trained. Accuracy: 0.500
+[SUCCESS] 2026-05-23 08:31:33 | F1System | kNN model trained (k=5). Accuracy: 0.833
+[SUCCESS] 2026-05-23 08:31:33 | F1System | ML pipeline tamamlandı: Belgium
+[INFO] 2026-05-23 08:31:33 | InsightEngine | Insight engine çalışıyor: Belgium
+[INFO] 2026-05-23 08:31:33 | InsightEngine | Insight engine tamamlandı: Belgium
+[INFO] 2026-05-23 08:31:33 | Visualization | Grafik üretimi başlıyor: Belgium
+[INFO] 2026-05-23 08:31:35 | Visualization | Üretilen grafik sayısı: 12
+[INFO] 2026-05-23 08:31:35 | CacheManager | Analysis cache created: Belgium → belgium_v2.json
+[INFO] 2026-05-23 08:31:35 | ReportGenerator | Rapor üretiliyor: Belgium
+[INFO] 2026-05-23 08:31:35 | ReportGenerator | Raporlar kaydedildi: belgium_report_20260523_0831.md, belgium_report_20260523_0831.txt
+[INFO] 2026-05-23 08:31:35 | PDFReport | PDF raporu oluşturuldu: belgium_report_20260523_0831.pdf
+[SUCCESS] 2026-05-23 08:31:35 | F1System | Dashboard data is ready: Belgium (3.8s)
+[INFO] 2026-05-23 08:31:35 | DataLoader | ==================================================
+[INFO] 2026-05-23 08:31:35 | DataLoader | Yarış yükleniyor: Italy 2025
+[WARNING] 2026-05-23 08:31:35 | DataLoader | fastf1 kütüphanesi bulunamadı. Örnek veri kullanılacak.
+[ERROR] 2026-05-23 08:31:35 | DataLoader | fastf1 yüklü değil. 'pip install fastf1' komutu çalıştırın.
+[WARNING] 2026-05-23 08:31:35 | Utils | [SIMULATED] Italy için simüle veri üretiliyor. Gerçek veri için internet bağlantısı ve FastF1 gereklidir.
+[WARNING] 2026-05-23 08:31:35 | Utils | [SIMULATED] Italy: 1060 satır, 20 pilot üretildi. Bu veriler gerçek değildir.
+[INFO] 2026-05-23 08:31:35 | DataLoader | Preprocessing başlıyor...
+[INFO] 2026-05-23 08:31:35 | Preprocessing | Preprocessing started: Italy (1060 satır)
+[INFO] 2026-05-23 08:31:35 | Preprocessing | Preprocessing tamamlandı: 1060 satır (0 satır çıkarıldı).
+[INFO] 2026-05-23 08:31:35 | Database | Italy: 1060 tur SQLite'a kaydedildi.
+[INFO] 2026-05-23 08:31:35 | DataLoader | Feature engineering başlıyor...
+[INFO] 2026-05-23 08:31:35 | FeatureEngineering | Feature engineering başladı: Italy
+[INFO] 2026-05-23 08:31:35 | FeatureEngineering | Feature engineering tamamlandı: 36 sütun mevcut.
+[SUCCESS] 2026-05-23 08:31:35 | F1System | Italy: İşlenmiş veri kaydedildi (1060 tur).
+[INFO] 2026-05-23 08:31:35 | EDA | EDA başlıyor: Italy
+[INFO] 2026-05-23 08:31:36 | EDA | EDA tamamlandı: Italy
+[INFO] 2026-05-23 08:31:36 | Analysis | Analizler başlıyor: Italy
+[INFO] 2026-05-23 08:31:37 | Analysis | Tüm analizler tamamlandı: Italy
+[INFO] 2026-05-23 08:31:37 | Models | ML pipeline başlıyor: Italy
+[SUCCESS] 2026-05-23 08:31:37 | F1System | K-Means tamamlandı: 3 küme, 20 pilot sınıflandırıldı.
+[SUCCESS] 2026-05-23 08:31:37 | F1System | Decision Tree model trained. Accuracy: 0.833
+[SUCCESS] 2026-05-23 08:31:37 | F1System | kNN model trained (k=5). Accuracy: 0.667
+[SUCCESS] 2026-05-23 08:31:37 | F1System | ML pipeline tamamlandı: Italy
+[INFO] 2026-05-23 08:31:37 | InsightEngine | Insight engine çalışıyor: Italy
+[INFO] 2026-05-23 08:31:37 | InsightEngine | Insight engine tamamlandı: Italy
+[INFO] 2026-05-23 08:31:37 | Visualization | Grafik üretimi başlıyor: Italy
+[INFO] 2026-05-23 08:31:39 | Visualization | Üretilen grafik sayısı: 12
+[INFO] 2026-05-23 08:31:39 | CacheManager | Analysis cache created: Italy → italy_v2.json
+[INFO] 2026-05-23 08:31:39 | ReportGenerator | Rapor üretiliyor: Italy
+[INFO] 2026-05-23 08:31:39 | ReportGenerator | Raporlar kaydedildi: italy_report_20260523_0831.md, italy_report_20260523_0831.txt
+[INFO] 2026-05-23 08:31:39 | PDFReport | PDF raporu oluşturuldu: italy_report_20260523_0831.pdf
+[SUCCESS] 2026-05-23 08:31:39 | F1System | Dashboard data is ready: Italy (3.8s)
+[WARNING] 2026-05-23 08:35:05 | Utils | [SIMULATED] Monaco için simüle veri üretiliyor. Gerçek veri için internet bağlantısı ve FastF1 gereklidir.
+[WARNING] 2026-05-23 08:35:05 | Utils | [SIMULATED] Monaco: 1560 satır, 20 pilot üretildi. Bu veriler gerçek değildir.
+[INFO] 2026-05-23 08:35:05 | Preprocessing | Preprocessing started: Monaco (1560 satır)
+[INFO] 2026-05-23 08:35:05 | Preprocessing | Preprocessing tamamlandı: 1560 satır (0 satır çıkarıldı).
+[INFO] 2026-05-23 08:35:05 | Database | Monaco: 1560 tur SQLite'a kaydedildi.
+[INFO] 2026-05-23 08:35:05 | FeatureEngineering | Feature engineering başladı: Monaco
+[INFO] 2026-05-23 08:35:05 | FeatureEngineering | Feature engineering tamamlandı: 36 sütun mevcut.
+[INFO] 2026-05-23 08:35:05 | Analysis | Analizler başlıyor: Monaco
+[INFO] 2026-05-23 08:35:05 | Analysis | Tüm analizler tamamlandı: Monaco
+[INFO] 2026-05-23 08:35:05 | Models | ML pipeline başlıyor: Monaco
+[SUCCESS] 2026-05-23 08:35:05 | F1System | K-Means tamamlandı: 3 küme, 20 pilot sınıflandırıldı.
+[SUCCESS] 2026-05-23 08:35:05 | F1System | Decision Tree model trained. Accuracy: 0.667
+[SUCCESS] 2026-05-23 08:35:05 | F1System | kNN model trained (k=5). Accuracy: 0.833
+[SUCCESS] 2026-05-23 08:35:05 | F1System | ML pipeline tamamlandı: Monaco
+[INFO] 2026-05-23 08:35:05 | Visualization | Grafik üretimi başlıyor: Monaco
+[INFO] 2026-05-23 08:35:07 | Visualization | Üretilen grafik sayısı: 12
+[INFO] 2026-05-23 08:35:07 | InsightEngine | Insight engine çalışıyor: Monaco
+[INFO] 2026-05-23 08:35:07 | InsightEngine | Insight engine tamamlandı: Monaco
+[INFO] 2026-05-23 08:35:08 | PDFReport | PDF raporu oluşturuldu: monaco_report_20260523_0835.pdf
+[INFO] 2026-05-23 08:35:23 | Dashboard | API isteği: Bahrain
+[INFO] 2026-05-23 08:35:23 | DataLoader | ==================================================
+[INFO] 2026-05-23 08:35:23 | DataLoader | Yarış yükleniyor: Bahrain 2025
+[SUCCESS] 2026-05-23 08:35:23 | F1System | Bahrain: Processed CSV'den yüklendi (1140 tur).
+[INFO] 2026-05-23 08:35:23 | Analysis | Analizler başlıyor: Bahrain
+[INFO] 2026-05-23 08:35:23 | Analysis | Tüm analizler tamamlandı: Bahrain
+[INFO] 2026-05-23 08:35:23 | Models | ML pipeline başlıyor: Bahrain
+[SUCCESS] 2026-05-23 08:35:23 | F1System | K-Means tamamlandı: 3 küme, 20 pilot sınıflandırıldı.
+[SUCCESS] 2026-05-23 08:35:23 | F1System | Decision Tree model trained. Accuracy: 0.833
+[SUCCESS] 2026-05-23 08:35:23 | F1System | kNN model trained (k=5). Accuracy: 0.833
+[SUCCESS] 2026-05-23 08:35:23 | F1System | ML pipeline tamamlandı: Bahrain
+[INFO] 2026-05-23 08:35:23 | InsightEngine | Insight engine çalışıyor: Bahrain
+[INFO] 2026-05-23 08:35:23 | InsightEngine | Insight engine tamamlandı: Bahrain
+[INFO] 2026-05-23 08:35:23 | Visualization | Grafik üretimi başlıyor: Bahrain
+[INFO] 2026-05-23 08:35:25 | Visualization | Üretilen grafik sayısı: 12
+[INFO] 2026-05-23 08:35:25 | CacheManager | Analysis cache created: Bahrain → bahrain_v2.json
+[INFO] 2026-05-23 08:35:25 | CacheManager | Cached analysis loaded: Bahrain (oluşturma: 2026-05-23 08:35:25)
+[INFO] 2026-05-23 08:35:25 | Dashboard | API isteği: Monaco
+[INFO] 2026-05-23 08:35:25 | DataLoader | ==================================================
+[INFO] 2026-05-23 08:35:25 | DataLoader | Yarış yükleniyor: Monaco 2025
+[SUCCESS] 2026-05-23 08:35:25 | F1System | Monaco: Processed CSV'den yüklendi (1560 tur).
+[INFO] 2026-05-23 08:35:25 | Analysis | Analizler başlıyor: Monaco
+[INFO] 2026-05-23 08:35:26 | Analysis | Tüm analizler tamamlandı: Monaco
+[INFO] 2026-05-23 08:35:26 | Models | ML pipeline başlıyor: Monaco
+[SUCCESS] 2026-05-23 08:35:26 | F1System | K-Means tamamlandı: 3 küme, 20 pilot sınıflandırıldı.
+[SUCCESS] 2026-05-23 08:35:26 | F1System | Decision Tree model trained. Accuracy: 0.667
+[SUCCESS] 2026-05-23 08:35:26 | F1System | kNN model trained (k=5). Accuracy: 0.833
+[SUCCESS] 2026-05-23 08:35:26 | F1System | ML pipeline tamamlandı: Monaco
+[INFO] 2026-05-23 08:35:26 | InsightEngine | Insight engine çalışıyor: Monaco
+[INFO] 2026-05-23 08:35:26 | InsightEngine | Insight engine tamamlandı: Monaco
+[INFO] 2026-05-23 08:35:26 | Visualization | Grafik üretimi başlıyor: Monaco
+[INFO] 2026-05-23 08:35:28 | Visualization | Üretilen grafik sayısı: 12
+[INFO] 2026-05-23 08:35:28 | CacheManager | Analysis cache created: Monaco → monaco_v2.json
+[INFO] 2026-05-23 08:37:24 | Database | Veritabanı tabloları hazır.
+[INFO] 2026-05-23 08:37:24 | CacheManager | Cached analysis loaded: Bahrain (oluşturma: 2026-05-23 08:35:25)
+[INFO] 2026-05-23 08:37:24 | CacheManager | Cached analysis loaded: Monaco (oluşturma: 2026-05-23 08:35:28)
+[INFO] 2026-05-23 08:37:24 | CacheManager | Cached analysis loaded: Great Britain (oluşturma: 2026-05-23 08:31:31)
+[INFO] 2026-05-23 08:37:24 | CacheManager | Cached analysis loaded: Belgium (oluşturma: 2026-05-23 08:31:35)
+[INFO] 2026-05-23 08:37:24 | CacheManager | Cached analysis loaded: Italy (oluşturma: 2026-05-23 08:31:39)
+[INFO] 2026-05-23 08:42:38 | Dashboard | API isteği: Bahrain
+[INFO] 2026-05-23 08:42:38 | DataLoader | ==================================================
+[INFO] 2026-05-23 08:42:38 | DataLoader | Yarış yükleniyor: Bahrain 2025
+[SUCCESS] 2026-05-23 08:42:38 | F1System | Bahrain: Processed CSV'den yüklendi (1140 tur).
+[INFO] 2026-05-23 08:42:38 | Analysis | Analizler başlıyor: Bahrain
+[INFO] 2026-05-23 08:42:38 | Analysis | Tüm analizler tamamlandı: Bahrain
+[INFO] 2026-05-23 08:42:38 | Models | ML pipeline başlıyor: Bahrain
+[SUCCESS] 2026-05-23 08:42:39 | F1System | K-Means tamamlandı: 3 küme, 20 pilot sınıflandırıldı.
+[SUCCESS] 2026-05-23 08:42:39 | F1System | Decision Tree model trained. Accuracy: 0.833
+[SUCCESS] 2026-05-23 08:42:39 | F1System | kNN model trained (k=5). Accuracy: 0.833
+[SUCCESS] 2026-05-23 08:42:39 | F1System | ML pipeline tamamlandı: Bahrain
+[INFO] 2026-05-23 08:42:39 | InsightEngine | Insight engine çalışıyor: Bahrain
+[INFO] 2026-05-23 08:42:39 | InsightEngine | Insight engine tamamlandı: Bahrain
+[INFO] 2026-05-23 08:42:39 | Visualization | Grafik üretimi başlıyor: Bahrain
+[INFO] 2026-05-23 08:42:41 | Visualization | Üretilen grafik sayısı: 12
+[INFO] 2026-05-23 08:42:41 | CacheManager | Analysis cache created: Bahrain → bahrain_v2.json
+[INFO] 2026-05-23 08:42:41 | Dashboard | API isteği: Monaco
+[INFO] 2026-05-23 08:42:41 | DataLoader | ==================================================
+[INFO] 2026-05-23 08:42:41 | DataLoader | Yarış yükleniyor: Monaco 2025
+[SUCCESS] 2026-05-23 08:42:41 | F1System | Monaco: Processed CSV'den yüklendi (1560 tur).
+[INFO] 2026-05-23 08:42:41 | Analysis | Analizler başlıyor: Monaco
+[INFO] 2026-05-23 08:42:41 | Analysis | Tüm analizler tamamlandı: Monaco
+[INFO] 2026-05-23 08:42:41 | Models | ML pipeline başlıyor: Monaco
+[SUCCESS] 2026-05-23 08:42:41 | F1System | K-Means tamamlandı: 3 küme, 20 pilot sınıflandırıldı.
+[SUCCESS] 2026-05-23 08:42:41 | F1System | Decision Tree model trained. Accuracy: 0.667
+[SUCCESS] 2026-05-23 08:42:41 | F1System | kNN model trained (k=5). Accuracy: 0.833
+[SUCCESS] 2026-05-23 08:42:41 | F1System | ML pipeline tamamlandı: Monaco
+[INFO] 2026-05-23 08:42:41 | InsightEngine | Insight engine çalışıyor: Monaco
+[INFO] 2026-05-23 08:42:41 | InsightEngine | Insight engine tamamlandı: Monaco
+[INFO] 2026-05-23 08:42:41 | Visualization | Grafik üretimi başlıyor: Monaco
+[INFO] 2026-05-23 08:42:43 | Visualization | Üretilen grafik sayısı: 12
+[INFO] 2026-05-23 08:42:43 | CacheManager | Analysis cache created: Monaco → monaco_v2.json
+[INFO] 2026-05-23 12:11:27 | Database | Veritabanı tabloları hazır.
+[INFO] 2026-05-23 12:11:27 | CacheManager | Cached analysis loaded: Bahrain (oluşturma: 2026-05-23 08:42:41)
+[INFO] 2026-05-23 12:11:27 | CacheManager | Cached analysis loaded: Monaco (oluşturma: 2026-05-23 08:42:43)
+[INFO] 2026-05-23 12:11:27 | CacheManager | Cached analysis loaded: Great Britain (oluşturma: 2026-05-23 08:31:31)
+[INFO] 2026-05-23 12:11:27 | CacheManager | Cached analysis loaded: Belgium (oluşturma: 2026-05-23 08:31:35)
+[INFO] 2026-05-23 12:11:27 | CacheManager | Cached analysis loaded: Italy (oluşturma: 2026-05-23 08:31:39)
+[INFO] 2026-05-23 12:13:03 | Dashboard | API isteği: Bahrain
+[INFO] 2026-05-23 12:13:03 | DataLoader | ==================================================
+[INFO] 2026-05-23 12:13:03 | DataLoader | Yarış yükleniyor: Bahrain 2025
+[SUCCESS] 2026-05-23 12:13:03 | F1System | Bahrain: Processed CSV'den yüklendi (1140 tur).
+[INFO] 2026-05-23 12:13:03 | Analysis | Analizler başlıyor: Bahrain
+[INFO] 2026-05-23 12:13:03 | Analysis | Tüm analizler tamamlandı: Bahrain
+[INFO] 2026-05-23 12:13:03 | Models | ML pipeline başlıyor: Bahrain
+[SUCCESS] 2026-05-23 12:13:07 | F1System | K-Means tamamlandı: 3 küme, 20 pilot sınıflandırıldı.
+[SUCCESS] 2026-05-23 12:13:07 | F1System | Decision Tree model trained. Accuracy: 0.833
+[SUCCESS] 2026-05-23 12:13:07 | F1System | kNN model trained (k=5). Accuracy: 0.833
+[SUCCESS] 2026-05-23 12:13:07 | F1System | ML pipeline tamamlandı: Bahrain
+[INFO] 2026-05-23 12:13:07 | InsightEngine | Insight engine çalışıyor: Bahrain
+[INFO] 2026-05-23 12:13:07 | InsightEngine | Insight engine tamamlandı: Bahrain
+[INFO] 2026-05-23 12:13:07 | Visualization | Grafik üretimi başlıyor: Bahrain
+[INFO] 2026-05-23 12:13:09 | Visualization | Üretilen grafik sayısı: 12
+[INFO] 2026-05-23 12:13:09 | CacheManager | Analysis cache created: Bahrain → bahrain_v2.json
+[INFO] 2026-05-23 12:13:29 | DataLoader | ==================================================
+[INFO] 2026-05-23 12:13:29 | DataLoader | Yarış yükleniyor: Bahrain 2025
+[SUCCESS] 2026-05-23 12:13:29 | F1System | Bahrain: Processed CSV'den yüklendi (1140 tur).
+[INFO] 2026-05-23 12:14:37 | Dashboard | API isteği: Australia
+[INFO] 2026-05-23 12:14:37 | DataLoader | ==================================================
+[INFO] 2026-05-23 12:14:37 | DataLoader | Yarış yükleniyor: Australia 2025
+[INFO] 2026-05-23 12:14:40 | DataLoader | FastF1 cache etkinleştirildi: C:\Users\dgknb\Desktop\f1-race-intelligence-system\f1-race-intelligence-system\cache
+[INFO] 2026-05-23 12:14:40 | DataLoader | Loading Australia GP 2025... (Deneme 1/3)
+[INFO] 2026-05-23 12:14:46 | DataLoader | Australia: 927 tur, 20 pilot verisi çekildi.
+[INFO] 2026-05-23 12:14:47 | DataLoader | Raw data saved: australia_laps_raw.csv
+[INFO] 2026-05-23 12:14:47 | DataLoader | Preprocessing başlıyor...
+[INFO] 2026-05-23 12:14:47 | Preprocessing | Preprocessing started: Australia (927 satır)
+[INFO] 2026-05-23 12:14:47 | Preprocessing | Preprocessing tamamlandı: 858 satır (69 satır çıkarıldı).
+[INFO] 2026-05-23 12:14:47 | Database | Australia: 858 tur SQLite'a kaydedildi.
+[INFO] 2026-05-23 12:14:47 | DataLoader | Feature engineering başlıyor...
+[INFO] 2026-05-23 12:14:47 | FeatureEngineering | Feature engineering başladı: Australia
+[INFO] 2026-05-23 12:14:47 | FeatureEngineering | Feature engineering tamamlandı: 52 sütun mevcut.
+[SUCCESS] 2026-05-23 12:14:47 | F1System | Australia: İşlenmiş veri kaydedildi (858 tur).
+[INFO] 2026-05-23 12:14:47 | Analysis | Analizler başlıyor: Australia
+[INFO] 2026-05-23 12:14:47 | Analysis | Tüm analizler tamamlandı: Australia
+[INFO] 2026-05-23 12:14:47 | Models | ML pipeline başlıyor: Australia
+[SUCCESS] 2026-05-23 12:14:48 | F1System | K-Means tamamlandı: 3 küme, 17 pilot sınıflandırıldı.
+[SUCCESS] 2026-05-23 12:14:48 | F1System | Decision Tree model trained. Accuracy: 0.667
+[SUCCESS] 2026-05-23 12:14:48 | F1System | kNN model trained (k=5). Accuracy: 0.667
+[SUCCESS] 2026-05-23 12:14:48 | F1System | ML pipeline tamamlandı: Australia
+[INFO] 2026-05-23 12:14:48 | InsightEngine | Insight engine çalışıyor: Australia
+[INFO] 2026-05-23 12:14:48 | InsightEngine | Insight engine tamamlandı: Australia
+[INFO] 2026-05-23 12:14:48 | Visualization | Grafik üretimi başlıyor: Australia
+[INFO] 2026-05-23 12:14:49 | Visualization | Üretilen grafik sayısı: 12
+[INFO] 2026-05-23 12:14:49 | CacheManager | Analysis cache created: Australia → australia_v2.json
+[INFO] 2026-05-23 12:21:33 | DataLoader | ==================================================
+[INFO] 2026-05-23 12:21:33 | DataLoader | Yarış yükleniyor: Australia 2025
+[SUCCESS] 2026-05-23 12:21:33 | F1System | Australia: Processed CSV'den yüklendi (858 tur).
+[INFO] 2026-05-23 12:24:18 | Dashboard | API isteği: Bahrain
+[INFO] 2026-05-23 12:24:18 | DataLoader | ==================================================
+[INFO] 2026-05-23 12:24:18 | DataLoader | Yarış yükleniyor: Bahrain 2025
+[SUCCESS] 2026-05-23 12:24:18 | F1System | Bahrain: Processed CSV'den yüklendi (1140 tur).
+[INFO] 2026-05-23 12:24:18 | Analysis | Analizler başlıyor: Bahrain
+[INFO] 2026-05-23 12:24:19 | Analysis | Tüm analizler tamamlandı: Bahrain
+[INFO] 2026-05-23 12:24:19 | Models | ML pipeline başlıyor: Bahrain
+[SUCCESS] 2026-05-23 12:24:20 | F1System | K-Means tamamlandı: 3 küme, 20 pilot sınıflandırıldı.
+[SUCCESS] 2026-05-23 12:24:20 | F1System | Decision Tree model trained. Accuracy: 0.833
+[SUCCESS] 2026-05-23 12:24:20 | F1System | kNN model trained (k=5). Accuracy: 0.833
+[SUCCESS] 2026-05-23 12:24:20 | F1System | ML pipeline tamamlandı: Bahrain
+[INFO] 2026-05-23 12:24:20 | InsightEngine | Insight engine çalışıyor: Bahrain
+[INFO] 2026-05-23 12:24:20 | InsightEngine | Insight engine tamamlandı: Bahrain
+[INFO] 2026-05-23 12:24:20 | Visualization | Grafik üretimi başlıyor: Bahrain
+[INFO] 2026-05-23 12:24:28 | Visualization | Üretilen grafik sayısı: 12
+[INFO] 2026-05-23 12:24:28 | CacheManager | Analysis cache created: Bahrain → bahrain_v2.json
+[INFO] 2026-05-23 12:25:05 | Dashboard | API isteği: Monaco
+[INFO] 2026-05-23 12:25:05 | DataLoader | ==================================================
+[INFO] 2026-05-23 12:25:05 | DataLoader | Yarış yükleniyor: Monaco 2025
+[SUCCESS] 2026-05-23 12:25:05 | F1System | Monaco: Processed CSV'den yüklendi (1560 tur).
+[INFO] 2026-05-23 12:25:05 | Analysis | Analizler başlıyor: Monaco
+[INFO] 2026-05-23 12:25:06 | Analysis | Tüm analizler tamamlandı: Monaco
+[INFO] 2026-05-23 12:25:06 | Models | ML pipeline başlıyor: Monaco
+[SUCCESS] 2026-05-23 12:25:07 | F1System | K-Means tamamlandı: 3 küme, 20 pilot sınıflandırıldı.
+[SUCCESS] 2026-05-23 12:25:07 | F1System | Decision Tree model trained. Accuracy: 0.667
+[SUCCESS] 2026-05-23 12:25:07 | F1System | kNN model trained (k=5). Accuracy: 0.833
+[SUCCESS] 2026-05-23 12:25:07 | F1System | ML pipeline tamamlandı: Monaco
+[INFO] 2026-05-23 12:25:07 | InsightEngine | Insight engine çalışıyor: Monaco
+[INFO] 2026-05-23 12:25:07 | InsightEngine | Insight engine tamamlandı: Monaco
+[INFO] 2026-05-23 12:25:07 | Visualization | Grafik üretimi başlıyor: Monaco
+[INFO] 2026-05-23 12:25:16 | Visualization | Üretilen grafik sayısı: 12
+[INFO] 2026-05-23 12:25:16 | CacheManager | Analysis cache created: Monaco → monaco_v2.json
+[INFO] 2026-05-23 12:25:27 | Dashboard | API isteği: Bahrain
+[INFO] 2026-05-23 12:25:27 | DataLoader | ==================================================
+[INFO] 2026-05-23 12:25:27 | DataLoader | Yarış yükleniyor: Bahrain 2025
+[SUCCESS] 2026-05-23 12:25:27 | F1System | Bahrain: Processed CSV'den yüklendi (1140 tur).
+[INFO] 2026-05-23 12:25:27 | Analysis | Analizler başlıyor: Bahrain
+[INFO] 2026-05-23 12:25:28 | Analysis | Tüm analizler tamamlandı: Bahrain
+[INFO] 2026-05-23 12:25:28 | Models | ML pipeline başlıyor: Bahrain
+[SUCCESS] 2026-05-23 12:25:29 | F1System | K-Means tamamlandı: 3 küme, 20 pilot sınıflandırıldı.
+[SUCCESS] 2026-05-23 12:25:29 | F1System | Decision Tree model trained. Accuracy: 0.833
+[SUCCESS] 2026-05-23 12:25:29 | F1System | kNN model trained (k=5). Accuracy: 0.833
+[SUCCESS] 2026-05-23 12:25:29 | F1System | ML pipeline tamamlandı: Bahrain
+[INFO] 2026-05-23 12:25:29 | InsightEngine | Insight engine çalışıyor: Bahrain
+[INFO] 2026-05-23 12:25:29 | InsightEngine | Insight engine tamamlandı: Bahrain
+[INFO] 2026-05-23 12:25:29 | Visualization | Grafik üretimi başlıyor: Bahrain
+[INFO] 2026-05-23 12:25:37 | Visualization | Üretilen grafik sayısı: 12
+[INFO] 2026-05-23 12:25:37 | CacheManager | Analysis cache created: Bahrain → bahrain_v2.json
+[INFO] 2026-05-23 12:25:47 | Dashboard | API isteği: Italy
+[INFO] 2026-05-23 12:25:47 | DataLoader | ==================================================
+[INFO] 2026-05-23 12:25:47 | DataLoader | Yarış yükleniyor: Italy 2025
+[SUCCESS] 2026-05-23 12:25:47 | F1System | Italy: Processed CSV'den yüklendi (1060 tur).
+[INFO] 2026-05-23 12:25:47 | Analysis | Analizler başlıyor: Italy
+[INFO] 2026-05-23 12:25:48 | Analysis | Tüm analizler tamamlandı: Italy
+[INFO] 2026-05-23 12:25:48 | Models | ML pipeline başlıyor: Italy
+[SUCCESS] 2026-05-23 12:25:49 | F1System | K-Means tamamlandı: 3 küme, 20 pilot sınıflandırıldı.
+[SUCCESS] 2026-05-23 12:25:49 | F1System | Decision Tree model trained. Accuracy: 0.833
+[SUCCESS] 2026-05-23 12:25:49 | F1System | kNN model trained (k=5). Accuracy: 0.667
+[SUCCESS] 2026-05-23 12:25:49 | F1System | ML pipeline tamamlandı: Italy
+[INFO] 2026-05-23 12:25:49 | InsightEngine | Insight engine çalışıyor: Italy
+[INFO] 2026-05-23 12:25:49 | InsightEngine | Insight engine tamamlandı: Italy
+[INFO] 2026-05-23 12:25:49 | Visualization | Grafik üretimi başlıyor: Italy
+[INFO] 2026-05-23 12:25:57 | Visualization | Üretilen grafik sayısı: 12
+[INFO] 2026-05-23 12:25:57 | CacheManager | Analysis cache created: Italy → italy_v2.json
+[INFO] 2026-05-23 12:33:42 | Database | Veritabanı tabloları hazır.
+[INFO] 2026-05-23 12:33:42 | DataLoader | ==================================================
+[INFO] 2026-05-23 12:33:42 | DataLoader | Yarış yükleniyor: Bahrain 2025
+[INFO] 2026-05-23 12:33:42 | DataLoader | FastF1 cache etkinleştirildi: C:\Users\dgknb\Desktop\f1-race-intelligence-system\f1-race-intelligence-system\cache
+[INFO] 2026-05-23 12:33:42 | DataLoader | Loading Bahrain GP 2025... (Deneme 1/3)
+[INFO] 2026-05-23 12:33:59 | DataLoader | Bahrain: 1128 tur, 20 pilot verisi çekildi.
+[INFO] 2026-05-23 12:33:59 | DataLoader | Raw data saved: bahrain_laps_raw.csv
+[INFO] 2026-05-23 12:33:59 | DataLoader | Preprocessing başlıyor...
+[INFO] 2026-05-23 12:33:59 | Preprocessing | Preprocessing started: Bahrain (1128 satır)
+[INFO] 2026-05-23 12:33:59 | Preprocessing | Preprocessing tamamlandı: 1115 satır (13 satır çıkarıldı).
+[INFO] 2026-05-23 12:33:59 | Database | Bahrain: 1115 tur SQLite'a kaydedildi.
+[INFO] 2026-05-23 12:33:59 | DataLoader | Feature engineering başlıyor...
+[INFO] 2026-05-23 12:33:59 | FeatureEngineering | Feature engineering başladı: Bahrain
+[INFO] 2026-05-23 12:33:59 | FeatureEngineering | Feature engineering tamamlandı: 52 sütun mevcut.
+[SUCCESS] 2026-05-23 12:33:59 | F1System | Bahrain: İşlenmiş veri kaydedildi (1115 tur).
+[INFO] 2026-05-23 12:33:59 | EDA | EDA başlıyor: Bahrain
+[INFO] 2026-05-23 12:34:00 | EDA | EDA tamamlandı: Bahrain
+[INFO] 2026-05-23 12:34:00 | Analysis | Analizler başlıyor: Bahrain
+[INFO] 2026-05-23 12:34:01 | Analysis | Tüm analizler tamamlandı: Bahrain
+[INFO] 2026-05-23 12:34:01 | Models | ML pipeline başlıyor: Bahrain
+[SUCCESS] 2026-05-23 12:34:04 | F1System | K-Means tamamlandı: 3 küme, 20 pilot sınıflandırıldı.
+[SUCCESS] 2026-05-23 12:34:04 | F1System | Decision Tree model trained. Accuracy: 0.667
+[SUCCESS] 2026-05-23 12:34:04 | F1System | kNN model trained (k=5). Accuracy: 0.833
+[SUCCESS] 2026-05-23 12:34:04 | F1System | ML pipeline tamamlandı: Bahrain
+[INFO] 2026-05-23 12:34:04 | InsightEngine | Insight engine çalışıyor: Bahrain
+[INFO] 2026-05-23 12:34:04 | InsightEngine | Insight engine tamamlandı: Bahrain
+[INFO] 2026-05-23 12:34:04 | Visualization | Grafik üretimi başlıyor: Bahrain
+[INFO] 2026-05-23 12:34:06 | Visualization | Üretilen grafik sayısı: 12
+[INFO] 2026-05-23 12:34:06 | CacheManager | Analysis cache created: Bahrain → bahrain_v2.json
+[INFO] 2026-05-23 12:34:06 | ReportGenerator | Rapor üretiliyor: Bahrain
+[INFO] 2026-05-23 12:34:06 | ReportGenerator | Raporlar kaydedildi: bahrain_report_20260523_1234.md, bahrain_report_20260523_1234.txt
+[INFO] 2026-05-23 12:34:06 | PDFReport | PDF raporu oluşturuldu: bahrain_report_20260523_1234.pdf
+[SUCCESS] 2026-05-23 12:34:06 | F1System | Dashboard data is ready: Bahrain (24.5s)
+[INFO] 2026-05-23 12:34:06 | DataLoader | ==================================================
+[INFO] 2026-05-23 12:34:06 | DataLoader | Yarış yükleniyor: Monaco 2025
+[INFO] 2026-05-23 12:34:06 | DataLoader | FastF1 cache etkinleştirildi: C:\Users\dgknb\Desktop\f1-race-intelligence-system\f1-race-intelligence-system\cache
+[INFO] 2026-05-23 12:34:06 | DataLoader | Loading Monaco GP 2025... (Deneme 1/3)
+[INFO] 2026-05-23 12:34:20 | DataLoader | Monaco: 1425 tur, 20 pilot verisi çekildi.
+[INFO] 2026-05-23 12:34:20 | DataLoader | Raw data saved: monaco_laps_raw.csv
+[INFO] 2026-05-23 12:34:20 | DataLoader | Preprocessing başlıyor...
+[INFO] 2026-05-23 12:34:20 | Preprocessing | Preprocessing started: Monaco (1425 satır)
+[INFO] 2026-05-23 12:34:20 | Preprocessing | Preprocessing tamamlandı: 1423 satır (2 satır çıkarıldı).
+[INFO] 2026-05-23 12:34:20 | Database | Monaco: 1423 tur SQLite'a kaydedildi.
+[INFO] 2026-05-23 12:34:20 | DataLoader | Feature engineering başlıyor...
+[INFO] 2026-05-23 12:34:20 | FeatureEngineering | Feature engineering başladı: Monaco
+[INFO] 2026-05-23 12:34:20 | FeatureEngineering | Feature engineering tamamlandı: 52 sütun mevcut.
+[SUCCESS] 2026-05-23 12:34:20 | F1System | Monaco: İşlenmiş veri kaydedildi (1423 tur).
+[INFO] 2026-05-23 12:34:20 | EDA | EDA başlıyor: Monaco
+[INFO] 2026-05-23 12:34:21 | EDA | EDA tamamlandı: Monaco
+[INFO] 2026-05-23 12:34:21 | Analysis | Analizler başlıyor: Monaco
+[INFO] 2026-05-23 12:34:21 | Analysis | Tüm analizler tamamlandı: Monaco
+[INFO] 2026-05-23 12:34:21 | Models | ML pipeline başlıyor: Monaco
+[SUCCESS] 2026-05-23 12:34:22 | F1System | K-Means tamamlandı: 3 küme, 20 pilot sınıflandırıldı.
+[SUCCESS] 2026-05-23 12:34:22 | F1System | Decision Tree model trained. Accuracy: 0.833
+[SUCCESS] 2026-05-23 12:34:22 | F1System | kNN model trained (k=5). Accuracy: 0.667
+[SUCCESS] 2026-05-23 12:34:22 | F1System | ML pipeline tamamlandı: Monaco
+[INFO] 2026-05-23 12:34:22 | InsightEngine | Insight engine çalışıyor: Monaco
+[INFO] 2026-05-23 12:34:22 | InsightEngine | Insight engine tamamlandı: Monaco
+[INFO] 2026-05-23 12:34:22 | Visualization | Grafik üretimi başlıyor: Monaco
+[INFO] 2026-05-23 12:34:25 | Visualization | Üretilen grafik sayısı: 12
+[INFO] 2026-05-23 12:34:25 | CacheManager | Analysis cache created: Monaco → monaco_v2.json
+[INFO] 2026-05-23 12:34:25 | ReportGenerator | Rapor üretiliyor: Monaco
+[INFO] 2026-05-23 12:34:25 | ReportGenerator | Raporlar kaydedildi: monaco_report_20260523_1234.md, monaco_report_20260523_1234.txt
+[INFO] 2026-05-23 12:34:25 | PDFReport | PDF raporu oluşturuldu: monaco_report_20260523_1234.pdf
+[SUCCESS] 2026-05-23 12:34:25 | F1System | Dashboard data is ready: Monaco (18.5s)
+[INFO] 2026-05-23 12:34:25 | DataLoader | ==================================================
+[INFO] 2026-05-23 12:34:25 | DataLoader | Yarış yükleniyor: Great Britain 2025
+[INFO] 2026-05-23 12:34:25 | DataLoader | FastF1 cache etkinleştirildi: C:\Users\dgknb\Desktop\f1-race-intelligence-system\f1-race-intelligence-system\cache
+[INFO] 2026-05-23 12:34:25 | DataLoader | Loading Great Britain GP 2025... (Deneme 1/3)
+[INFO] 2026-05-23 12:34:39 | DataLoader | Great Britain: 1126 tur, 19 pilot verisi çekildi.
+[INFO] 2026-05-23 12:34:39 | DataLoader | Raw data saved: great_britain_laps_raw.csv
+[INFO] 2026-05-23 12:34:39 | DataLoader | Preprocessing başlıyor...
+[INFO] 2026-05-23 12:34:39 | Preprocessing | Preprocessing started: Great Britain (1126 satır)
+[INFO] 2026-05-23 12:34:39 | Preprocessing | Preprocessing tamamlandı: 1124 satır (2 satır çıkarıldı).
+[INFO] 2026-05-23 12:34:39 | Database | Great Britain: 1124 tur SQLite'a kaydedildi.
+[INFO] 2026-05-23 12:34:39 | DataLoader | Feature engineering başlıyor...
+[INFO] 2026-05-23 12:34:39 | FeatureEngineering | Feature engineering başladı: Great Britain
+[INFO] 2026-05-23 12:34:39 | FeatureEngineering | Feature engineering tamamlandı: 52 sütun mevcut.
+[SUCCESS] 2026-05-23 12:34:39 | F1System | Great Britain: İşlenmiş veri kaydedildi (1124 tur).
+[INFO] 2026-05-23 12:34:39 | EDA | EDA başlıyor: Great Britain
+[INFO] 2026-05-23 12:34:40 | EDA | EDA tamamlandı: Great Britain
+[INFO] 2026-05-23 12:34:40 | Analysis | Analizler başlıyor: Great Britain
+[INFO] 2026-05-23 12:34:41 | Analysis | Tüm analizler tamamlandı: Great Britain
+[INFO] 2026-05-23 12:34:41 | Models | ML pipeline başlıyor: Great Britain
+[SUCCESS] 2026-05-23 12:34:41 | F1System | K-Means tamamlandı: 3 küme, 17 pilot sınıflandırıldı.
+[SUCCESS] 2026-05-23 12:34:41 | F1System | Decision Tree model trained. Accuracy: 0.333
+[SUCCESS] 2026-05-23 12:34:41 | F1System | kNN model trained (k=5). Accuracy: 0.500
+[SUCCESS] 2026-05-23 12:34:41 | F1System | ML pipeline tamamlandı: Great Britain
+[INFO] 2026-05-23 12:34:41 | InsightEngine | Insight engine çalışıyor: Great Britain
+[INFO] 2026-05-23 12:34:41 | InsightEngine | Insight engine tamamlandı: Great Britain
+[INFO] 2026-05-23 12:34:41 | Visualization | Grafik üretimi başlıyor: Great Britain
+[INFO] 2026-05-23 12:34:44 | Visualization | Üretilen grafik sayısı: 12
+[INFO] 2026-05-23 12:34:44 | CacheManager | Analysis cache created: Great Britain → great_britain_v2.json
+[INFO] 2026-05-23 12:34:44 | ReportGenerator | Rapor üretiliyor: Great Britain
+[INFO] 2026-05-23 12:34:44 | ReportGenerator | Raporlar kaydedildi: great_britain_report_20260523_1234.md, great_britain_report_20260523_1234.txt
+[INFO] 2026-05-23 12:34:44 | PDFReport | PDF raporu oluşturuldu: great_britain_report_20260523_1234.pdf
+[SUCCESS] 2026-05-23 12:34:44 | F1System | Dashboard data is ready: Great Britain (19.2s)
+[INFO] 2026-05-23 12:34:44 | DataLoader | ==================================================
+[INFO] 2026-05-23 12:34:44 | DataLoader | Yarış yükleniyor: Belgium 2025
+[INFO] 2026-05-23 12:34:44 | DataLoader | FastF1 cache etkinleştirildi: C:\Users\dgknb\Desktop\f1-race-intelligence-system\f1-race-intelligence-system\cache
+[INFO] 2026-05-23 12:34:44 | DataLoader | Loading Belgium GP 2025... (Deneme 1/3)
+[INFO] 2026-05-23 12:34:56 | DataLoader | Belgium: 879 tur, 20 pilot verisi çekildi.
+[INFO] 2026-05-23 12:34:57 | DataLoader | Raw data saved: belgium_laps_raw.csv
+[INFO] 2026-05-23 12:34:57 | DataLoader | Preprocessing başlıyor...
+[INFO] 2026-05-23 12:34:57 | Preprocessing | Preprocessing started: Belgium (879 satır)
+[INFO] 2026-05-23 12:34:57 | Preprocessing | Preprocessing tamamlandı: 819 satır (60 satır çıkarıldı).
+[INFO] 2026-05-23 12:34:57 | Database | Belgium: 819 tur SQLite'a kaydedildi.
+[INFO] 2026-05-23 12:34:57 | DataLoader | Feature engineering başlıyor...
+[INFO] 2026-05-23 12:34:57 | FeatureEngineering | Feature engineering başladı: Belgium
+[INFO] 2026-05-23 12:34:57 | FeatureEngineering | Feature engineering tamamlandı: 52 sütun mevcut.
+[SUCCESS] 2026-05-23 12:34:57 | F1System | Belgium: İşlenmiş veri kaydedildi (819 tur).
+[INFO] 2026-05-23 12:34:57 | EDA | EDA başlıyor: Belgium
+[INFO] 2026-05-23 12:34:58 | EDA | EDA tamamlandı: Belgium
+[INFO] 2026-05-23 12:34:58 | Analysis | Analizler başlıyor: Belgium
+[INFO] 2026-05-23 12:34:58 | Analysis | Tüm analizler tamamlandı: Belgium
+[INFO] 2026-05-23 12:34:58 | Models | ML pipeline başlıyor: Belgium
+[SUCCESS] 2026-05-23 12:34:59 | F1System | K-Means tamamlandı: 3 küme, 20 pilot sınıflandırıldı.
+[SUCCESS] 2026-05-23 12:34:59 | F1System | Decision Tree model trained. Accuracy: 1.000
+[SUCCESS] 2026-05-23 12:34:59 | F1System | kNN model trained (k=5). Accuracy: 1.000
+[SUCCESS] 2026-05-23 12:34:59 | F1System | ML pipeline tamamlandı: Belgium
+[INFO] 2026-05-23 12:34:59 | InsightEngine | Insight engine çalışıyor: Belgium
+[INFO] 2026-05-23 12:34:59 | InsightEngine | Insight engine tamamlandı: Belgium
+[INFO] 2026-05-23 12:34:59 | Visualization | Grafik üretimi başlıyor: Belgium
+[INFO] 2026-05-23 12:35:01 | Visualization | Üretilen grafik sayısı: 12
+[INFO] 2026-05-23 12:35:01 | CacheManager | Analysis cache created: Belgium → belgium_v2.json
+[INFO] 2026-05-23 12:35:01 | ReportGenerator | Rapor üretiliyor: Belgium
+[INFO] 2026-05-23 12:35:01 | ReportGenerator | Raporlar kaydedildi: belgium_report_20260523_1235.md, belgium_report_20260523_1235.txt
+[INFO] 2026-05-23 12:35:01 | PDFReport | PDF raporu oluşturuldu: belgium_report_20260523_1235.pdf
+[SUCCESS] 2026-05-23 12:35:01 | F1System | Dashboard data is ready: Belgium (17.3s)
+[INFO] 2026-05-23 12:35:01 | DataLoader | ==================================================
+[INFO] 2026-05-23 12:35:01 | DataLoader | Yarış yükleniyor: Italy 2025
+[INFO] 2026-05-23 12:35:01 | DataLoader | FastF1 cache etkinleştirildi: C:\Users\dgknb\Desktop\f1-race-intelligence-system\f1-race-intelligence-system\cache
+[INFO] 2026-05-23 12:35:01 | DataLoader | Loading Italy GP 2025... (Deneme 1/3)
+[INFO] 2026-05-23 12:35:14 | DataLoader | Italy: 974 tur, 19 pilot verisi çekildi.
+[INFO] 2026-05-23 12:35:14 | DataLoader | Raw data saved: italy_laps_raw.csv
+[INFO] 2026-05-23 12:35:14 | DataLoader | Preprocessing başlıyor...
+[INFO] 2026-05-23 12:35:14 | Preprocessing | Preprocessing started: Italy (974 satır)
+[INFO] 2026-05-23 12:35:14 | Preprocessing | Preprocessing tamamlandı: 974 satır (0 satır çıkarıldı).
+[INFO] 2026-05-23 12:35:14 | Database | Italy: 974 tur SQLite'a kaydedildi.
+[INFO] 2026-05-23 12:35:14 | DataLoader | Feature engineering başlıyor...
+[INFO] 2026-05-23 12:35:14 | FeatureEngineering | Feature engineering başladı: Italy
+[INFO] 2026-05-23 12:35:14 | FeatureEngineering | Feature engineering tamamlandı: 52 sütun mevcut.
+[SUCCESS] 2026-05-23 12:35:14 | F1System | Italy: İşlenmiş veri kaydedildi (974 tur).
+[INFO] 2026-05-23 12:35:14 | EDA | EDA başlıyor: Italy
+[INFO] 2026-05-23 12:35:15 | EDA | EDA tamamlandı: Italy
+[INFO] 2026-05-23 12:35:15 | Analysis | Analizler başlıyor: Italy
+[INFO] 2026-05-23 12:35:16 | Analysis | Tüm analizler tamamlandı: Italy
+[INFO] 2026-05-23 12:35:16 | Models | ML pipeline başlıyor: Italy
+[SUCCESS] 2026-05-23 12:35:16 | F1System | K-Means tamamlandı: 3 küme, 19 pilot sınıflandırıldı.
+[SUCCESS] 2026-05-23 12:35:16 | F1System | Decision Tree model trained. Accuracy: 0.833
+[SUCCESS] 2026-05-23 12:35:16 | F1System | kNN model trained (k=5). Accuracy: 0.833
+[SUCCESS] 2026-05-23 12:35:16 | F1System | ML pipeline tamamlandı: Italy
+[INFO] 2026-05-23 12:35:16 | InsightEngine | Insight engine çalışıyor: Italy
+[INFO] 2026-05-23 12:35:16 | InsightEngine | Insight engine tamamlandı: Italy
+[INFO] 2026-05-23 12:35:16 | Visualization | Grafik üretimi başlıyor: Italy
+[INFO] 2026-05-23 12:35:19 | Visualization | Üretilen grafik sayısı: 12
+[INFO] 2026-05-23 12:35:19 | CacheManager | Analysis cache created: Italy → italy_v2.json
+[INFO] 2026-05-23 12:35:19 | ReportGenerator | Rapor üretiliyor: Italy
+[INFO] 2026-05-23 12:35:19 | ReportGenerator | Raporlar kaydedildi: italy_report_20260523_1235.md, italy_report_20260523_1235.txt
+[INFO] 2026-05-23 12:35:19 | PDFReport | PDF raporu oluşturuldu: italy_report_20260523_1235.pdf
+[SUCCESS] 2026-05-23 12:35:19 | F1System | Dashboard data is ready: Italy (17.4s)
+[WARNING] 2026-05-27 16:51:45 | XAI | SHAP kurulu degil. Permutation Importance kullanilacak. (pip install shap)
+[INFO] 2026-05-27 16:52:00 | DataLoader | ==================================================
+[INFO] 2026-05-27 16:52:00 | DataLoader | Yarış yükleniyor: Australia 2025
+[INFO] 2026-05-27 16:52:01 | DataLoader | FastF1 cache etkinleştirildi: C:\Users\dgknb\Desktop\F1 Analizi - Veri Madenciliği\cache
+[INFO] 2026-05-27 16:52:01 | DataLoader | Loading Australia GP 2025... (Deneme 1/3)
+[INFO] 2026-05-27 16:52:03 | DataLoader | Australia: 927 tur, 20 pilot verisi çekildi.
+[INFO] 2026-05-27 16:52:03 | DataLoader | Raw data saved: australia_laps_raw.csv
+[INFO] 2026-05-27 16:52:03 | DataLoader | Preprocessing başlıyor...
+[INFO] 2026-05-27 16:52:03 | Preprocessing | Preprocessing started: Australia (927 satır)
+[INFO] 2026-05-27 16:52:03 | Preprocessing | Preprocessing tamamlandı: 858 satır (69 satır çıkarıldı).
+[INFO] 2026-05-27 16:52:03 | Database | Australia: 858 tur SQLite'a kaydedildi.
+[INFO] 2026-05-27 16:52:03 | DataLoader | Feature engineering başlıyor...
+[INFO] 2026-05-27 16:52:03 | FeatureEngineering | Feature engineering başladı: Australia
+[INFO] 2026-05-27 17:45:04 | Database | Veritabanı tabloları hazır.
+[INFO] 2026-05-27 17:45:04 | CacheManager | Cached analysis loaded: Bahrain (oluşturma: 2026-05-23 12:38:37)
+[INFO] 2026-05-27 17:45:04 | CacheManager | Cached analysis loaded: Monaco (oluşturma: 2026-05-23 12:34:25)
+[INFO] 2026-05-27 17:45:04 | CacheManager | Cached analysis loaded: Great Britain (oluşturma: 2026-05-23 12:34:44)
+[INFO] 2026-05-27 17:45:04 | CacheManager | Cached analysis loaded: Belgium (oluşturma: 2026-05-23 12:35:01)
+[INFO] 2026-05-27 17:45:04 | CacheManager | Cached analysis loaded: Italy (oluşturma: 2026-05-23 12:35:19)
+[INFO] 2026-05-27 17:50:38 | DataLoader | ==================================================
+[INFO] 2026-05-27 17:50:38 | DataLoader | Yarış yükleniyor: Bahrain 2025
+[SUCCESS] 2026-05-27 17:50:38 | F1System | Bahrain: Processed CSV'den yüklendi (1115 tur).
+[INFO] 2026-05-27 17:50:58 | DataLoader | ==================================================
+[INFO] 2026-05-27 17:50:58 | DataLoader | Yarış yükleniyor: Bahrain 2025
+[SUCCESS] 2026-05-27 17:50:58 | F1System | Bahrain: Processed CSV'den yüklendi (1115 tur).
+[INFO] 2026-05-27 17:50:59 | ModelEvaluation | Akademik degerlendirme basliyor: Bahrain
+[SUCCESS] 2026-05-27 17:50:59 | F1System | CV tamamlandi (3-fold) — DT: 0.905±0.067 | kNN: 0.849±0.011
+[SUCCESS] 2026-05-27 17:51:04 | F1System | GridSearch tamamlandi — DT best: 0.849 | kNN best: 0.849
+[SUCCESS] 2026-05-27 17:51:06 | F1System | K-Means optimizasyonu tamamlandi. En iyi: {'n_clusters': 5, 'init': 'k-means++'}, sil=0.319
+[SUCCESS] 2026-05-27 17:51:06 | F1System | ROC/AUC tamamlandi — DT AUC=0.804 | kNN AUC=0.618
+[SUCCESS] 2026-05-27 17:51:06 | F1System | Model karsilastirma tablosu olusturuldu. En iyi model: Decision Tree
+[INFO] 2026-05-27 17:51:06 | ModelEvaluation | Karsilastirma CSV kaydedildi: model_comparison_bahrain.csv
+[WARNING] 2026-05-27 17:51:06 | ModelEvaluation | Markdown kaydetme hatasi: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+[INFO] 2026-05-27 17:51:06 | ModelEvaluation | CV sonuclari CSV kaydedildi: cv_results_bahrain.csv
+[SUCCESS] 2026-05-27 17:51:06 | F1System | Akademik degerlendirme tamamlandi: Bahrain
+[INFO] 2026-05-27 17:51:48 | DataLoader | ==================================================
+[INFO] 2026-05-27 17:51:48 | DataLoader | Yarış yükleniyor: Bahrain 2025
+[SUCCESS] 2026-05-27 17:51:48 | F1System | Bahrain: Processed CSV'den yüklendi (1115 tur).
+[WARNING] 2026-05-27 17:51:49 | XAI | SHAP kurulu degil. Permutation Importance kullanilacak. (pip install shap)
+[INFO] 2026-05-27 17:51:49 | XAI | XAI analizi basliyor: Bahrain
+[SUCCESS] 2026-05-27 17:51:50 | F1System | XAI analizi tamamlandi: Bahrain (SHAP=Hayir)
+[INFO] 2026-05-27 17:51:50 | ErrorAnalysis | Hata analizi basliyor: Bahrain
+[INFO] 2026-05-27 17:51:51 | ErrorAnalysis | Hata analizi CSV kaydedildi: error_analysis_bahrain.csv
+[SUCCESS] 2026-05-27 17:51:51 | F1System | Hata analizi tamamlandi: Bahrain
+[INFO] 2026-05-27 17:51:51 | StatisticalTests | Istatistiksel testler basliyor: Bahrain
+[INFO] 2026-05-27 17:51:51 | StatisticalTests | Test sonuclari CSV kaydedildi: statistical_tests_bahrain.csv
+[SUCCESS] 2026-05-27 17:51:51 | F1System | Istatistiksel testler tamamlandi — McNemar p=1.0000 | t-test p=0.4226
+[INFO] 2026-05-27 18:00:24 | AdvancedAnalysis | === Gelişmiş Akademik Analiz: Bahrain ===
+[INFO] 2026-05-27 18:00:24 | AdvancedAnalysis | Learning Curves hesaplanıyor: Bahrain
+[WARNING] 2026-05-27 18:00:24 | AdvancedAnalysis |   Decision Tree learning curve hatası: train_sizes has been interpreted as absolute numbers of training samples and must be within (0, 13], but is within [6, 20].
+[WARNING] 2026-05-27 18:00:24 | AdvancedAnalysis |   kNN learning curve hatası: train_sizes has been interpreted as absolute numbers of training samples and must be within (0, 13], but is within [6, 20].
+[INFO] 2026-05-27 18:00:24 | AdvancedAnalysis |   Learning curve kaydedildi: learning_curves_bahrain.png
+[INFO] 2026-05-27 18:00:24 | AdvancedAnalysis | Feature Correlation hesaplanıyor: Bahrain
+[INFO] 2026-05-27 18:00:24 | AdvancedAnalysis |   Feature correlation kaydedildi: feature_correlation_bahrain.png
+[INFO] 2026-05-27 18:00:24 | AdvancedAnalysis | Ablation Study çalışıyor: Bahrain
+[INFO] 2026-05-27 18:00:24 | AdvancedAnalysis |   Baseline → DT=0.897, kNN=0.698
+[INFO] 2026-05-27 18:00:25 | AdvancedAnalysis |   Ablation study kaydedildi: ablation_study_bahrain.png
+[INFO] 2026-05-27 18:00:25 | AdvancedAnalysis | Overfitting Analysis çalışıyor: Bahrain
+[INFO] 2026-05-27 18:00:27 | AdvancedAnalysis |   Overfitting analysis kaydedildi: overfitting_analysis_bahrain.png
+[INFO] 2026-05-27 18:00:27 | AdvancedAnalysis | === Gelişmiş analiz tamamlandı: Bahrain ===
+[INFO] 2026-05-27 18:01:10 | AdvancedAnalysis | === Gelişmiş Akademik Analiz: Bahrain ===
+[INFO] 2026-05-27 18:01:10 | AdvancedAnalysis | Learning Curves hesaplanıyor: Bahrain
+[INFO] 2026-05-27 18:01:13 | AdvancedAnalysis |   Decision Tree learning curve OK (max_val_acc=0.952)
+[INFO] 2026-05-27 18:01:14 | AdvancedAnalysis |   kNN learning curve OK (max_val_acc=0.754)
+[INFO] 2026-05-27 18:01:15 | AdvancedAnalysis |   Learning curve kaydedildi: learning_curves_bahrain.png
+[INFO] 2026-05-27 18:01:15 | AdvancedAnalysis | Feature Correlation hesaplanıyor: Bahrain
+[INFO] 2026-05-27 18:01:15 | AdvancedAnalysis |   Feature correlation kaydedildi: feature_correlation_bahrain.png
+[INFO] 2026-05-27 18:01:15 | AdvancedAnalysis | Ablation Study çalışıyor: Bahrain
+[INFO] 2026-05-27 18:01:15 | AdvancedAnalysis |   Baseline -> DT=0.897, kNN=0.698
+[INFO] 2026-05-27 18:01:16 | AdvancedAnalysis |   Ablation study kaydedildi: ablation_study_bahrain.png
+[INFO] 2026-05-27 18:01:16 | AdvancedAnalysis | Overfitting Analysis çalışıyor: Bahrain
+[INFO] 2026-05-27 18:01:18 | AdvancedAnalysis |   Overfitting analysis kaydedildi: overfitting_analysis_bahrain.png
+[INFO] 2026-05-27 18:01:18 | AdvancedAnalysis | === Gelişmiş analiz tamamlandı: Bahrain ===

@@ -162,14 +162,57 @@ FASTF1_RETRY_CONFIG = {
 }
 
 # ─────────────────────────────────────────────────────────────
-# KLASÖR OLUŞTURMA YARDIMCISI
+# REPRODUCIBILITY
 # ─────────────────────────────────────────────────────────────
+RANDOM_STATE = 42
+
+# ─────────────────────────────────────────────────────────────
+# CROSS-VALIDATION AYARLARI
+# ─────────────────────────────────────────────────────────────
+CV_CONFIG = {
+    "n_splits": 5,
+    "shuffle": True,
+    "random_state": RANDOM_STATE,
+}
+
+# ─────────────────────────────────────────────────────────────
+# GRIDSEARCHCV PARAMETRELERİ
+# ─────────────────────────────────────────────────────────────
+GRIDSEARCH_DT_PARAMS = {
+    "max_depth": [3, 4, 5, 7, None],
+    "min_samples_split": [2, 4, 6],
+    "min_samples_leaf": [1, 2, 3],
+    "criterion": ["gini", "entropy"],
+}
+
+GRIDSEARCH_KNN_PARAMS = {
+    "n_neighbors": [3, 5, 7, 9],
+    "metric": ["euclidean", "manhattan"],
+    "weights": ["uniform", "distance"],
+}
+
+KMEANS_GRID_PARAMS = {
+    "n_clusters": [2, 3, 4, 5],
+    "init": ["k-means++", "random"],
+}
+
+# ─────────────────────────────────────────────────────────────
+# AKADEMİK ÇIKTI DİZİNLERİ
+# ─────────────────────────────────────────────────────────────
+FIGURES_XAI_DIR   = FIGURES_DIR / "xai"
+FIGURES_EVAL_DIR  = FIGURES_DIR / "evaluation"
+TABLES_DIR        = REPORTS_DIR / "tables"
+EXPERIMENTS_DIR   = BASE_DIR / "experiments"
+
+
 def ensure_directories():
     """Tüm gerekli klasörlerin var olduğundan emin ol."""
     dirs = [
         CACHE_DIR, RAW_DATA_DIR, PROCESSED_DATA_DIR,
         EXPORTS_DIR, FIGURES_DIR, GENERATED_REPORTS_DIR,
         NOTEBOOKS_DIR, DASHBOARD_DIR,
+        FIGURES_XAI_DIR, FIGURES_EVAL_DIR,
+        TABLES_DIR, EXPERIMENTS_DIR,
     ]
     for d in dirs:
         d.mkdir(parents=True, exist_ok=True)

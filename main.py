@@ -139,9 +139,54 @@ def process_single_race(race_name: str, force: bool = False) -> bool:
     except Exception as e:
         logger.warning(f"PDF hatası: {e}")
 
+    # 10. Akademik özet rapor
+    _print_academic_summary(race_name, ml)
+
     elapsed = time.time() - start
     log_success(f"Dashboard data is ready: {race_name} ({elapsed:.1f}s)")
     return True
+
+
+def _print_academic_summary(race_name: str, ml: dict) -> None:
+    """Akademik değerlendirme sonuçlarını terminale özetle."""
+    ev = ml.get("evaluation", {})
+    if not ev or ev.get("error"):
+        return
+
+    cv = ev.get("cross_validation", {})
+    gs = ev.get("grid_search", {})
+    roc = ev.get("roc_auc", {})
+    mc = ml.get("statistical_tests", {}).get("mcnemar", {})
+
+    print(f"\n  📐 AKADEMİK ÖZET — {race_name}")
+    print(f"  {'─'*48}")
+
+    dt_cv = cv.get("decision_tree", {})
+    knn_cv = cv.get("knn", {})
+    if dt_cv:
+        print(f"  CV ({cv.get('n_folds',5)}-Fold) │ DT: {dt_cv.get('mean_accuracy',0):.3f}±{dt_cv.get('std_accuracy',0):.3f}"
+              f" │ kNN: {knn_cv.get('mean_accuracy',0):.3f}±{knn_cv.get('std_accuracy',0):.3f}")
+
+    dt_gs = gs.get("decision_tree", {})
+    knn_gs = gs.get("knn", {})
+    if dt_gs:
+        print(f"  GridSearch   │ DT best: {dt_gs.get('best_score',0):.3f}"
+              f" │ kNN best: {knn_gs.get('best_score',0):.3f}")
+
+    dt_roc = roc.get("Decision Tree", {})
+    knn_roc = roc.get("kNN", {})
+    if dt_roc:
+        print(f"  ROC AUC      │ DT: {dt_roc.get('auc',0):.3f}"
+              f" │ kNN: {knn_roc.get('auc',0):.3f}")
+
+    if mc:
+        sig = "Anlamlı ✓" if mc.get("significant") else "Anlamlı değil"
+        print(f"  McNemar      │ p={mc.get('p_value',1):.4f} → {sig}")
+
+    comp = ev.get("model_comparison", {})
+    if comp.get("best_model"):
+        print(f"  En iyi model │ {comp['best_model']}")
+    print(f"  {'─'*48}")
 
 
 def main():

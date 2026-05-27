@@ -9,4 +9,7 @@ plotly
 streamlit
 joblib
 flask
+reportlab
+shap
+tabulate
 # Not: sqlite3 Python standart kütüphanesinde mevcuttur, ayrıca kurulum gerekmez.

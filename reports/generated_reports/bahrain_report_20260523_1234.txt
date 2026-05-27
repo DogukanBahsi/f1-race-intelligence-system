@@ -1,0 +1,143 @@
+🏎️ F1 Race Intelligence Report
+Bahrain Grand Prix — 2025 Sezonu
+Rapor tarihi: 23 May 2026, 12:34
+
+──────────────────────────────────────────────────
+📊 Yarış Genel Bakış
+| Metrik | Değer |
+|──────────────────────────────────────────────────|──────────────────────────────────────────────────|
+| Toplam Tur | 1115 |
+| Toplam Pilot | 20 |
+| En Hızlı Tur | 1:35.140 |
+| En Hızlı Pilot | PIA |
+| En İstikrarlı Pilot | OCO |
+| Ortalama Hava Sıcaklığı | 27.1°C |
+| Ortalama Pist Sıcaklığı | 31.9°C |
+
+🏁 Pilot İstikrar Analizi
+En İstikrarlı Pilot: OCO
+En Hızlı Pilot: PIA
+
+| Sıra | Pilot | Ort. Tur | En Hızlı | Std Sapma | Consistency |
+|──────────────────────────────────────────────────|──────────────────────────────────────────────────|──────────────────────────────────────────────────|──────────────────────────────────────────────────|──────────────────────────────────────────────────|──────────────────────────────────────────────────|
+| 1 | OCO | 98.298s | 97.098s | 0.656s | 0.6037 |
+| 2 | STR | 99.242s | 98.064s | 0.672s | 0.5982 |
+| 3 | DOO | 98.605s | 96.682s | 0.736s | 0.5760 |
+| 4 | BOR | 99.341s | 98.006s | 0.750s | 0.5716 |
+| 5 | ANT | 98.363s | 96.690s | 0.804s | 0.5544 |
+| 6 | TSU | 98.597s | 97.225s | 0.820s | 0.5494 |
+| 7 | HUL | 98.820s | 97.338s | 0.842s | 0.5428 |
+| 8 | ALO | 99.041s | 97.906s | 0.846s | 0.5418 |
+| 9 | BEA | 98.695s | 97.303s | 0.851s | 0.5404 |
+| 10 | HAD | 98.802s | 96.952s | 0.859s | 0.5379 |
+
+  >> Bahrain yarışında en stabil pilot OCO olmuştur (Consistency Score: 0.604). En hızlı tur PIA adına kayıtlıdır (1:35.140).
+
+🔴 Lastik Stratejisi Analizi
+En Avantajlı Lastik: HARD
+
+| Lastik | Ort. Tur (s) | En Hızlı (s) | Std Sapma | Tur Sayısı |
+|──────────────────────────────────────────────────|──────────────────────────────────────────────────|──────────────────────────────────────────────────|──────────────────────────────────────────────────|──────────────────────────────────────────────────|
+| HARD | 98.276 | 96.132 | 0.931 | 270 |
+| MEDIUM | 98.436 | 95.140 | 1.094 | 456 |
+| SOFT | 98.606 | 95.518 | 1.090 | 251 |
+
+  >> Bahrain yarışında HARD lastikler en hızlı ortalama süreyi kaydetmiştir (1:38.276).
+
+📉 Lastik Bozulma Analizi
+En Hızlı Bozulan Lastik: HARD
+
+| Lastik | Bozulma Oranı (s/tur) | R² |
+|──────────────────────────────────────────────────|──────────────────────────────────────────────────|──────────────────────────────────────────────────|
+| SOFT | -0.0392 | 0.298 |
+| MEDIUM | -0.0261 | 0.158 |
+| HARD | 0.0240 | 0.406 |
+
+  >> Bahrain yarışında en hızlı bozulan lastik HARD olmuştur (0.024 s/tur artış).
+
+🔧 Pit Stop Analizi
+Ortalama Pit Stop Faydası: 2.108s
+
+| Pilot | Pit Sayısı | Ortalama Etki (s) |
+|──────────────────────────────────────────────────|──────────────────────────────────────────────────|──────────────────────────────────────────────────|
+| ALB | 2 | 3.100 |
+| SAI | 2 | 2.745 |
+| HAM | 2 | 2.433 |
+| HAD | 4 | 2.426 |
+| OCO | 4 | 2.377 |
+| TSU | 2 | 2.332 |
+| ANT | 4 | 2.307 |
+| ALO | 2 | 2.296 |
+| VER | 4 | 2.288 |
+| LEC | 2 | 2.277 |
+| DOO | 4 | 2.217 |
+| HUL | 4 | 2.198 |
+| BEA | 3 | 1.948 |
+| LAW | 2 | 1.764 |
+| GAS | 4 | 1.731 |
+| STR | 2 | 1.645 |
+| BOR | 2 | 1.608 |
+| RUS | 2 | 1.554 |
+| NOR | 2 | 1.513 |
+| PIA | 2 | 1.397 |
+
+  >> Bahrain yarışında ortalama pit stop faydası 2.11s olarak ölçülmüştür. Pit stop sonrası hız artışı gözlemlenmiştir (undercut avantajı).
+
+🌡️ Hava ve Sıcaklık Analizi
+Hava Sıcaklığı
+- Pearson r = nan
+- p-değeri = nan (❌ Anlamlı değil)
+- Çok güçlü ilişki
+  >> Bahrain: Hava Sıcaklığı artarken tur zamanı azalıyor (r=nan, p=>0.05). Çok güçlü ilişki.
+
+Pist Sıcaklığı
+- Pearson r = nan
+- p-değeri = nan (❌ Anlamlı değil)
+- Çok güçlü ilişki
+  >> Bahrain: Pist Sıcaklığı artarken tur zamanı azalıyor (r=nan, p=>0.05). Çok güçlü ilişki.
+
+🤖 Makine Öğrenmesi Sonuçları
+K-Means Clustering
+Küme Sayısı: 3
+- Düzensiz: HAD, HUL
+- Agresif: ALB, ALO, ANT, BEA, BOR, DOO, LAW, OCO, STR, TSU
+- Stabil & Hızlı: GAS, HAM, LEC, NOR, PIA, RUS, SAI, VER
+
+  >> Bahrain yarışında 3 performans grubu tespit edilmiştir. 'Stabil & Hızlı' grubundaki pilotlar: GAS, HAM, LEC, NOR, PIA, RUS, SAI, VER.
+
+Decision Tree Sınıflandırma
+Doğruluk: %66.7
+
+Feature Importance:
+- consistency_score: 0.4615 █████████
+- tire_degradation_rate: 0.3889 ███████
+- pit_stop_impact: 0.1496 ██
+- average_lap_time: 0.0000 
+- sector_consistency: 0.0000 
+- AirTemp: 0.0000 
+- TrackTemp: 0.0000 
+
+En Önemli Özellik: consistency_score
+
+  >> Decision Tree modeli Bahrain yarışında %66.7 doğruluk oranı elde etti. Yarış performansını en çok etkileyen faktör: consistency_score.
+
+kNN Sınıflandırma
+Doğruluk: %83.3 (k=5)
+  >> kNN modeli (k=5) Bahrain yarışında %83.3 doğruluk oranı elde etti.
+
+Model Karşılaştırması
+| Model | Doğruluk |
+|──────────────────────────────────────────────────|──────────────────────────────────────────────────|
+| Decision Tree | %66.7 |
+| kNN | %83.3 |
+| Kazanan | kNN |
+
+  >> Bahrain: Decision Tree doğruluk oranı %66.7, kNN doğruluk oranı %83.3. Bu yarışta daha başarılı model: kNN.
+
+──────────────────────────────────────────────────
+📝 Genel Sonuç
+Bahrain Grand Prix analizi tamamlandı. Yarışın en hızlı pilotu PIA olurken, en tutarlı performansı OCO sergilemiştir. Lastik stratejisi açısından HARD bileşiği bu pistte en avantajlı seçenek olarak öne çıkmıştır. Makine öğrenmesi modeli, yarış performansını etkileyen en kritik faktör olarak consistency_score özelliğini belirlemiştir. Sınıflandırma modelleri karşılaştırmasında kNN daha yüksek doğruluk oranına ulaşmıştır.
+
+──────────────────────────────────────────────────
+Bu rapor F1 Race Intelligence System tarafından otomatik üretilmiştir.
+Veri kaynağı: FastF1 / 2025 Formula 1 Sezonu
