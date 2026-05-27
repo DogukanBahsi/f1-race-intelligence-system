@@ -802,3 +802,76 @@
 [INFO] 2026-05-23 12:35:19 | ReportGenerator | Raporlar kaydedildi: italy_report_20260523_1235.md, italy_report_20260523_1235.txt
 [INFO] 2026-05-23 12:35:19 | PDFReport | PDF raporu oluşturuldu: italy_report_20260523_1235.pdf
 [SUCCESS] 2026-05-23 12:35:19 | F1System | Dashboard data is ready: Italy (17.4s)
+[WARNING] 2026-05-27 16:51:45 | XAI | SHAP kurulu degil. Permutation Importance kullanilacak. (pip install shap)
+[INFO] 2026-05-27 16:52:00 | DataLoader | ==================================================
+[INFO] 2026-05-27 16:52:00 | DataLoader | Yarış yükleniyor: Australia 2025
+[INFO] 2026-05-27 16:52:01 | DataLoader | FastF1 cache etkinleştirildi: C:\Users\dgknb\Desktop\F1 Analizi - Veri Madenciliği\cache
+[INFO] 2026-05-27 16:52:01 | DataLoader | Loading Australia GP 2025... (Deneme 1/3)
+[INFO] 2026-05-27 16:52:03 | DataLoader | Australia: 927 tur, 20 pilot verisi çekildi.
+[INFO] 2026-05-27 16:52:03 | DataLoader | Raw data saved: australia_laps_raw.csv
+[INFO] 2026-05-27 16:52:03 | DataLoader | Preprocessing başlıyor...
+[INFO] 2026-05-27 16:52:03 | Preprocessing | Preprocessing started: Australia (927 satır)
+[INFO] 2026-05-27 16:52:03 | Preprocessing | Preprocessing tamamlandı: 858 satır (69 satır çıkarıldı).
+[INFO] 2026-05-27 16:52:03 | Database | Australia: 858 tur SQLite'a kaydedildi.
+[INFO] 2026-05-27 16:52:03 | DataLoader | Feature engineering başlıyor...
+[INFO] 2026-05-27 16:52:03 | FeatureEngineering | Feature engineering başladı: Australia
+[INFO] 2026-05-27 17:45:04 | Database | Veritabanı tabloları hazır.
+[INFO] 2026-05-27 17:45:04 | CacheManager | Cached analysis loaded: Bahrain (oluşturma: 2026-05-23 12:38:37)
+[INFO] 2026-05-27 17:45:04 | CacheManager | Cached analysis loaded: Monaco (oluşturma: 2026-05-23 12:34:25)
+[INFO] 2026-05-27 17:45:04 | CacheManager | Cached analysis loaded: Great Britain (oluşturma: 2026-05-23 12:34:44)
+[INFO] 2026-05-27 17:45:04 | CacheManager | Cached analysis loaded: Belgium (oluşturma: 2026-05-23 12:35:01)
+[INFO] 2026-05-27 17:45:04 | CacheManager | Cached analysis loaded: Italy (oluşturma: 2026-05-23 12:35:19)
+[INFO] 2026-05-27 17:50:38 | DataLoader | ==================================================
+[INFO] 2026-05-27 17:50:38 | DataLoader | Yarış yükleniyor: Bahrain 2025
+[SUCCESS] 2026-05-27 17:50:38 | F1System | Bahrain: Processed CSV'den yüklendi (1115 tur).
+[INFO] 2026-05-27 17:50:58 | DataLoader | ==================================================
+[INFO] 2026-05-27 17:50:58 | DataLoader | Yarış yükleniyor: Bahrain 2025
+[SUCCESS] 2026-05-27 17:50:58 | F1System | Bahrain: Processed CSV'den yüklendi (1115 tur).
+[INFO] 2026-05-27 17:50:59 | ModelEvaluation | Akademik degerlendirme basliyor: Bahrain
+[SUCCESS] 2026-05-27 17:50:59 | F1System | CV tamamlandi (3-fold) — DT: 0.905±0.067 | kNN: 0.849±0.011
+[SUCCESS] 2026-05-27 17:51:04 | F1System | GridSearch tamamlandi — DT best: 0.849 | kNN best: 0.849
+[SUCCESS] 2026-05-27 17:51:06 | F1System | K-Means optimizasyonu tamamlandi. En iyi: {'n_clusters': 5, 'init': 'k-means++'}, sil=0.319
+[SUCCESS] 2026-05-27 17:51:06 | F1System | ROC/AUC tamamlandi — DT AUC=0.804 | kNN AUC=0.618
+[SUCCESS] 2026-05-27 17:51:06 | F1System | Model karsilastirma tablosu olusturuldu. En iyi model: Decision Tree
+[INFO] 2026-05-27 17:51:06 | ModelEvaluation | Karsilastirma CSV kaydedildi: model_comparison_bahrain.csv
+[WARNING] 2026-05-27 17:51:06 | ModelEvaluation | Markdown kaydetme hatasi: `Import tabulate` failed.  Use pip or conda to install the tabulate package.
+[INFO] 2026-05-27 17:51:06 | ModelEvaluation | CV sonuclari CSV kaydedildi: cv_results_bahrain.csv
+[SUCCESS] 2026-05-27 17:51:06 | F1System | Akademik degerlendirme tamamlandi: Bahrain
+[INFO] 2026-05-27 17:51:48 | DataLoader | ==================================================
+[INFO] 2026-05-27 17:51:48 | DataLoader | Yarış yükleniyor: Bahrain 2025
+[SUCCESS] 2026-05-27 17:51:48 | F1System | Bahrain: Processed CSV'den yüklendi (1115 tur).
+[WARNING] 2026-05-27 17:51:49 | XAI | SHAP kurulu degil. Permutation Importance kullanilacak. (pip install shap)
+[INFO] 2026-05-27 17:51:49 | XAI | XAI analizi basliyor: Bahrain
+[SUCCESS] 2026-05-27 17:51:50 | F1System | XAI analizi tamamlandi: Bahrain (SHAP=Hayir)
+[INFO] 2026-05-27 17:51:50 | ErrorAnalysis | Hata analizi basliyor: Bahrain
+[INFO] 2026-05-27 17:51:51 | ErrorAnalysis | Hata analizi CSV kaydedildi: error_analysis_bahrain.csv
+[SUCCESS] 2026-05-27 17:51:51 | F1System | Hata analizi tamamlandi: Bahrain
+[INFO] 2026-05-27 17:51:51 | StatisticalTests | Istatistiksel testler basliyor: Bahrain
+[INFO] 2026-05-27 17:51:51 | StatisticalTests | Test sonuclari CSV kaydedildi: statistical_tests_bahrain.csv
+[SUCCESS] 2026-05-27 17:51:51 | F1System | Istatistiksel testler tamamlandi — McNemar p=1.0000 | t-test p=0.4226
+[INFO] 2026-05-27 18:00:24 | AdvancedAnalysis | === Gelişmiş Akademik Analiz: Bahrain ===
+[INFO] 2026-05-27 18:00:24 | AdvancedAnalysis | Learning Curves hesaplanıyor: Bahrain
+[WARNING] 2026-05-27 18:00:24 | AdvancedAnalysis |   Decision Tree learning curve hatası: train_sizes has been interpreted as absolute numbers of training samples and must be within (0, 13], but is within [6, 20].
+[WARNING] 2026-05-27 18:00:24 | AdvancedAnalysis |   kNN learning curve hatası: train_sizes has been interpreted as absolute numbers of training samples and must be within (0, 13], but is within [6, 20].
+[INFO] 2026-05-27 18:00:24 | AdvancedAnalysis |   Learning curve kaydedildi: learning_curves_bahrain.png
+[INFO] 2026-05-27 18:00:24 | AdvancedAnalysis | Feature Correlation hesaplanıyor: Bahrain
+[INFO] 2026-05-27 18:00:24 | AdvancedAnalysis |   Feature correlation kaydedildi: feature_correlation_bahrain.png
+[INFO] 2026-05-27 18:00:24 | AdvancedAnalysis | Ablation Study çalışıyor: Bahrain
+[INFO] 2026-05-27 18:00:24 | AdvancedAnalysis |   Baseline → DT=0.897, kNN=0.698
+[INFO] 2026-05-27 18:00:25 | AdvancedAnalysis |   Ablation study kaydedildi: ablation_study_bahrain.png
+[INFO] 2026-05-27 18:00:25 | AdvancedAnalysis | Overfitting Analysis çalışıyor: Bahrain
+[INFO] 2026-05-27 18:00:27 | AdvancedAnalysis |   Overfitting analysis kaydedildi: overfitting_analysis_bahrain.png
+[INFO] 2026-05-27 18:00:27 | AdvancedAnalysis | === Gelişmiş analiz tamamlandı: Bahrain ===
+[INFO] 2026-05-27 18:01:10 | AdvancedAnalysis | === Gelişmiş Akademik Analiz: Bahrain ===
+[INFO] 2026-05-27 18:01:10 | AdvancedAnalysis | Learning Curves hesaplanıyor: Bahrain
+[INFO] 2026-05-27 18:01:13 | AdvancedAnalysis |   Decision Tree learning curve OK (max_val_acc=0.952)
+[INFO] 2026-05-27 18:01:14 | AdvancedAnalysis |   kNN learning curve OK (max_val_acc=0.754)
+[INFO] 2026-05-27 18:01:15 | AdvancedAnalysis |   Learning curve kaydedildi: learning_curves_bahrain.png
+[INFO] 2026-05-27 18:01:15 | AdvancedAnalysis | Feature Correlation hesaplanıyor: Bahrain
+[INFO] 2026-05-27 18:01:15 | AdvancedAnalysis |   Feature correlation kaydedildi: feature_correlation_bahrain.png
+[INFO] 2026-05-27 18:01:15 | AdvancedAnalysis | Ablation Study çalışıyor: Bahrain
+[INFO] 2026-05-27 18:01:15 | AdvancedAnalysis |   Baseline -> DT=0.897, kNN=0.698
+[INFO] 2026-05-27 18:01:16 | AdvancedAnalysis |   Ablation study kaydedildi: ablation_study_bahrain.png
+[INFO] 2026-05-27 18:01:16 | AdvancedAnalysis | Overfitting Analysis çalışıyor: Bahrain
+[INFO] 2026-05-27 18:01:18 | AdvancedAnalysis |   Overfitting analysis kaydedildi: overfitting_analysis_bahrain.png
+[INFO] 2026-05-27 18:01:18 | AdvancedAnalysis | === Gelişmiş analiz tamamlandı: Bahrain ===
