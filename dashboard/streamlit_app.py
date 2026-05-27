@@ -230,7 +230,7 @@ if is_sim:
 # ─────────────────────────────────────────────────────────────
 tab_overview, tab_driver, tab_compare, tab_tire, tab_pit, \
 tab_weather, tab_ml, tab_cv, tab_roc, tab_xai, tab_error, \
-tab_insight, tab_report, tab_pres = st.tabs([
+tab_adv, tab_insight, tab_report, tab_pres = st.tabs([
     "🏠 Overview",
     "👤 Driver Perf.",
     "⚔️ Comparison",
@@ -242,6 +242,7 @@ tab_insight, tab_report, tab_pres = st.tabs([
     "📈 ROC / AUC",
     "🔍 XAI (SHAP)",
     "⚠️ Error Analysis",
+    "🔬 Advanced",
     "💡 AI Insights",
     "📄 Report",
     "🎯 Sunum",
@@ -987,7 +988,152 @@ with tab_error:
 
 
 # ══════════════════════════════════════════════════
-# 12. AI INSIGHTS
+# 12. ADVANCED ANALYSIS (Learning Curves, Correlation, Ablation, Overfit)
+# ══════════════════════════════════════════════════
+with tab_adv:
+    st.markdown("## 🔬 Gelişmiş Akademik Analizler")
+    st.caption("Learning Curves · Feature Correlation · Ablation Study · Overfitting Analysis")
+
+    adv_data = ml_results.get("advanced", {})
+
+    if not adv_data:
+        st.warning("Gelişmiş analiz verisi bulunamadı. Pipeline'ı yeniden çalıştırın.")
+    else:
+        # ── 12a. Learning Curves ──────────────────────────────────────────
+        st.markdown("### 📉 Learning Curves (Bias-Variance Tradeoff)")
+        lc = adv_data.get("learning_curves", {})
+        if lc.get("error"):
+            st.warning(f"Learning curves: {lc['error']}")
+        else:
+            lc_path = lc.get("chart", "")
+            if lc_path:
+                try:
+                    import base64, os
+                    if os.path.exists(lc_path):
+                        with open(lc_path, "rb") as f:
+                            b64 = base64.b64encode(f.read()).decode()
+                        st.image(f"data:image/png;base64,{b64}", use_column_width=True)
+                except Exception:
+                    pass
+            col1, col2 = st.columns(2)
+            curves = lc.get("curves", {})
+            for col, (mname, cdata) in zip([col1, col2], curves.items()):
+                with col:
+                    if "error" not in cdata and cdata.get("val_mean"):
+                        vm = cdata["val_mean"]
+                        col.metric(f"{mname} — Max Val Acc",
+                                   f"{max(vm):.3f}",
+                                   f"n_folds={lc.get('n_folds',3)}")
+            st.caption(
+                "**Okuma rehberi:** Eğitim doğruluğu yüksek, doğrulama düşükse → Overfit (yüksek varyans). "
+                "Her ikisi de düşükse → Underfit (yüksek bias). İdeal: iki eğri yakın ve yüksek."
+            )
+
+        st.divider()
+
+        # ── 12b. Feature Correlation ─────────────────────────────────────
+        st.markdown("### 🔗 Feature Korelasyon Matrisi")
+        fc = adv_data.get("feature_correlation", {})
+        if fc.get("error"):
+            st.warning(f"Feature correlation: {fc['error']}")
+        else:
+            fc_path = fc.get("chart", "")
+            if fc_path:
+                try:
+                    import base64, os
+                    if os.path.exists(fc_path):
+                        with open(fc_path, "rb") as f:
+                            b64 = base64.b64encode(f.read()).decode()
+                        st.image(f"data:image/png;base64,{b64}", use_column_width=True)
+                except Exception:
+                    pass
+            hcp = fc.get("high_corr_pairs", [])
+            if hcp:
+                st.markdown(f"**⚠️ Yüksek Korelasyon Çiftleri (|r| > 0.7) — {len(hcp)} çift**")
+                st.dataframe(
+                    pd.DataFrame(hcp),
+                    use_container_width=True, hide_index=True
+                )
+                st.caption(
+                    "Yüksek korelasyon (>0.9): multicollinearity riski. "
+                    "Bu özelliklerden biri çıkarılabilir (bkz. Ablation Study)."
+                )
+            else:
+                st.success(f"✅ {fc.get('n_features',0)} özellik arasında yüksek korelasyon (>0.7) bulunamadı.")
+
+        st.divider()
+
+        # ── 12c. Ablation Study ──────────────────────────────────────────
+        st.markdown("### 🔬 Ablation Study (Drop-One-Out)")
+        abl = adv_data.get("ablation_study", {})
+        if abl.get("error"):
+            st.warning(f"Ablation: {abl['error']}")
+        else:
+            col1, col2, col3 = st.columns(3)
+            col1.metric("Baseline DT",  f"{abl.get('baseline_dt', 0):.3f}")
+            col2.metric("Baseline kNN", f"{abl.get('baseline_knn', 0):.3f}")
+            col3.metric("En Kritik Özellik", abl.get("most_important", "—"))
+
+            abl_path = abl.get("chart", "")
+            if abl_path:
+                try:
+                    import base64, os
+                    if os.path.exists(abl_path):
+                        with open(abl_path, "rb") as f:
+                            b64 = base64.b64encode(f.read()).decode()
+                        st.image(f"data:image/png;base64,{b64}", use_column_width=True)
+                except Exception:
+                    pass
+
+            abl_tbl = abl.get("ablation_table", [])
+            if abl_tbl:
+                abl_df = pd.DataFrame(abl_tbl)
+                abl_df.columns = [c.replace("_", " ").title() for c in abl_df.columns]
+                st.dataframe(
+                    abl_df.style.background_gradient(
+                        subset=[c for c in abl_df.columns if "Delta" in c],
+                        cmap="RdYlGn"
+                    ),
+                    use_container_width=True, hide_index=True
+                )
+            st.caption(
+                "**Okuma rehberi:** Negatif Δ → özellik çıkarıldığında performans düştü (önemli). "
+                "Pozitif Δ → özellik gereksiz olabilir (gürültü ekliyor)."
+            )
+
+        st.divider()
+
+        # ── 12d. Overfitting Analysis ─────────────────────────────────────
+        st.markdown("### 📊 Overfitting Analizi (Hiperparametre Sweepleri)")
+        ov = adv_data.get("overfitting", {})
+        if ov.get("error"):
+            st.warning(f"Overfitting analizi: {ov['error']}")
+        else:
+            col1, col2 = st.columns(2)
+            col1.metric("DT Optimal max_depth", ov.get("best_dt_depth", "—"))
+            col2.metric("kNN Optimal n_neighbors", ov.get("best_knn_k", "—"))
+
+            ov_path = ov.get("chart", "")
+            if ov_path:
+                try:
+                    import base64, os
+                    if os.path.exists(ov_path):
+                        with open(ov_path, "rb") as f:
+                            b64 = base64.b64encode(f.read()).decode()
+                        st.image(f"data:image/png;base64,{b64}", use_column_width=True)
+                except Exception:
+                    pass
+
+            dt_gap  = ov.get("dt_overfit_gap", 0)
+            st.caption(
+                f"**DT Overfit Gap (max depth'te):** {dt_gap:.3f} "
+                f"({'⚠️ Yüksek Overfit' if dt_gap > 0.15 else '✓ Makul'}). "
+                "Kırmızı bölge: eğitim-doğrulama farkı (overfit alanı)."
+            )
+
+
+# ══════════════════════════════════════════════════
+# 13. AI INSIGHTS
 # ══════════════════════════════════════════════════
 with tab_insight:
     st.markdown("#### 💡 AI Insight Engine — Otomatik Analitik Yorumlar")

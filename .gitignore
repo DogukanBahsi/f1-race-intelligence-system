@@ -1,13 +1,47 @@
+# ── Python ────────────────────────────────────
 venv/
 __pycache__/
-*/__pycache__/
+**/__pycache__/
 *.pyc
+*.pyo
+*.pyd
+.Python
 
+# ── Veri & Cache ──────────────────────────────
 cache/
 data/raw/
 data/processed/
 data/analysis_cache/
 data/*.db
+data/exports/models/*.pkl
+data/exports/models/*.joblib
 
+# ── Loglar & Raporlar (üretilen) ─────────────
 reports/generated_reports/
 f1_system.log
+*.log
+
+# ── Akademik Çıktılar (büyük PNG'ler) ─────────
+# reports/figures/ ve reports/tables/ git'te tutulabilir
+# ama isteğe bağlı olarak dışarıda bırakmak için aşağıyı aç:
+# reports/figures/
+# reports/tables/
+
+# ── Ortam & IDE ───────────────────────────────
+.env
+.env.local
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ── Jupyter ───────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── Test dosyaları (geçici) ───────────────────
+test_*.py
+validate_*.py
+debug_*.py

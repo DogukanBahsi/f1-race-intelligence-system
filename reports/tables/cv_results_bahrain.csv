@@ -1,0 +1,7 @@
+race,model,fold,accuracy,mean_accuracy,std_accuracy,mean_f1,auc
+Bahrain,Decision Tree,1,0.8571,0.9048,0.0673,0.7498,0
+Bahrain,Decision Tree,2,0.8571,0.9048,0.0673,0.7498,0
+Bahrain,Decision Tree,3,1.0,0.9048,0.0673,0.7498,0
+Bahrain,kNN,1,0.8571,0.8492,0.0112,0.4592,0
+Bahrain,kNN,2,0.8571,0.8492,0.0112,0.4592,0
+Bahrain,kNN,3,0.8333,0.8492,0.0112,0.4592,0
