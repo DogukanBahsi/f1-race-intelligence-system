@@ -229,7 +229,8 @@ if is_sim:
 # SEKMELER
 # ─────────────────────────────────────────────────────────────
 tab_overview, tab_driver, tab_compare, tab_tire, tab_pit, \
-tab_weather, tab_ml, tab_insight, tab_report, tab_pres = st.tabs([
+tab_weather, tab_ml, tab_cv, tab_roc, tab_xai, tab_error, \
+tab_insight, tab_report, tab_pres = st.tabs([
     "🏠 Overview",
     "👤 Driver Perf.",
     "⚔️ Comparison",
@@ -237,6 +238,10 @@ tab_weather, tab_ml, tab_insight, tab_report, tab_pres = st.tabs([
     "🔧 Pit Stop",
     "🌡️ Weather",
     "🤖 ML Models",
+    "📊 CV & GridSearch",
+    "📈 ROC / AUC",
+    "🔍 XAI (SHAP)",
+    "⚠️ Error Analysis",
     "💡 AI Insights",
     "📄 Report",
     "🎯 Sunum",
@@ -598,7 +603,391 @@ with tab_ml:
 
 
 # ══════════════════════════════════════════════════
-# 8. AI INSIGHTS
+# 8. CROSS-VALIDATION & GRIDSEARCH
+# ══════════════════════════════════════════════════
+with tab_cv:
+    st.markdown("#### 📊 Cross-Validation & GridSearch Sonuçları")
+    eval_res = ml.get("evaluation", {})
+
+    if eval_res.get("error"):
+        st.warning(f"⚠️ {eval_res['error']}")
+    elif not eval_res:
+        st.info("Akademik değerlendirme verisi yükleniyor (ilk çalıştırmada hesaplanır).")
+    else:
+        # ── CV Özeti ─────────────────────────────────────────
+        cv_data = eval_res.get("cross_validation", {})
+        if cv_data:
+            st.markdown(f"**{cv_data.get('n_folds', 5)}-Fold Stratified Cross-Validation**")
+            if cv_data.get("comment"):
+                st.info(cv_data["comment"])
+
+            dt_cv  = cv_data.get("decision_tree", {})
+            knn_cv = cv_data.get("knn", {})
+
+            col1, col2, col3, col4 = st.columns(4)
+            with col1:
+                st.metric("DT CV Mean Acc",
+                          f"%{dt_cv.get('mean_accuracy', 0)*100:.1f}",
+                          delta=f"±{dt_cv.get('std_accuracy', 0)*100:.1f}%")
+            with col2:
+                st.metric("kNN CV Mean Acc",
+                          f"%{knn_cv.get('mean_accuracy', 0)*100:.1f}",
+                          delta=f"±{knn_cv.get('std_accuracy', 0)*100:.1f}%")
+            with col3:
+                st.metric("DT Overfit Gap",
+                          f"{dt_cv.get('overfit_gap', 0):.3f}",
+                          delta_color="inverse")
+            with col4:
+                st.metric("kNN Overfit Gap",
+                          f"{knn_cv.get('overfit_gap', 0):.3f}",
+                          delta_color="inverse")
+
+            show_chart(cv_data.get("chart_b64", ""), "Fold Bazlı CV Skoru")
+
+            # Fold detay tablosu
+            st.markdown("##### Fold Bazlı Detay")
+            fold_rows = []
+            for fold_i, (dt_acc, knn_acc) in enumerate(
+                zip(dt_cv.get("fold_accuracies", []), knn_cv.get("fold_accuracies", [])), 1
+            ):
+                fold_rows.append({
+                    "Fold": fold_i,
+                    "DT Accuracy": f"{dt_acc:.4f}",
+                    "kNN Accuracy": f"{knn_acc:.4f}",
+                    "Fark": f"{dt_acc - knn_acc:+.4f}",
+                    "Üstün Model": "DT" if dt_acc > knn_acc else ("kNN" if knn_acc > dt_acc else "Eşit"),
+                })
+            if fold_rows:
+                st.dataframe(pd.DataFrame(fold_rows), use_container_width=True, hide_index=True)
+
+            # Metrik tablosu
+            st.markdown("##### Kapsamlı Metrik Karşılaştırması")
+            metric_rows = [
+                {
+                    "Metrik": "Ortalama Accuracy",
+                    "Decision Tree": f"{dt_cv.get('mean_accuracy', 0):.4f}",
+                    "kNN": f"{knn_cv.get('mean_accuracy', 0):.4f}",
+                },
+                {
+                    "Metrik": "Std Sapma",
+                    "Decision Tree": f"{dt_cv.get('std_accuracy', 0):.4f}",
+                    "kNN": f"{knn_cv.get('std_accuracy', 0):.4f}",
+                },
+                {
+                    "Metrik": "Precision (macro)",
+                    "Decision Tree": f"{dt_cv.get('mean_precision', 0):.4f}",
+                    "kNN": f"{knn_cv.get('mean_precision', 0):.4f}",
+                },
+                {
+                    "Metrik": "Recall (macro)",
+                    "Decision Tree": f"{dt_cv.get('mean_recall', 0):.4f}",
+                    "kNN": f"{knn_cv.get('mean_recall', 0):.4f}",
+                },
+                {
+                    "Metrik": "F1-Score (macro)",
+                    "Decision Tree": f"{dt_cv.get('mean_f1', 0):.4f}",
+                    "kNN": f"{knn_cv.get('mean_f1', 0):.4f}",
+                },
+                {
+                    "Metrik": "Overfit Gap (Train-Test)",
+                    "Decision Tree": f"{dt_cv.get('overfit_gap', 0):.4f}",
+                    "kNN": f"{knn_cv.get('overfit_gap', 0):.4f}",
+                },
+            ]
+            st.dataframe(pd.DataFrame(metric_rows), use_container_width=True, hide_index=True)
+
+        st.divider()
+
+        # ── GridSearch ────────────────────────────────────────
+        gs_data = eval_res.get("grid_search", {})
+        if gs_data and not gs_data.get("error"):
+            st.markdown("**GridSearchCV Sonuçları**")
+
+            col_gs1, col_gs2 = st.columns(2)
+            with col_gs1:
+                dt_gs = gs_data.get("decision_tree", {})
+                st.markdown("**Decision Tree — En İyi Parametreler**")
+                st.json(dt_gs.get("best_params", {}))
+                st.metric("DT Best CV Score", f"%{dt_gs.get('best_score', 0)*100:.1f}")
+                if dt_gs.get("comment"):
+                    st.caption(dt_gs["comment"])
+
+            with col_gs2:
+                knn_gs = gs_data.get("knn", {})
+                st.markdown("**kNN — En İyi Parametreler**")
+                st.json(knn_gs.get("best_params", {}))
+                st.metric("kNN Best CV Score", f"%{knn_gs.get('best_score', 0)*100:.1f}")
+                if knn_gs.get("comment"):
+                    st.caption(knn_gs["comment"])
+
+            show_chart(gs_data.get("chart_b64", ""), "GridSearch Sonuçları")
+
+        st.divider()
+
+        # ── K-Means Optimizasyonu ─────────────────────────────
+        km_opt = eval_res.get("kmeans_optimization", {})
+        if km_opt:
+            st.markdown("**K-Means Hiperparametre Optimizasyonu (Silhouette Score)**")
+            if km_opt.get("comment"):
+                st.success(km_opt["comment"])
+            show_chart(km_opt.get("chart_b64", ""), "K-Means Optimizasyonu")
+
+            km_rows = km_opt.get("all_results", [])
+            if km_rows:
+                st.dataframe(pd.DataFrame(km_rows), use_container_width=True, hide_index=True)
+
+        # ── İstatistiksel Testler ─────────────────────────────
+        st.divider()
+        st.markdown("**İstatistiksel Anlamlılık Testleri**")
+        stat_tests = ml.get("statistical_tests", {})
+        if stat_tests and not stat_tests.get("error"):
+            show_chart(stat_tests.get("chart_b64", ""), "İstatistiksel Test Sonuçları")
+
+            for test_key, test_name in [
+                ("mcnemar", "McNemar Testi"),
+                ("paired_ttest", "Paired t-test"),
+                ("wilcoxon", "Wilcoxon Testi"),
+            ]:
+                t = stat_tests.get(test_key, {})
+                if t.get("conclusion"):
+                    st.info(f"**{test_name}:** {t['conclusion']}")
+
+            for line in stat_tests.get("interpretation", []):
+                st.caption(f"• {line}")
+        else:
+            st.caption("İstatistiksel test verisi mevcut değil.")
+
+
+# ══════════════════════════════════════════════════
+# 9. ROC / AUC ANALİZİ
+# ══════════════════════════════════════════════════
+with tab_roc:
+    st.markdown("#### 📈 ROC Eğrisi & AUC Analizi")
+    eval_res = ml.get("evaluation", {})
+    roc_data = eval_res.get("roc_auc", {})
+
+    if not roc_data or roc_data.get("error"):
+        st.warning("ROC/AUC verisi mevcut değil.")
+        st.caption("Model değerlendirme pipeline'ı çalıştırıldığında hesaplanacak.")
+    else:
+        col_r1, col_r2, col_r3 = st.columns(3)
+        dt_roc  = roc_data.get("Decision Tree", {})
+        knn_roc = roc_data.get("kNN", {})
+
+        with col_r1:
+            st.metric("Decision Tree AUC", f"{dt_roc.get('auc', 0):.4f}")
+        with col_r2:
+            st.metric("kNN AUC", f"{knn_roc.get('auc', 0):.4f}")
+        with col_r3:
+            better = "Decision Tree" if dt_roc.get("auc", 0) >= knn_roc.get("auc", 0) else "kNN"
+            st.metric("🏆 Üstün Model (AUC)", better)
+
+        if roc_data.get("comment"):
+            st.info(roc_data["comment"])
+
+        show_chart(roc_data.get("chart_b64", ""), "ROC Eğrisi")
+
+        st.markdown("#### ROC Detayları")
+        roc_rows = []
+        for model_name, data in roc_data.items():
+            if model_name in ("chart_b64", "comment") or "comment" in str(model_name):
+                continue
+            if not isinstance(data, dict) or "auc" not in data:
+                continue
+            roc_rows.append({
+                "Model":           model_name,
+                "AUC":             f"{data.get('auc', 0):.4f}",
+                "Optimal Eşik":    f"{data.get('best_threshold', 0):.4f}",
+                "TPR @ Eşik":      f"{data.get('best_tpr', 0):.4f}",
+                "FPR @ Eşik":      f"{data.get('best_fpr', 0):.4f}",
+                "Değerlendirme": (
+                    "Mükemmel (≥0.90)" if data.get("auc", 0) >= 0.9 else
+                    "İyi (0.80-0.90)" if data.get("auc", 0) >= 0.8 else
+                    "Orta (0.70-0.80)" if data.get("auc", 0) >= 0.7 else
+                    "Zayıf (≤0.70)"
+                ),
+            })
+        if roc_rows:
+            st.dataframe(pd.DataFrame(roc_rows), use_container_width=True, hide_index=True)
+
+        st.markdown("---")
+        st.markdown("""
+        **ROC Eğrisi Yorumu:**
+        - **AUC = 1.0**: Mükemmel sınıflandırıcı
+        - **AUC = 0.5**: Rastgele sınıflandırıcı (faydasız)
+        - **AUC > 0.8**: Akademik açıdan kabul edilebilir performans
+        - **Optimal Eşik**: Youden J istatistiğini (TPR - FPR) maksimize eden eşik
+        """)
+
+    # Model karşılaştırma tablosu
+    st.divider()
+    st.markdown("#### Model Karşılaştırma Tablosu")
+    comp_data = eval_res.get("model_comparison", {})
+    if comp_data and comp_data.get("dataframe"):
+        df_comp = pd.DataFrame(comp_data["dataframe"])
+        numeric_cols = ["CV Mean Acc", "CV Std", "CV Precision", "CV Recall",
+                        "CV F1", "AUC", "GS Best Score", "Overfit Gap"]
+        st.dataframe(
+            df_comp.style.format({
+                col: "{:.4f}" for col in numeric_cols if col in df_comp.columns
+            }).background_gradient(subset=["AUC", "CV Mean Acc"] if "AUC" in df_comp.columns else [],
+                                   cmap="RdYlGn"),
+            use_container_width=True, hide_index=True,
+        )
+        st.success(f"🏆 En iyi model: **{comp_data.get('best_model', '—')}**")
+        show_chart(comp_data.get("chart_b64", ""), "Model Karşılaştırması")
+        for line in comp_data.get("interpretation", []):
+            st.info(f"💡 {line}")
+
+
+# ══════════════════════════════════════════════════
+# 10. XAI (SHAP / PERMUTATION IMPORTANCE)
+# ══════════════════════════════════════════════════
+with tab_xai:
+    st.markdown("#### 🔍 Açıklanabilir Yapay Zeka (XAI)")
+    xai_data = ml.get("xai", {})
+
+    if not xai_data or xai_data.get("error"):
+        st.warning(xai_data.get("error", "XAI verisi mevcut değil."))
+    else:
+        has_shap = xai_data.get("has_shap", False)
+        if has_shap:
+            st.success("✅ SHAP TreeExplainer aktif")
+        else:
+            st.info("ℹ️ SHAP kurulu değil — Permutation Importance kullanılıyor. (`pip install shap`)")
+
+        # SHAP / Fallback
+        shap_dt = xai_data.get("shap_dt", {})
+        if shap_dt:
+            st.markdown(f"**Yöntem:** `{shap_dt.get('method', '—')}`")
+            if shap_dt.get("comment"):
+                st.success(shap_dt["comment"])
+            if shap_dt.get("top_feature"):
+                st.metric("En Kritik Özellik", shap_dt["top_feature"])
+
+            col_xa, col_xb = st.columns(2)
+            with col_xa:
+                show_chart(shap_dt.get("chart_b64", ""), "SHAP Özellik Önemi")
+            with col_xb:
+                if shap_dt.get("beeswarm_b64"):
+                    show_chart(shap_dt["beeswarm_b64"], "SHAP Beeswarm")
+
+        st.divider()
+
+        # Permutation Importance karşılaştırması
+        st.markdown("#### Permutation Importance — DT vs kNN")
+        show_chart(xai_data.get("comparison_chart_b64", ""), "Karşılaştırmalı Permutation Importance")
+
+        col_p1, col_p2 = st.columns(2)
+        with col_p1:
+            perm_dt = xai_data.get("perm_importance_dt", {})
+            if perm_dt.get("importance"):
+                st.markdown("**Decision Tree — Permutation Importance**")
+                df_pi = pd.DataFrame(perm_dt["importance"]).sort_values("PI Mean", ascending=False)
+                st.dataframe(df_pi.style.format({"PI Mean": "{:.5f}", "PI Std": "{:.5f}"}),
+                             use_container_width=True, hide_index=True)
+                if perm_dt.get("comment"):
+                    st.caption(perm_dt["comment"])
+
+        with col_p2:
+            perm_knn = xai_data.get("perm_importance_knn", {})
+            if perm_knn.get("importance"):
+                st.markdown("**kNN — Permutation Importance**")
+                df_pi2 = pd.DataFrame(perm_knn["importance"]).sort_values("PI Mean", ascending=False)
+                st.dataframe(df_pi2.style.format({"PI Mean": "{:.5f}", "PI Std": "{:.5f}"}),
+                             use_container_width=True, hide_index=True)
+                if perm_knn.get("comment"):
+                    st.caption(perm_knn["comment"])
+
+        # Yerel açıklamalar
+        st.divider()
+        st.markdown("#### Yerel Açıklamalar — Sürücü Bazlı Tahmin Analizi")
+        local_exp = xai_data.get("local_explanations", [])
+        if local_exp:
+            le_rows = []
+            for exp in local_exp:
+                row = {
+                    "Sürücü": exp["driver"],
+                    "Gerçek": "Güçlü" if exp["actual"] == 1 else "Normal",
+                    "Tahmin": exp["prediction_label"],
+                    "Doğru?": "✅" if exp["correct"] else "❌",
+                }
+                if exp.get("confidence") is not None:
+                    row["Güven"] = f"{exp['confidence']:.2%}"
+                for feat, val in (exp.get("features") or {}).items():
+                    row[feat] = f"{val:.3f}"
+                le_rows.append(row)
+
+            st.dataframe(
+                pd.DataFrame(le_rows).style.apply(
+                    lambda col: ["background: #1A4D1A" if v == "✅" else
+                                 "background: #4D1A1A" if v == "❌" else ""
+                                 for v in col] if col.name == "Doğru?" else [""] * len(col),
+                    axis=0,
+                ),
+                use_container_width=True, hide_index=True,
+            )
+
+
+# ══════════════════════════════════════════════════
+# 11. HATA ANALİZİ
+# ══════════════════════════════════════════════════
+with tab_error:
+    st.markdown("#### ⚠️ Hata Analizi — Yanlış Tahmin İncelemesi")
+    ea_data = ml.get("error_analysis", {})
+
+    if not ea_data or ea_data.get("error"):
+        st.warning(ea_data.get("error", "Hata analizi verisi mevcut değil."))
+    else:
+        # Genel özet
+        dt_err  = ea_data.get("dt_errors", {})
+        knn_err = ea_data.get("knn_errors", {})
+
+        col_e1, col_e2, col_e3, col_e4 = st.columns(4)
+        with col_e1:
+            st.metric("DT Hata Oranı", f"%{dt_err.get('error_rate', 0)*100:.1f}")
+        with col_e2:
+            st.metric("kNN Hata Oranı", f"%{knn_err.get('error_rate', 0)*100:.1f}")
+        with col_e3:
+            st.metric("DT FP", dt_err.get("false_positives", 0))
+        with col_e4:
+            st.metric("DT FN", dt_err.get("false_negatives", 0))
+
+        if dt_err.get("comment"):
+            st.info(f"**DT:** {dt_err['comment']}")
+        if knn_err.get("comment"):
+            st.info(f"**kNN:** {knn_err['comment']}")
+
+        # Confusion Matrix
+        show_chart(ea_data.get("cm_chart_b64", ""), "Confusion Matrix Karşılaştırması")
+
+        # Ortak hatalar
+        common = ea_data.get("common_errors", [])
+        if common:
+            st.markdown(f"#### Her İki Model Tarafından da Yanlış Tahmin Edilen Sürücüler ({len(common)} adet)")
+            st.dataframe(pd.DataFrame(common), use_container_width=True, hide_index=True)
+
+        # Sürücü bazlı rapor
+        st.divider()
+        st.markdown("#### Sürücü Bazlı Tahmin Sonuçları")
+        driver_report = ea_data.get("driver_error_report", [])
+        if driver_report:
+            st.dataframe(pd.DataFrame(driver_report), use_container_width=True, hide_index=True)
+        show_chart(ea_data.get("driver_error_chart_b64", ""), "Sürücü Bazlı Hata Dağılımı")
+
+        # Yüksek güvenli hatalar
+        hce_dt = dt_err.get("high_conf_errors", [])
+        if hce_dt:
+            st.markdown(f"#### ⚠️ Yüksek Güvenli Yanlış Tahminler — Decision Tree ({len(hce_dt)} adet)")
+            st.dataframe(pd.DataFrame(hce_dt), use_container_width=True, hide_index=True)
+            st.caption("Bu sürücüler için model yüksek güven (>70%) ile yanlış tahmin yaptı.")
+
+        # Hata dağılım grafiği
+        show_chart(ea_data.get("feature_error_chart_b64", ""), "Hata Dağılımı (Özellik Uzayı)")
+
+
+# ══════════════════════════════════════════════════
+# 12. AI INSIGHTS
 # ══════════════════════════════════════════════════
 with tab_insight:
     st.markdown("#### 💡 AI Insight Engine — Otomatik Analitik Yorumlar")

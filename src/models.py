@@ -61,6 +61,38 @@ def run_all_models(df: pd.DataFrame, race_name: str) -> Dict[str, Any]:
     results["knn"]           = clf_results.get("knn", {})
     results["comparison"]    = clf_results.get("comparison", {})
 
+    # ── D) Akademik Değerlendirme Pipeline ───────────────────
+    try:
+        from src.model_evaluation import run_full_evaluation
+        results["evaluation"] = run_full_evaluation(feature_matrix, df, race_name)
+    except Exception as _eval_err:
+        logger.warning(f"Akademik değerlendirme hatası: {_eval_err}")
+        results["evaluation"] = {}
+
+    # ── E) XAI (SHAP / Permutation Importance) ───────────────
+    try:
+        from src.xai import run_xai_analysis
+        results["xai"] = run_xai_analysis(feature_matrix, df, race_name)
+    except Exception as _xai_err:
+        logger.warning(f"XAI analizi hatası: {_xai_err}")
+        results["xai"] = {}
+
+    # ── F) Hata Analizi ──────────────────────────────────────
+    try:
+        from src.error_analysis import run_error_analysis
+        results["error_analysis"] = run_error_analysis(feature_matrix, df, race_name)
+    except Exception as _ea_err:
+        logger.warning(f"Hata analizi hatası: {_ea_err}")
+        results["error_analysis"] = {}
+
+    # ── G) İstatistiksel Testler ─────────────────────────────
+    try:
+        from src.statistical_tests import run_statistical_tests
+        results["statistical_tests"] = run_statistical_tests(feature_matrix, df, race_name)
+    except Exception as _st_err:
+        logger.warning(f"İstatistiksel test hatası: {_st_err}")
+        results["statistical_tests"] = {}
+
     log_success(f"ML pipeline tamamlandı: {race_name}")
     return results
 
