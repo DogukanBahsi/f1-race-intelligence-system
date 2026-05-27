@@ -60,6 +60,18 @@ sınıflandırılabilir mi?
 | Akademisyen | CV ve istatistiksel test sonuçları üzerinde çalışma |
 | Taraftar | Pilotlar arası hız ve tutarlılık karşılaştırması |
 
+### Varsayılan Yarışlar (config.py → DEFAULT_RACES)
+
+Sistem aşağıdaki 5 yarışı varsayılan olarak işler:
+
+| # | Yarış | Pist Özelliği |
+|---|-------|---------------|
+| 1 | Bahrain | Yüksek degradasyon, 3 DRS |
+| 2 | Monaco | Dar sokak, overtake güç, pit zamanlaması kritik |
+| 3 | Great Britain | Yüksek hız, hava değişkeni |
+| 4 | Belgium | Uzun düzlük + teknik sektör kombinasyonu |
+| 5 | Italy | En hızlı pist, slipstream stratejisi |
+
 ---
 
 ## 2. Sistem Mimarisi
@@ -86,12 +98,15 @@ sınıflandırılabilir mi?
 │                                                             │
 │  error_analysis.py    →  statistical_tests.py              │
 │  (Hata analizi)           (McNemar, t-test, Wilcoxon)     │
+│                                                             │
+│  advanced_analysis.py  (Learning Curves, Correlation,      │
+│                          Ablation Study, Overfit Sweep)    │
 └──────────────────────┬──────────────────────────────────────┘
                        │
 ┌──────────────────────▼──────────────────────────────────────┐
 │                  ÇIKTI KATMANI                              │
 │                                                             │
-│  dashboard/streamlit_app.py  (Port 8501 — 14 sekme)        │
+│  dashboard/streamlit_app.py  (Port 8501 — 15 sekme)        │
 │  dashboard/app.py            (Port 5050 — Flask API)       │
 │  reports/                    (PDF, MD, CSV, PNG)            │
 └─────────────────────────────────────────────────────────────┘
@@ -166,7 +181,7 @@ FastF1 API (internet) ──► data/raw/          (Ham CSV)
 
 | Kütüphane | Kullanım |
 |-----------|---------|
-| `streamlit` | Ana dashboard (14 sekme) |
+| `streamlit` | Ana dashboard (15 sekme) |
 | `flask` | REST API backend |
 | `reportlab` | PDF rapor üretimi |
 | `tabulate` | Markdown tablo formatı |
@@ -331,16 +346,16 @@ optimal_threshold = thresholds[argmax(tpr - fpr)]
 
 | Metrik | Decision Tree | kNN |
 |--------|---------------|-----|
-| CV Mean Accuracy | ... | ... |
-| CV Std | ... | ... |
-| CV Precision | ... | ... |
-| CV Recall | ... | ... |
-| CV F1 | ... | ... |
-| AUC | ... | ... |
-| GridSearch Best Score | ... | ... |
-| Overfit Gap | ... | ... |
+| CV Mean Accuracy | **0.905** | 0.849 |
+| CV Std | ±0.067 | ±0.011 |
+| CV Precision (macro) | 0.726 | 0.425 |
+| CV Recall (macro) | 0.806 | 0.500 |
+| CV F1 (macro) | 0.750 | 0.459 |
+| AUC | **0.804** | 0.618 |
+| GridSearch Best Score | 0.849 | 0.849 |
+| Overfit Gap | 0.095 | 0.001 |
 
-*Her yarış için otomatik üretilir — `reports/tables/` altına kaydedilir.*
+*Bahrain GP 2025 — 3-fold Stratified CV (n=20 sürücü). Her yarış için otomatik üretilir → `reports/tables/model_comparison_{race}.csv`*
 
 ### 6.5 SHAP Açıklanabilir Yapay Zeka
 
@@ -526,20 +541,17 @@ venv\Scripts\activate
 # macOS/Linux:
 source venv/bin/activate
 
-# 3. Bağımlılıkları kur
+# 3. Bağımlılıkları kur (shap dahil tüm paketler)
 pip install -r requirements.txt
 
-# 4. (Opsiyonel) SHAP kur — XAI için
-pip install shap
-
-# 5. Pipeline çalıştır
+# 4. Pipeline çalıştır
 #    (İnternet yoksa simüle veri ile otomatik çalışır)
 python main.py
 
-# 6. Streamlit Dashboard
+# 5. Streamlit Dashboard
 streamlit run dashboard/streamlit_app.py
 
-# 7. Flask API (opsiyonel)
+# 6. Flask API (opsiyonel)
 python dashboard/app.py
 ```
 
@@ -585,8 +597,8 @@ F1 Analizi - Veri Madenciliği/
 │   └── utils.py                  # Yardımcı fonksiyonlar
 │
 ├── dashboard/
-│   ├── streamlit_app.py          # Streamlit (14 sekme, port 8501)
-│   └── app.py                    # Flask API (port 5050)
+│   ├── streamlit_app.py          # Streamlit (15 sekme, port 8501)
+│   └── app.py                    # Flask API (6 endpoint, port 5050)
 │
 ├── data/
 │   ├── raw/                      # Ham FastF1 CSV
@@ -602,9 +614,9 @@ F1 Analizi - Veri Madenciliği/
 │   ├── tables/                ★  # CSV + Markdown karşılaştırma tabloları
 │   └── generated_reports/        # PDF + MD + TXT raporlar
 │
-└── experiments/               ★  # Deney log dosyaları
+└── notebooks/                    # Jupyter notebook alanı (opsiyonel)
 
-★ = Bu geliştirmede eklenen bileşenler
+★ = Akademik geliştirme aşamasında eklenen bileşenler
 ```
 
 ---
@@ -612,7 +624,7 @@ F1 Analizi - Veri Madenciliği/
 ## 10. Streamlit Dashboard Kullanımı
 
 Dashboard `streamlit run dashboard/streamlit_app.py` komutuyla başlatılır.
-**14 sekme** içerir:
+**15 sekme** içerir:
 
 | # | Sekme | İçerik |
 |---|-------|--------|
@@ -642,9 +654,12 @@ Flask API `python dashboard/app.py` ile başlar (port 5050).
 
 | Endpoint | Yöntem | Açıklama |
 |----------|--------|----------|
-| `/` | GET | Ana sayfa |
-| `/api/races` | GET | İşlenmiş yarışlar listesi |
-| `/api/race/<name>` | GET | Yarış analiz sonuçları (JSON) |
+| `/` | GET | Ana dashboard sayfası |
+| `/api/race/<race_name>` | GET | Yarış analiz sonuçları (JSON) |
+| `/api/report/<race_name>` | GET | Yarış raporu (Markdown/TXT) |
+| `/api/compare/<race>/<driver1>/<driver2>` | GET | İki pilot karşılaştırması |
+| `/api/pdf/<race_name>` | GET | PDF rapor indir |
+| `/api/export/<race_name>` | GET | CSV verisi dışa aktar |
 
 ---
 
