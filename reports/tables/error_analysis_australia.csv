@@ -1,0 +1,18 @@
+Driver,Gercek,DT Tahmini,kNN Tahmini,DT Dogru,kNN Dogru,Her Ikisi Yanlis,Ort. Tur (s)
+ALB,Guclu,Normal,Normal,✗,✗,⚠,91.847
+ALO,Normal,Normal,Normal,✓,✓,,92.502
+ANT,Normal,Normal,Normal,✓,✓,,91.734
+BEA,Normal,Guclu,Normal,✗,✓,,92.966
+BOR,Normal,Normal,Normal,✓,✓,,92.693
+GAS,Guclu,Normal,Normal,✗,✗,⚠,92.14
+HAM,Normal,Guclu,Guclu,✗,✗,⚠,92.103
+HUL,Normal,Normal,Normal,✓,✓,,92.528
+LAW,Normal,Normal,Normal,✓,✓,,93.131
+LEC,Normal,Guclu,Guclu,✗,✗,⚠,91.704
+NOR,Guclu,Guclu,Guclu,✓,✓,,90.012
+OCO,Normal,Normal,Normal,✓,✓,,93.678
+PIA,Guclu,Guclu,Guclu,✓,✓,,90.432
+RUS,Guclu,Guclu,Guclu,✓,✓,,91.074
+STR,Normal,Guclu,Normal,✗,✓,,92.324
+TSU,Normal,Normal,Normal,✓,✓,,92.147
+VER,Guclu,Guclu,Guclu,✓,✓,,90.521

@@ -1,0 +1,4 @@
+race,test,statistic,p_value,significant
+Australia,McNemar,0.5,0.4795,False
+Australia,Paired t-test,-1.0,0.3739,False
+Australia,Wilcoxon,0.0,1.0,False

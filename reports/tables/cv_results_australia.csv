@@ -1,0 +1,11 @@
+race,model,fold,accuracy,mean_accuracy,std_accuracy,mean_f1,auc
+Australia,Decision Tree,1,0.5,0.6333,0.3055,0.5667,0
+Australia,Decision Tree,2,1.0,0.6333,0.3055,0.5667,0
+Australia,Decision Tree,3,0.3333,0.6333,0.3055,0.5667,0
+Australia,Decision Tree,4,1.0,0.6333,0.3055,0.5667,0
+Australia,Decision Tree,5,0.3333,0.6333,0.3055,0.5667,0
+Australia,kNN,1,0.5,0.7667,0.2906,0.7167,0
+Australia,kNN,2,1.0,0.7667,0.2906,0.7167,0
+Australia,kNN,3,1.0,0.7667,0.2906,0.7167,0
+Australia,kNN,4,1.0,0.7667,0.2906,0.7167,0
+Australia,kNN,5,0.3333,0.7667,0.2906,0.7167,0
