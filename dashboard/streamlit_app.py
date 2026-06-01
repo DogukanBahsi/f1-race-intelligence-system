@@ -6,6 +6,7 @@ Komut: streamlit run dashboard/streamlit_app.py
 """
 
 import sys
+import os
 import base64
 from pathlib import Path
 
@@ -994,7 +995,7 @@ with tab_adv:
     st.markdown("## 🔬 Gelişmiş Akademik Analizler")
     st.caption("Learning Curves · Feature Correlation · Ablation Study · Overfitting Analysis")
 
-    adv_data = ml_results.get("advanced", {})
+    adv_data = ml.get("advanced", {})
 
     if not adv_data:
         st.warning("Gelişmiş analiz verisi bulunamadı. Pipeline'ı yeniden çalıştırın.")
@@ -1008,11 +1009,10 @@ with tab_adv:
             lc_path = lc.get("chart", "")
             if lc_path:
                 try:
-                    import base64, os
                     if os.path.exists(lc_path):
                         with open(lc_path, "rb") as f:
                             b64 = base64.b64encode(f.read()).decode()
-                        st.image(f"data:image/png;base64,{b64}", use_column_width=True)
+                        st.image(f"data:image/png;base64,{b64}", use_container_width=True)
                 except Exception:
                     pass
             col1, col2 = st.columns(2)
@@ -1040,11 +1040,10 @@ with tab_adv:
             fc_path = fc.get("chart", "")
             if fc_path:
                 try:
-                    import base64, os
                     if os.path.exists(fc_path):
                         with open(fc_path, "rb") as f:
                             b64 = base64.b64encode(f.read()).decode()
-                        st.image(f"data:image/png;base64,{b64}", use_column_width=True)
+                        st.image(f"data:image/png;base64,{b64}", use_container_width=True)
                 except Exception:
                     pass
             hcp = fc.get("high_corr_pairs", [])
@@ -1077,11 +1076,10 @@ with tab_adv:
             abl_path = abl.get("chart", "")
             if abl_path:
                 try:
-                    import base64, os
                     if os.path.exists(abl_path):
                         with open(abl_path, "rb") as f:
                             b64 = base64.b64encode(f.read()).decode()
-                        st.image(f"data:image/png;base64,{b64}", use_column_width=True)
+                        st.image(f"data:image/png;base64,{b64}", use_container_width=True)
                 except Exception:
                     pass
 
@@ -1105,26 +1103,25 @@ with tab_adv:
 
         # ── 12d. Overfitting Analysis ─────────────────────────────────────
         st.markdown("### 📊 Overfitting Analizi (Hiperparametre Sweepleri)")
-        ov = adv_data.get("overfitting", {})
-        if ov.get("error"):
-            st.warning(f"Overfitting analizi: {ov['error']}")
+        ov_data = adv_data.get("overfitting", {})
+        if ov_data.get("error"):
+            st.warning(f"Overfitting analizi: {ov_data['error']}")
         else:
             col1, col2 = st.columns(2)
-            col1.metric("DT Optimal max_depth", ov.get("best_dt_depth", "—"))
-            col2.metric("kNN Optimal n_neighbors", ov.get("best_knn_k", "—"))
+            col1.metric("DT Optimal max_depth", ov_data.get("best_dt_depth", "—"))
+            col2.metric("kNN Optimal n_neighbors", ov_data.get("best_knn_k", "—"))
 
-            ov_path = ov.get("chart", "")
+            ov_path = ov_data.get("chart", "")
             if ov_path:
                 try:
-                    import base64, os
                     if os.path.exists(ov_path):
                         with open(ov_path, "rb") as f:
                             b64 = base64.b64encode(f.read()).decode()
-                        st.image(f"data:image/png;base64,{b64}", use_column_width=True)
+                        st.image(f"data:image/png;base64,{b64}", use_container_width=True)
                 except Exception:
                     pass
 
-            dt_gap  = ov.get("dt_overfit_gap", 0)
+            dt_gap = ov_data.get("dt_overfit_gap", 0)
             st.caption(
                 f"**DT Overfit Gap (max depth'te):** {dt_gap:.3f} "
                 f"({'⚠️ Yüksek Overfit' if dt_gap > 0.15 else '✓ Makul'}). "
