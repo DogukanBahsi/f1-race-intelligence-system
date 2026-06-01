@@ -718,15 +718,6 @@ python dashboard/app.py
 | SHAP bağımlılığı | Kurulu değilse permutation importance fallback devreye girer |
 | Simüle veri | FastF1 erişimi yoksa gerçek telemetri yerine simülasyon kullanılır |
 
-### 11.3 Gelecek Çalışmalar
-
-| Konu | Yaklaşım |
-|------|----------|
-| Sezon genelinde değerlendirme | Tüm 24 yarış üzerinde model eğitimi → n≈480 |
-| Ensemble yöntemler | Random Forest, Gradient Boosting ile karşılaştırma |
-| Zaman serisi modelleme | Stint bazlı tur zamanı tahmini (LSTM/ARIMA) |
-| Çok yarışlı genelleme | Farklı pist tiplerine model transfer |
-| MLflow entegrasyonu | Deney takibi ve model versiyonlama |
 
 ---
 
@@ -767,9 +758,9 @@ Bu proje **BLM308 Veri Madenciliği** dersi dönem projesi kapsamında hazırlan
 ---
 
 **Geliştirici:** Ramazan Doğukan Bahşi
-**Kurum:** Bilgisayar Mühendisliği Bölümü — BLM308 Veri Madenciliği
+**Kurum:** İstanbul Gedik Üniversitesi Bilgisayar Mühendisliği Bölümü —  Veri Madenciliği
 **Dönem:** Bahar 2026
-**Lisans:** MIT
+
 
 ---
 
